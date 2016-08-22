@@ -408,8 +408,10 @@ app.directive('slider', ['$document', '$compile', '$filter', function ($document
                                         vTarget = $filter('currency')(speechValues[speechIndex], ' HK$', 0);
                                         var speechHtml;
                                         if (scope.model.vfillDisplays[j][speechIndex].template) {
-                                            var year = 4.5*scope.model.probs[1] ;
+                                            var year = scope.model.probs[1] ;
                                             // var vTarget = (scope.model.vTarget) ? scope.model.vTarget : 1;
+                                            //year = parseInt(year.toFixed(0));
+                                            year = -23 + year * 7.9;
                                             year = parseInt(year.toFixed(0));
                                             if (year > 0) {
                                                 var sf = scope.model.exportData.goalAtProbs[0][0].need - scope.model.exportData.goalAtProbs[0][0].saving;
