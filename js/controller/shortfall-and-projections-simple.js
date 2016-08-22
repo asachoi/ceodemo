@@ -30,6 +30,7 @@ app.controller('shortfall-and-projections-simple-ctrl', ['$scope', function ($sc
             fill = goalModel.vfills[0] + deltaFill * (timeAt - goalModel.probs[0]) / timeSpan;
         }
         $scope.goals[index].view.vfills[0] = fill;
+       // console.log(fill * 100);
         // $scope.goals[index].view.exportData = $scope.timelineModel.exportData;
         // $scope.goals[index].view.exportData.goalAtProbs = [$scope.timelineModel.exportData.goalAtProbs[index]];
 
@@ -57,41 +58,15 @@ app.controller('shortfall-and-projections-simple-ctrl', ['$scope', function ($sc
         $scope.updateView(1, data);
     };
 
-    $scope.goalData0 = [
-        {need: 7698268, saving: 800000},
-        {need: 7926126, saving: 840000},
-        {need: 8163910, saving: 882000},
-        {need: 8408827, saving: 926100},
-        {need: 8661092, saving: 972405},
-        {need: 8920925, saving: 1021025},
-        {need: 9188553, saving: 1072076},
-        {need: 9464209, saving: 1125680},
-        {need: 9748136, saving: 1181964},
-        {need: 10040580, saving: 1241062},
-        {need: 10341797, saving: 1303115},
-        {need: 10652051, saving: 1368271},
-        {need: 10971613, saving: 1436685},
-        {need: 11310734, saving: 1508519},
-        {need: 11649856, saving: 1583945},
-        {need: 11988977, saving: 1663142},
-        {need: 12370884, saving: 1746299},
-        {need: 12752791, saving: 1833614},
-        {need: 13134697, saving: 1925295},
-        {need: 13516604, saving: 2021560},
-        {need: 13898511, saving: 2122638},
-        {need: 14341245, saving: 2228770},
-        {need: 14783980, saving: 2340208},
-        {need: 15226714, saving: 2457219},
-        {need: 15669449, saving: 2580079},
-        {need: 16112183, saving: 2790083},
-        {need: 16625434, saving: 2844538},
-        {need: 17138685, saving: 2986765},
-        {need: 17651935, saving: 3136103},
-        {need: 18165186, saving: 3292908},
-        {need: 18678437, saving: 3457553},
+    $scope.loadGoalData0 = function(asset, goal, year) {
+        $scope.goalData0 = new Array();
+        for(var i = 0;i <= year ;i++) {
+            var yearPayment = ((goal - asset) / year);
+            $scope.goalData0.push({need: goal, saving: yearPayment * i + asset}); 
+        }
+    }
 
-        // {need: 18678437, saving: 17678437},
-    ];
+   $scope.loadGoalData0(1000, 10000, 30);
 
     $scope.goalData1 = [
         {need: 1200000, saving: 20000 * 0},
@@ -206,7 +181,7 @@ app.controller('shortfall-and-projections-simple-ctrl', ['$scope', function ($sc
             }]
         ],
         fillColor: '#8d449a',
-        emptyColor: '#c8cccc',
+        emptyColor: '#c8ffff',
         speechClass: 'speech'
     };
     $scope.goalViewModel1 = {
@@ -241,7 +216,7 @@ app.controller('shortfall-and-projections-simple-ctrl', ['$scope', function ($sc
     $scope.updateModel();
 
     $scope.extendInvestment = function() {
- 
+        $scope.loadGoalData0(1000, 10000, 60);
         $scope.goalModel0 = {
             exportData: {age:0, ageIndex:0, 
                 goalAtProbs:[
@@ -379,7 +354,7 @@ app.directive('slider', ['$document', '$compile', '$filter', function ($document
                     p = getP(i);
                     pRunningTotal += p;
                     x = pRunningTotal / pTotal * 100;
-                    console.log(x);
+                   // console.log(x);
                     if (scope.model.exportData != undefined && !scope.model.isView) {
                         var age = x / 100 * 60;
                         var ageIndex = age.toFixed(0); 
@@ -437,7 +412,8 @@ app.directive('slider', ['$document', '$compile', '$filter', function ($document
                                             // var vTarget = (scope.model.vTarget) ? scope.model.vTarget : 1;
                                             year = parseInt(year.toFixed(0));
                                             if (year > 0) {
-                                                var extraMonthlySaving = (scope.model.exportData.goalAtProbs[i][0].need - scope.model.exportData.goalAtProbs[i][0].saving) / year / 12;
+                                                vTarget = (scope.model.exportData.goalAtProbs[0][0].need - scope.model.exportData.goalAtProbs[0][0].saving);
+                                                var extraMonthlySaving = (scope.model.exportData.goalAtProbs[0][0].need - scope.model.exportData.goalAtProbs[0][0].saving) / year / 12;
                                                 extraMonthlySaving = $filter('currency')(extraMonthlySaving, 'HK$', 0);
                                                 speechHtml = scope.model.vfillDisplays[j][speechIndex].template
                                                                 .replace('$shortfall$', vTarget)
