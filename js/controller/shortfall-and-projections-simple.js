@@ -108,23 +108,6 @@ app.controller('shortfall-and-projections-simple-ctrl', ['$scope', function ($sc
         {need: 1391129, saving: 20000 * 5},
     ];
 
-    $scope.timelineModel = {
-        exportData: {age:0, ageIndex:0, 
-            goalAtProbs:[
-                [{need:0,saving:0,shortfall:0}, {need:0,saving:0,shortfall:0}]
-            ]
-        },
-        importData: [$scope.goalData0, $scope.goalData1],
-        // age: 0,
-        // ageIndex: 0,
-        handleAlignTop: -10,
-        handleClass: 'drag-slider-handle-bar',
-        handleKnob: 'bar',
-        sliderClass: 'drag-slider-ticker',
-        tickValues: ["30","","45","","60"],
-        probs: [0, 10],
-        listener: $scope.onTimelineChange
-    };
     $scope.goalModel0 = {
         exportData: {age:0, ageIndex:0, 
             goalAtProbs:[
@@ -133,9 +116,12 @@ app.controller('shortfall-and-projections-simple-ctrl', ['$scope', function ($sc
             ]
         },
         importData: [$scope.goalData0],
-        probs: [0, 10, 0],
+        //probs: [0, 10, 0],
+        probs: [0, 10*20/30, 10*20/30],
+        boundaries: [0, 10*20/30],
         vfills: [4.42516, 49.889919],
         vTarget: 18878437,
+        
         vfillDisplays: [[], [{
             template: "<span>Shortfall $shortfall$</span><br/><br/><span>To avoid this shortfall, an extra $extraMonthlySaving$ is needed per month for the next $year$ years</span>",
             topOffset: -30,
@@ -152,6 +138,27 @@ app.controller('shortfall-and-projections-simple-ctrl', ['$scope', function ($sc
         listener: $scope.onGoal0Change,
         speechClass: 'multi_speech'
     };
+
+    $scope.updateModel = function() {
+
+    $scope.timelineModel = {
+        exportData: {age:0, ageIndex:0, 
+            goalAtProbs:[
+                [{need:0,saving:0,shortfall:0}, {need:0,saving:0,shortfall:0}]
+            ]
+        },
+        importData: [$scope.goalData0, $scope.goalData1],
+        // age: 0,
+        // ageIndex: 0,
+        handleAlignTop: -10,
+        handleClass: 'drag-slider-handle-bar',
+        handleKnob: 'bar',
+        sliderClass: 'drag-slider-ticker',
+        tickValues: ["30","","60","","90"],
+        probs: [0, 10],
+        listener: $scope.onTimelineChange
+    };
+
     $scope.goalModel1 = {
         exportData: {age:0, ageIndex:0, 
             goalAtProbs:[
@@ -229,6 +236,47 @@ app.controller('shortfall-and-projections-simple-ctrl', ['$scope', function ($sc
         { model: $scope.goalModel0, view: $scope.goalViewModel0, date: new Date() },
         { model: $scope.goalModel1, view: $scope.goalViewModel1, date: new Date() },
     ];
+    };
+
+    $scope.updateModel();
+
+    $scope.extendInvestment = function() {
+ 
+        $scope.goalModel0 = {
+            exportData: {age:0, ageIndex:0, 
+                goalAtProbs:[
+                    [{need:0,saving:0,shortfall:0}],
+                    [{need:0,saving:0,shortfall:0}]
+                ]
+            },
+            importData: [$scope.goalData0],
+            probs: [0, 10, 0],
+            //probs: [0, 20*20/30, 20*20/30],
+            boundaries: [0, 20*20/30],
+            vfills: [4.42516, 49.889919],
+            vTarget: 18878437,
+            
+            vfillDisplays: [[], [{
+                template: "<span>Shortfall $shortfall$</span><br/><br/><span>To avoid this shortfall, an extra $extraMonthlySaving$ is needed per month for the next $year$ years</span>",
+                topOffset: -30,
+                leftOffset: 65,
+                width: 160,}
+                ]
+            ],
+            minDiff: 0.833,
+            handleKnob: 'band',
+            fillColor: '#8d449a',
+            emptyColor: '#c8cccc',
+            // allowDownTarget: true,
+            // vDraggable: true,
+            listener: $scope.onGoal0Change,
+            speechClass: 'multi_speech'
+        };
+        $scope.updateModel();
+        
+    }
+
+
 
 }]);
 
@@ -331,9 +379,9 @@ app.directive('slider', ['$document', '$compile', '$filter', function ($document
                     p = getP(i);
                     pRunningTotal += p;
                     x = pRunningTotal / pTotal * 100;
-
+                    console.log(x);
                     if (scope.model.exportData != undefined && !scope.model.isView) {
-                        var age = 30 * x / 100;
+                        var age = x / 100 * 60;
                         var ageIndex = age.toFixed(0); 
                         scope.model.exportData.ageIndex = ageIndex;
                         scope.model.exportData.age = (30 + age).toFixed(0);
@@ -385,7 +433,7 @@ app.directive('slider', ['$document', '$compile', '$filter', function ($document
                                         vTarget = $filter('currency')(speechValues[speechIndex], ' HK$', 0);
                                         var speechHtml;
                                         if (scope.model.vfillDisplays[j][speechIndex].template) {
-                                            var year = 30 * scope.model.probs[1] / 10;
+                                            var year = 4.5*scope.model.probs[1] ;
                                             // var vTarget = (scope.model.vTarget) ? scope.model.vTarget : 1;
                                             year = parseInt(year.toFixed(0));
                                             if (year > 0) {
