@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../style/default.css">
+    <script src="../script/jquery.js"></script>
+    <script>
+    $(document).ready(function() {
+        //menu animations are controlled by CSS. The following classes should be added when the menu is to be opened.
+        function open() {
+            $('#pageWrapper').addClass('pageMenuOpen');
+            $('.menu').addClass('open');
+        }
+
+        function close() {
+            $('#pageWrapper').removeClass('pageMenuOpen');
+            $('.menu').removeClass('open');
+        }
+
+        setTimeout(function() {
+            open();
+            setTimeout(function() {
+                close();
+            }, 3000)
+        }, 2000);
+    });
+    </script>
+</head>
+
+<body>
+    <nav class="menu agentMenu" id="pageMenu">
+        <div class="menuContainer">
+            <div class="panelUser">
+                <span class="imageIcon imageIconUser" style="background-image:url(../images/content/placeholder-menu-agent.jpg);"></span>
+                <p>Kevin Chung</p>
+            </div>
+            <ul class="menuList">
+                <li>
+                    <a href="/agent-dashboard">
+                        <span class="imageIcon imageIconHome"></span>
+                        <p>Home</p>
+                        <span class="imageIcon imageIconLock"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="imageIcon imageIconCustomers"></span>
+                        <p>Customer List</p>
+                        <span class="imageIcon imageIconLock"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="imageIcon imageIconTools"></span>
+                        <p>All Tools</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="imageIcon imageIconResources"></span>
+                        <p>Resources</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="imageIcon imageIconSolutions"></span>
+                        <p>Solutions</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="imageIcon imageIconProposals"></span>
+                        <p>Proposals</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="imageIcon imageIconApplication"></span>
+                        <p>eApplication</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="menuOption">
+                <ul>
+                    <li><a href="#"><span class="imageIcon imageIconSupport"></span><span class="title">Support</span></a>
+                    </li>
+                    <li><a href="#"><span class="imageIcon imageIconSettings"></span><span class="title">Settings</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="panelAction">
+                <button type="button" class="button logoutButton"><span class="imageIcon imageIconLogout"></span>
+                    <p>LOGOUT</p>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div id="pageWrapper">
+        <div id="pageOverlay"></div>
+        <div class="pageHeader" id="pageHeader" data-hw-module="app/modules/Header">
+            <div class="header-wrapper">
+                <div class="header-menu">
+                    <span class="imageIcon hamburgerManulifeMenuBtn"></span>
+                </div>
+                <div class="hader-title">
+                    <h1 class="title">Header Title</h1>
+                </div>
+                <div class="header-control">
+                    <ul class="actions-list">
+                        <li>
+                            <span class="imageIcon imageIconTool"></span><span class="accessible">Tools</span>
+                        </li>
+                        <li>
+                            <span class="imageIcon imageIconClose"></span><span class="accessible">Close</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="app">
+            <div class="scroller row">
+                <section class="panel themePanel themeCustomer">
+                    <div class="panelTitle row">
+                        <h2>Clients</h2>
+                        <button><span class="imageIcon imageIconExpand"></span><span class="accessible">Expand</span>
+                        </button>
+                    </div>
+                    <div class="panelContent">
+                        <div class="searchBox" style="background-image:url(../images/background/image-bg-search.png)">
+                            <div class="content">
+                                <button class="imageIcon imageIconMagifyGlass"></button>
+                                <input class="searchTextBox" type="text" placeholder="Search...">
+                            </div>
+                        </div>
+                        <div class="tabContent">
+                            <ul class="clientList">
+                                <li>
+                                    <a href="#">
+                                        <span class="imageIcon imageIconNotExistingCustomer"></span>
+                                        <p>Peter Chung <span class="imageIcon imageIconCompleted"></span>
+                                        </p>
+                                        <p class="note">Last viewed 13 Apr 2014</p>
+                                        <span class="imageIcon imageIconForewardArrow"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="imageIcon imageIconExistingCustomer"></span>
+                                        <p>Catherine Teresa Wu</p>
+                                        <p class="note">Last viewed 13 Apr 2014</p>
+                                        <span class="imageIcon imageIconForewardArrow"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="imageIcon imageIconExistingCustomer"></span>
+                                        <p>Kevin Chung <span class="imageIcon imageIconCompleted"></span>
+                                        </p>
+                                        <p class="note">Last viewed 13 Apr 2014</p>
+                                        <span class="imageIcon imageIconForewardArrow"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="imageIcon imageIconExistingCustomer"></span>
+                                        <p>Robert Lee Wong</p>
+                                        <p class="note">Last viewed 13 Apr 2014</p>
+                                        <span class="imageIcon imageIconForewardArrow"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="imageIcon imageIconNotExistingCustomer"></span>
+                                        <p>Jeremy Li Ng <span class="imageIcon imageIconCompleted"></span>
+                                        </p>
+                                        <p class="note">Last viewed 13 Apr 2014</p>
+                                        <span class="imageIcon imageIconForewardArrow"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panelAction">
+                        <button type="button" class="button clearButton">CLEAR</button>
+                        <button type="button" class="button positiveButton">ALL</button>
+                    </div>
+                </section>
+                <section class="panel themePanel themeSchedule">
+                    <div class="panelTitle row">
+                        <h2>Schedule</h2>
+                        <button><span class="imageIcon imageIconForeward"></span><span class="accessible">Go</span>
+                        </button>
+                    </div>
+                    <div class="panelContent">
+                        <div class="calendar">
+                            <div class="controls" style="background-image:url(../images/content/placeholder-calendar.jpg); background-size:100% auto;">
+                                <div class="content">
+                                    <button class="previous"><span>previous</span>
+                                    </button>
+                                    <span class="title">May 2014</span>
+                                    <button class="next"><span>next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="calendarTable">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Mon</th>
+                                            <th>Tue</th>
+                                            <th>Wed</th>
+                                            <th>Thu</th>
+                                            <th>Fri</th>
+                                            <th>Sat</th>
+                                            <th>Sun</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><span></span>
+                                            </td>
+                                            <td><span></span>
+                                            </td>
+                                            <td><span>1</span>
+                                            </td>
+                                            <td><span>2</span>
+                                            </td>
+                                            <td><span>3</span>
+                                            </td>
+                                            <td><span>4</span>
+                                            </td>
+                                            <td><span>5</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>6</span>
+                                            </td>
+                                            <td><span>7</span>
+                                            </td>
+                                            <td><span>8</span>
+                                            </td>
+                                            <td><span>9</span>
+                                            </td>
+                                            <td><span>10</span>
+                                            </td>
+                                            <td><span>11</span>
+                                            </td>
+                                            <td><span>12</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>13</span>
+                                            </td>
+                                            <td><span>14</span>
+                                            </td>
+                                            <td><span>15</span>
+                                            </td>
+                                            <td><a href="#">16</a>
+                                            </td>
+                                            <td><a href="#">17</a>
+                                            </td>
+                                            <td><span>18</span>
+                                            </td>
+                                            <td><span>19</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>20</span>
+                                            </td>
+                                            <td><a href="#">21</a>
+                                            </td>
+                                            <td><span>22</span>
+                                            </td>
+                                            <td><span>23</span>
+                                            </td>
+                                            <td><span>24</span>
+                                            </td>
+                                            <td><a href="#" class="today">25</a>
+                                            </td>
+                                            <td><span>26</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>27</span>
+                                            </td>
+                                            <td><span>28</span>
+                                            </td>
+                                            <td><span>29</span>
+                                            </td>
+                                            <td><a href="#">30</a>
+                                            </td>
+                                            <td><span>31</span>
+                                            </td>
+                                            <td><span></span>
+                                            </td>
+                                            <td><span></span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="calendarContent">
+                            <div class="scheduleItem">
+                                <div class="schedulateDate row">
+                                    <h3>Saturday, 25 May 2014</h3>
+                                    <button><span class="imageIcon imageIconExpand"></span><span class="accessible">Expand</span>
+                                    </button>
+                                </div>
+                                <ul class="scheduleList">
+                                    <li class="allDay">
+                                        <a href="#">
+                                            <p class="eventTime">All Day</p>
+                                            <p>Kevin Chung's Birthday</p>
+                                            <p class="note">Birthday Alert - All Day</p>
+                                            <span class="imageIcon imageIconForewardArrow"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <p class="eventTime"><span class="startTime">10:00AM</span><span class="duration">-</span><span class="endTime">10:30AM</span>
+                                            </p>
+                                            <p>Meeting with Kevin Chung</p>
+                                            <p class="note">Appointment</p>
+                                            <span class="imageIcon imageIconForewardArrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="currentTime">
+                                        <a href="#">
+                                            <p class="eventTime"><span class="startTime">11:30AM</span><span class="duration">-</span><span class="endTime">12:30AM</span>
+                                            </p>
+                                            <p>Collect HKID copy for Jeremy</p>
+                                            <p class="note">Note</p>
+                                            <span class="imageIcon imageIconForewardArrow"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <p class="eventTime"><span class="startTime">12:45PM</span><span class="duration">-</span><span class="endTime">1:30PM</span>
+                                            </p>
+                                            <p>Call with Robert Lee</p>
+                                            <p class="note">Appointment</p>
+                                            <span class="imageIcon imageIconForewardArrow"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="panel themePanel themeFocus">
+                    <div class="panelTitle row">
+                        <h2>Focus Retirement</h2>
+                        <button><span class="imageIcon imageIconForeward"></span><span class="accessible">Go</span>
+                        </button>
+                    </div>
+                    <div class="panelContent">
+                        <div class="featureVideo" style="background-image:url(../images/background/image-bg-video.png)">
+                            <a href="#">
+                                <span class="imageIcon imageIconLoadVideo"></span>
+                                <div class="content">
+                                    <p class="feature"><span class="imageIcon imageIconStar"></span> Featured</p>
+                                    <p>Plan for your Future - Retirement</p>
+                                    <p class="note">30MB | MOV</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="videoItem row">
+                            <div class="video">
+                                <a href="#" style="background-image:url(../images/background/image-bg-sea.png)"><span class="imageIcon imageIconLoadVideo"></span></a>
+                            </div>
+                            <div class="content">
+                                <p>Education Costs</p>
+                                <p class="note">450MB | MOV</p>
+                            </div>
+                        </div>
+                        <div class="videoItem row">
+                            <div class="video">
+                                <a href="#" style="background-image:url(../images/background/image-bg-sea.png)"><span class="imageIcon imageIconLoadVideo"></span></a>
+                            </div>
+                            <div class="content">
+                                <p>Asset rates of return</p>
+                                <p class="note">30MB | MOV<span class="tagUpdate">Update</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pdfItem row">
+                            <div class="pdf">
+                                <span class="imageIcon imageIconPDF"></span>
+                            </div>
+                            <div class="content">
+                                <p>Introduction to lifestage &hellip;</p>
+                                <p class="note">3MB | PDF</p>
+                            </div>
+                            <div class="action">
+                                <button class="downloadButton"><span class="imageIcon imageIconDownload"></span><span class="accessible">Download</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="panel themePanel themeNotification">
+                    <div class="panelTitle row">
+                        <h2>Notification</h2>
+                        <button><span class="imageIcon imageIconForeward"></span><span class="accessible">Go</span>
+                        </button>
+                        <div> </div>
+                    </div>
+                    <div class="panelContent">
+                        <ul class="notificationList">
+                            <li>
+                                <a href="#">
+                                    <span class="imageIcon status unread"></span>
+                                    <p>New App Update Available</p>
+                                    <p class="note">Today</p>
+                                    <span class="imageIcon imageIconForewardArrow"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="imageIcon status"></span>
+                                    <p>New ManuTouch App</p>
+                                    <p class="note">Yesterday</p>
+                                    <span class="imageIcon imageIconForewardArrow"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="imageIcon status"></span>
+                                    <p>Alert! Manulife servers will be te&hellip;</p>
+                                    <p class="note">Yesterday</p>
+                                    <span class="imageIcon imageIconForewardArrow"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="imageIcon status"></span>
+                                    <p>Retirement Campaign Launch</p>
+                                    <p class="note">13 April 2014</p>
+                                    <span class="imageIcon imageIconForewardArrow"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

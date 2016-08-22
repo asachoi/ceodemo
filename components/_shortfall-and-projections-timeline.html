@@ -1,0 +1,83 @@
+<section class="row">
+	<section class="panelz">
+		<div class="scrollable scrollable--vertical">
+			<div class="content padded">
+
+				<div class="viewMode">
+					<div class="viewMode__header"><img src="../images/placeholder/shortfall-title.jpg" alt="" /></div>
+					<div class="viewMode__selector"><span class="text">View mode</span> <a href="shortfall-and-projections-barchart.html"><img src="../images/placeholder/icon-bar-chart.png" alt="" /></a><a href="#"><img src="../images/placeholder/icon-timeline-highlighted.png" alt="" /></a></div>
+				</div>
+
+				<section style="padding-top: 30px;">
+				
+					<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+					<!-- these two elements to mimick the missing borders of the chart -->
+<!--
+					<div style="border: 1px solid #BBBDBD; position: absolute; width: 200px; top: 115px; left: 20px;"></div>
+					<div style="border: 1px solid #BBBDBD; position: absolute; width: 420px; top: 115px; left: 527px;"></div>
+-->
+					<div style="border: 1px solid #BBBDBD; position: absolute; width: 200px; top: 144px; left: 20px;"></div>
+					<div style="border: 1px dashed #9fa1a1; position: absolute; width: 200px; top: 305px; left: 20px; z-index:1; border-bottom:0;"></div>
+					<div style="border: 1px dashed #9fa1a1; position: absolute; width: 160px; top: 305px; right: 25px; z-index:1; border-bottom:0;"></div>
+					<div style="border: 1px solid #BBBDBD; position: absolute; width: 220px; top: 144px; left: 527px;" class="xaxis"></div>
+					<div style="border: 1px solid #e3e3e3; position: absolute; width: 160px; top: 144px; right:25px; border-bottom: 0"></div>
+					<!-- <div style="border: 1px solid #BBBDBD; position: absolute; width: calc(100% - 40px); top: 472px; left: 20px;"></div> -->
+
+					<div style="background-color: #c1c3c3; position: absolute; width: 2px; height: 10px; top: 135px; left: 600px;"></div>					
+					<div style="background-color: #c1c3c3; position: absolute; width: 2px; height: 10px; top: 135px; left: 675px;"></div>
+
+					<div style="color: #9c9b9d; position:absolute; top: 118px; left: 676px; font-size: 14px; ">75</div>
+
+					<div style="position:absolute; top:150px; left: 600px; border-left: 1px dashed #f1f2f3; width:1px; height: 260px;"></div>
+
+					<div style="position:absolute; top:150px; left: 675px; border-left: 1px dashed #f1f2f3; width:1px; height: 260px;"></div>
+
+					<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+				
+					<div ng-controller="shortfall-and-projections-simple-ctrl" class="XXdrag-slider-main">
+						<div class="timelineBlock">	
+							<div class="row1">
+								<div class="columnLeft columnLeftPlaceholder">
+									<div class="title">
+										<p>Age</p>
+									</div>
+								</div>
+								<div class="columnCenter timeLine">
+									<slider model="timelineModel"></slider>
+								</div>
+								<div class="columnRight title">
+									<p>Projection at age [{timelineModel.exportData.age}]</p>
+								</div>
+							</div>
+							<div class="row2">
+								<div class="columnLeftImagePosition">
+									<div class="imageBackground imageSaveForRetirement"></div>
+								</div>
+								<div class="columnCenter heightBlock">
+									<slider model="goalModel0"></slider>
+								</div>
+								<div class="columnRight heightBlock">
+									<slider model="goalViewModel0"></slider>
+								</div>
+							</div>
+							<div class="row3">
+								<div class="columnLeftImagePosition" style="top:-65px;">
+									<div class="imageBackground imageBuyAHome"></div>
+								</div>
+								<div class="columnCenter heightBlock">
+									<slider model="goalModel1"></slider>
+								</div>
+								<div class="columnRight heightBlock">
+									<slider model="goalViewModel1"></slider>
+								</div>
+							</div>
+							<div class="divLine"></div>
+						</div>
+					</div>
+				</section>
+
+			</div>
+		</div>
+	</section>
+</section>
+<script src="../js/controller/shortfall-and-projections-simple.js"></script>

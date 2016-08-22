@@ -1,0 +1,146 @@
+<div class="stepTracker">
+	<a href="" class="previousStep stepHidden"></a>
+	<a href="edisclosure-family-history.html" class="nextStep"></a>
+	<!-- <div class="placeholderImage" style="position: relative; top: 1px; z-index: 1;"><img src="../images/placeholder/step-tracker-basic-info.jpg" alt="" /></div> -->
+</div>
+
+<div class="stepperWrapper">
+	<ul class="stepMarker">
+		<li class="stepMarkerItem"><div class="dotMarker active"></div></li>
+		<li class="stepMarkerItem"><div class="lineMarker"></div></li>
+		<li class="stepMarkerItem"><div class="dotMarker"></div></li>
+		<li class="stepMarkerItem"><div class="lineMarker"></div></li>
+		<li class="stepMarkerItem"><div class="dotMarker"></div></li>
+	</ul>
+	<div class="stepper">
+		<a class="stepperItem active" href="edisclosure-basic-info.html">
+			Basic Info
+		</a>
+		<a class="stepperItem" href="edisclosure-family-history.html">
+			Family history
+		</a>
+		<a class="stepperItem" href="edisclosure-personal-medical-history.html">
+			Personal medical history
+		</a>
+	</div>
+</div>
+
+<!-- <div class="placeholderImage" style="<!~~ position:relative; ~~> margin-top:30px; left: -4px;"><img src="../images/placeholder/edisclosure-basic-info.jpg" alt="" /></div> -->
+
+<h2 class="mainTitle" style="margin-top: 40px;">Basic Info</h2>
+
+<section class="viewDetailBlock viewDetailBlock--firstBlock" style="margin-bottom: 0; padding: 0 0 30px; border-bottom: 1px solid #e5e5e5;">
+	<div class="viewDetailBlock__content">
+		<div class="grid">
+			<section class="span12">
+				<div class="valuePairBlock">
+					<div class="valuePairBlock__leftBlock">
+
+						<span class="valuePairBlock__description">Name</span>
+					</div>
+					<div class="valuePairBlock__rightBlock">
+						<span class="valuePairBlock__value">Chan Tai Man</span>
+					</div>
+				</div>
+
+				<div class="valuePairBlock">
+					<div class="valuePairBlock__leftBlock">
+						<span class="valuePairBlock__description">Gender</span>
+					</div>
+					<div class="valuePairBlock__rightBlock">
+						<span class="valuePairBlock__value">Male</span>
+					</div>
+				</div>
+
+				<div class="valuePairBlock">
+					<div class="valuePairBlock__leftBlock">
+						<span class="valuePairBlock__description">Date of birth</span>
+					</div>
+					<div class="valuePairBlock__rightBlock">
+						<span class="valuePairBlock__value">15  May  1985</span>
+					</div>
+				</div>
+
+			</section>
+			<section class="span0">
+			</section>
+		</div>
+	</div>
+</section>
+
+
+<div class="commonForm" style="padding: 30px 0; border-bottom: 1px solid #e5e5e5;">
+
+	<h2 class="mainTitle">Smoking status</h2>
+
+	<div class="myToggle myToggle--clearFix myToggle--large">
+		<div class="radio">
+			<input id="smokingStatusSmoker" name="smokingStatus" type="radio">
+			<label for="smokingStatusSmoker">Smoker</label>
+		</div>
+		<div class="radio">
+			<input id="smokingStatusNonSmoker" name="smokingStatus" type="radio" checked="checked">
+			<label for="smokingStatusNonSmoker">Non-smoker</label>
+		</div>
+	</div>
+
+</div>
+
+<div ng-controller="edisclosure-basic-info-ctrl" class="commonForm" style="padding-bottom: 20px;">
+	<div class="grid">
+		<div class="span8" style="min-height: 300px;">
+
+			<div style="margin-top: 20px;">
+				<h2 class="mainTitle">Height</h2>
+
+				<div class="myToggle myToggle--large" ng-repeat="v in units.height">
+					<div class="radio">
+						<input id="[{v.name}]" name="heightUnit" type="radio" ng-model="body.heightUnit" ng-value="$index">
+						<label for="[{v.name}]">[{v.name}]</label>
+					</div>
+				</div>
+
+				<div class="sliderWithValue">
+					<span class="sliderWithValue__slider">
+						<rzslider rz-slider-options="sliderOption.options" rz-slider-model="body.height"></rzslider>
+					</span>
+					<span class="sliderWithValue__value">
+						<span class="pretendInput">[{body.displayHeight | number:0 }]</span>
+					</span>
+				</div>
+			</div>
+
+			<div style="margin-top: 20px;">
+				<h2 class="mainTitle">Weight</h2>
+
+				<div class="myToggle myToggle--large" ng-repeat="v in units.weight">
+					<div class="radio">
+						<input id="[{v.name}]" name="weightUnit" type="radio" ng-model="body.weightUnit" ng-value="$index">
+						<label for="[{v.name}]">[{v.name}]</label>
+					</div>
+				</div>
+
+				<div class="sliderWithValue">
+					<span class="sliderWithValue__slider">
+						<rzslider rz-slider-options="sliderOption.options" rz-slider-model="body.weight"></rzslider>
+					</span>
+					<span class="sliderWithValue__value">
+						<span class="pretendInput">[{body.displayWeight | number:0 }]</span>						
+					</span>
+				</div>
+			</div>
+
+		</div>
+		<div class="span4">
+
+			<div class="visualDisplay">
+				<span><img id="visualMan" src="../images/content/visual-man.png" alt="" /></span>
+			</div>
+
+		</div>
+	</div>
+</div>
+<script src="../js/controller/edisclosure-basic-info.js"></script>
+
+
+

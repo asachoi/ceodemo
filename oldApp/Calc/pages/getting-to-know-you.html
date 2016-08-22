@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="stylesheet" type="text/css" href="../style/default.css">
+</head>
+
+<body>
+	<div class="emotional-base-page getting-to-know-you">
+		<div class="ebp-content-container">
+			<div class="ebp-left-container">
+				<div class="ebp-background-container">
+					<div class="ebp-background-header">
+					</div>
+				</div>
+				<div class="page-management">
+					<div class="page-container">
+					</div>
+				</div>
+			</div>
+			<div class="ebp-right-container">
+				<!-- start right panel -->
+				<div class="right-panel-know-you">
+					<div class="header">
+						<div class="title">
+							<p>GETTING TO<br> KNOW YOU2</p>
+							<div class="page-selector">
+							</div>
+						</div>
+						<div class="progress-bar-container">
+						</div>
+					</div>
+					<div class="content">
+						<div class="object-container">
+						</div>
+						<div class="graph-container hidden">
+							<div class="graph-title">
+								<p>YOU MAY HAVE THE<br> FOLLOWING NEEDS</p>
+							</div>
+							<span class="graph"></span>
+						</div>
+					</div>
+				</div>
+				<!-- end right panel -->
+			</div>
+		</div>
+	</div>
+	<script src="../script/jquery.js"></script>
+	<script src="../script/i18next.js"></script>
+	<script src="../script/I18nHelper.js"></script>
+	<script src="../script/handlebars.js"></script>
+	<script src="../script/Templates.js"></script>
+	<script src="../script/NumberUtils.js"></script>
+
+
+	<!-- start data -->
+	<script src='../script/data/SubscribeItem.js'></script>
+	<script src='../script/data/svg/SVGDataConfig.js'></script>
+	<script src='../script/data/ConfigData.js'></script>
+	<script src='../script/data/CharacterData.js'></script>
+	<script src='../script/data/DependentData.js'></script>
+	<script src='../script/data/HousingData.js'></script>
+	<script src='../script/data/GettingToKnowYouData.js'></script>
+
+	<script src='../script/data/retirement/RetirementConfigData.js'></script>
+	<script src='../script/data/retirement/RetirementIncomeAssetsData.js'></script>
+	<script src='../script/data/retirement/RetirementLifeStyleData.js'></script>
+	<script src='../script/data/retirement/RetirementPlanData.js'></script>
+
+	<script src='../script/data/insurance/InsurancePlanData.js'></script>
+	<script src='../script/data/investment/InvestmentGoalData.js'></script>
+
+	<script src='../script/data/EmotionalFactFindingData.js'></script>
+	<!-- end data -->
+	<!--start base control -->
+	<script src='../script/plugin/jquery-ui-effect.js'></script>
+	<script src='../script/plugin/fastclick.js'></script>
+	<script src='../script/pos/range/jquery.nouislider.js'></script>
+	<script src='../script/plugin/jtouchswipe.js'></script>
+	<script src='../script/plugin/idangerous.swiper.scrollbar.js'></script>
+	<script src='../script/pos/SwiperCarousel.js'></script>
+	<script src='../script/pos/HeaderComponent.js'></script>
+
+	<script src='../script/pos/sortable-jquery-ui.js'></script>
+	<script src='../script/plugin/jquery.ui.touch-punch.js'></script>
+
+	<script src='../script/pos/range/NewSlider.js'></script>
+	<script src='../script/pos/IncrementControl.js'></script>
+	<script src='../script/pos/ProgressBar.js'></script>
+	<script src='../script/pos/SwipeSelect.js'></script>
+	<script src='../script/pos/RadioGroup.js'></script>
+	<script src="../script/pos/page-management/PageElement.js"></script>
+	<script src="../script/pos/page-management/PageManagement.js"></script>
+	<!-- end base control -->
+	<!--custom control -->
+	<script src='../script/pos/character/CharacterAge.js'></script>
+	<script src="../script/pos/character/SVGItem.js"></script>
+	<script src="../script/pos/character/SVGHousingItem.js"></script>
+	<!--custom control -->
+
+	<!-- page list -->
+	<script src='../script/UserLandingScreen.js'></script>
+	<script src='../script/pages/getting_to_know_you/AboutYouPage.js'></script>
+	<script src='../script/pages/getting_to_know_you/ChildrenChoosingPage.js'></script>
+	<script src='../script/pages/getting_to_know_you/UserDependent.js'></script>
+	<script src='../script/pages/getting_to_know_you/UserHousing.js'></script>
+	<script src='../script/pages/getting_to_know_you/YourDreamPage.js'></script>
+	<script src='../script/pages/getting_to_know_you/LifeStageNeedPage.js'></script>
+	<script src='../script/pages/getting_to_know_you/YourConcernPage.js'></script>
+	<script src='../script/pages/getting_to_know_you/GTKYSummaryPage.js'></script>
+	<script src='../script/pages/getting_to_know_you/UserOccupation.js'></script>
+	<script src='../script/UserLifeState.js'></script>
+	<!--page list -->
+
+	<!--start know you -->
+	<script src="../script/pages/getting_to_know_you/RightPanelKnowYou.js"></script>
+	<script src="../script/pages/GettingToKnowYou.js"></script>
+	<!--end know you -->
+	<script>
+		/*global FastClick, page*/
+		FastClick.attach(document.body);
+		new page.GettingToKnowYou(".getting-to-know-you", {
+			"isStandalone": true
+		});
+	</script>
+</body>
+
+</html>

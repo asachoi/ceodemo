@@ -1,0 +1,72 @@
+﻿/* SVG style */
+
+#delightmeter svg {
+    width: 100%;
+}
+
+/* Input section */
+
+#scoreReader {
+    display: none;
+    width: 35%;
+    background: #83e043;
+    margin: auto;
+    border-radius: 3px;
+    padding: 3px;
+    text-align:center;
+}
+    #scoreReader input {
+        border: none;
+        border-radius: 3px;
+        width: 80%;
+        height: 25px;
+        font-size: 25px;
+    }
+
+/* Needle of the meter */
+
+#delightmeter .needle,#delightmeter  .needle-center {
+    fill: #df7a1c;
+}
+#delightmeter .needleset {
+    -webkit-transition: All 3s ease-in-out;
+    -moz-transition: All 3s ease-in-out;
+    -o-transition: All 3s ease-in-out;
+}
+#delightmeter .needle-pointer {
+/*
+    fill: #fff;
+    stroke-width: 5px;
+    z-index: 2;
+*/
+}
+
+/* Each arc in the meter */
+
+#delightmeter .arc {
+    fill: none;
+    stroke-width: 20px;
+}
+#delightmeter #arc1 {
+    stroke: #f8e0a0;
+}
+#delightmeter #arc2 {
+    stroke: #f6d47c;
+}
+#delightmeter #arc3 {
+    stroke: #f3c858;
+}
+#delightmeter #arc4 {
+    stroke: #f1bd34;
+}
+#delightmeter #arc5 {
+    stroke: #eeb111;
+}
+
+/* For the score inside circle */
+
+#delightmeter .scoreInCircle {
+    -webkit-transition: All 3s ease;
+    -moz-transition: All 3s ease;
+    -o-transition: All 3s ease;
+}

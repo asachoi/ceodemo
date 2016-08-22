@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+		<title>Manulife Pos Technical</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../style/default.css">
+</head>
+
+<body>
+	<div class="animation-page-svg">
+		<div class="left-container">
+			<div class="big-lady"></div>
+			<div class="header">
+				<div class="test">
+				</div>
+				<div class="container">
+					<div class="lady-small"></div>
+					<div class="man"></div>
+				</div>
+			</div>
+			<div class="middle">
+				<div class="content-container">
+					<div class="education-field">
+						<p>Education</p>
+						<div class="radio-group">
+							<div class="row">
+								<label class="toggle-button">
+									<input type="checkbox" value="0">
+										Primary or below
+									</label>
+									<label class="toggle-button selected">
+											<input type="checkbox" value="1">
+											Secondary
+									</label>
+							</div>
+							<div class="row">
+									<label class="toggle-button">
+										<input type="checkbox" value="2">
+										Post Secondary
+								</label>
+								<label class="toggle-button selected">
+										<input type="checkbox" value="3">
+										Bachelors or Above
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="marital-status-field">
+						<p>Marital Status</p>
+						<div class="radio-group">
+							<div class="row">
+								<label class="toggle-button">
+										<input type="checkbox" value="0">
+										Single
+								</label>
+								<label class="toggle-button selected">
+										<input type="checkbox" value="1">
+										Married
+								</label>
+							</div>
+							<div class="row">
+								<label class="toggle-button">
+										<input type="checkbox" value="2">
+										Divorced
+								</label>
+								<label class="toggle-button selected">
+										<input type="checkbox" value="3">
+										Widowed
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="right-container">
+		</div>
+	</div>
+	<script src="../script/jquery.js"></script>
+	<script src="../script/plugin/jtouchswipe.js"></script>
+	<script src="../script/pos/character/CharacterAge.js"></script>
+	<script src="../script/pos/RadioGroup.js"></script>
+	<script src="../script/pages/getting_to_know_you/AnimationPageSVG.js"></script>
+	<script>
+		var animationPage = new page.AnimationPageSVG(".animation-page-svg", {});
+	</script>
+</body>
+
+</html>

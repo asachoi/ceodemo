@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../style/default.css">
+</head>
+
+<body>
+    <div class="calc-page-wrap protection-life-coverage">
+        <!-- start left panl -->
+        <div class="calc-page-content">
+            <div class="content-wrapper">
+                <div class="calc-page-title">
+                    <p class="title">Basic Life Coverage Need</p>
+                </div>
+                <!-- start content view -->
+                <div class="inner-content">
+                    <div class="saving-investment">
+                        <div class="slider-title">Outstanding Mortgage Balance and Debts (HK$)</div>
+                        <div class="new-slider-component single">
+                            <div class="slider-container"></div>
+                            <div class="content">
+                                <input type="number" name="fname" class="textinput">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="target-amount">
+                        <div class="slider-title">Monthly Family Expenses (excluding mortgage payment (HK$)</div>
+                        <div class="new-slider-component single">
+                            <div class="slider-container"></div>
+                            <div class="content">
+                                <input type="number" name="fname" class="textinput">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="year-support clearfix">
+                        <div class="title slider-title">
+                            <p>Number of Years to Support Your Family</p>
+                        </div>
+                        <div class="incerement-container">
+                            <ul id="increment-control" class="increment-control no-input" data-suffix="years">
+                                <li class="sub"><span class="increment-button"></span>
+                                </li>
+                                <li>
+                                    <p class="value"></p>
+                                    <input type="number" />
+                                </li>
+                                <li class="add"><span class="increment-button"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="asscoiate-expense">
+                        <div class="slider-title">Final &amp; Asscoiated Expenses (HK$)</div>
+                        <div class="new-slider-component single">
+                            <div class="slider-container"></div>
+                            <div class="content">
+                                <input type="number" name="fname" class="textinput">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rate-return clearfix">
+                        <div class="title slider-title">
+                            <p>Assumed Annual Rate of Return (%) </p>
+                            <div class="icon icon-info" title="Tooltip"></div>
+                        </div>
+                        <div class="incerement-container">
+                            <ul id="increment-control" class="increment-control">
+                                <li class="sub"><span class="increment-button"></span>
+                                </li>
+                                <li>
+                                    <p class="value"></p>
+                                    <input type="number" />
+                                </li>
+                                <li class="add"><span class="increment-button"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rate-inflation clearfix">
+                        <div class="title slider-title">
+                            <p>Assumed Annual Rate of Inflation (%) </p>
+                            <div class="icon icon-info" title="Tooltip"></div>
+                        </div>
+                        <div class="incerement-container">
+                            <ul class="increment-control">
+                                <li class="sub"><span class="increment-button"></span>
+                                </li>
+                                <li>
+                                    <p class="value"></p>
+                                    <input type="number" />
+                                </li>
+                                <li class="add"><span class="increment-button"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- end content view -->
+            </div>
+        </div>
+        <!-- end left panl -->
+        <div class="calc-page-graph"><div class="graph-control clearfix"></div></div>
+    </div>
+    <script src="../script/jquery.js"></script>
+    <script src="../script/plugin/fastclick.js"></script>
+    <script src="../script/plugin/jquery.tooltip.js"></script>
+    <script src="../script/pos/NumberInput.js"></script>
+    <script src="../script/pos/tooltip/Tooltip.js"></script>
+    <script src="../script/pos/range/jquery.nouislider.js"></script>
+    <script src="../script/pos/range/NewSlider.js"></script>
+    <script src="../script/pos/IncrementControl.js"></script>
+    <script src="../script/pos/Graph.js"></script>
+    <script src="../script/ProtectionLifeCoverage.js"></script>
+    <script>
+    /*global FastClick, page*/
+    FastClick.attach(document.body);
+    var protectionLifeCoverage = new page.ProtectionLifeCoverage(".protection-life-coverage", {});
+    </script>
+</body>
+
+</html>

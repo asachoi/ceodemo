@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+		<title>Manulife Pos Technical</title>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
+		<link rel='stylesheet' type='text/css' href='../style/default.css'>
+</head>
+
+<body>
+	<div class='user-landing-screen'>
+		<!-- start header-->
+		<section class='header-container'>
+			<div class='header-content'>
+				<div class='content'>
+					<p class='title'>THE MORE WE KNOW ABOUT YOU,<br>THE BETTER ADVICE WE CAN GIVE</p>
+					<p class='sub-title'>CHOOSE A SECTION TO GET STARTED</p>
+				</div>
+			</div>
+			<div class='line'></div>
+		</section>
+		<!-- end header-->
+		<!-- start content -->
+		<section class='content-container'>
+			<div class='option-container'>
+				<div class='know-you option-item'>
+					<div class='icon'></div>
+					<p class='title'>GETTING TO KNOW YOU</p>
+				</div>
+				<div class='like-to-retire option-item'>
+					<div class='icon'></div>
+					<p class='title'>HOW WOULD YOU<br>LIKE TO RETIRE ?</p>
+				</div>
+				<div class='life-insurance option-item'>
+					<div class='icon'></div>
+					<p class='title'>LIFE INSURANCE PLANS ?</p>
+				</div>
+				<div class='investment-goal option-item'>
+					<div class='icon'></div>
+					<p class='title'>INVESTMENT GOALS ?</p>
+				</div>
+			</div>
+		</section>
+		<!-- end content -->
+	</div>
+	<script src='../script/jquery.js'></script>
+	<script src='../script/plugin/jquery-ui-effect.js'></script>
+	<script src='../script/UserLandingScreen.js'></script>
+	<script>
+		var retirementUser = new page.UserLandingScreen('.user-landing-screen', {
+			'isStandalone': true	//can only run standalone as component, if set this variable is true
+		});
+		setTimeout(function(){
+			retirementUser.startFadInAnimation();
+		}, 1000);
+
+	</script>
+</body>
+
+</html>

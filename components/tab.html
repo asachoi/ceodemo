@@ -1,0 +1,41 @@
+
+
+
+
+<section class="tab jsTab">
+    <nav class="horizontalNav">
+      <ul>
+          
+      </ul>
+    </nav>
+
+    <article class="tab__content">
+      
+    </article>
+</section>
+
+<script type="text/javascript">
+
+$(function(){
+  
+  $('.jsTabListItem').click(function(e){
+    e.preventDefault();
+    var activeClass = 'is-active',
+        $this = $(this),
+        $tab = $this.parents('.jsTab'),
+        $tabListItems = $tab.find('.jsTabListItem'),
+        $tabContentItems = $tab.find('.jsTabContentItem');
+
+    if(!$this.hasClass(activeClass)){
+      // update the tab list item
+      $tabListItems.removeClass(activeClass);
+      $this.addClass(activeClass);
+      // update the content
+      $tabContentItems.removeClass(activeClass);
+      $tabContentItems.eq($this.data('mytabkey')).addClass(activeClass);
+    }
+  });
+
+});
+
+</script>

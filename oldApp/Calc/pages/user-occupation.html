@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class='no-js lt-ie9 lt-ie8 lt-ie7'> <![endif]-->
+<!--[if IE 7]>         <html class='no-js lt-ie9 lt-ie8'> <![endif]-->
+<!--[if IE 8]>         <html class='no-js lt-ie9'> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='no-js'>
+<!--<![endif]-->
+
+
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
+    <meta name='apple-mobile-web-app-capable' content='yes' />
+		<link rel='stylesheet' type='text/css' href='../style/default.css'>
+</head>
+<body>
+	<div class='user-occupation'>
+		<div class='left-container'>
+			<div class='header'>
+				<div class='swiper-container swiper-carousel'>
+					<div class='left-gradient'></div>
+					<div class='right-gradient'></div>
+					<div class='container swiper-wrapper'>
+						<div class='swiper-slide characters-list'>
+							<div class='inner'>
+								<div class='occupation-item occupation-professional'></div>
+								<p class='title'>PROFESSIONAL</p>
+							</div>
+						</div>
+						<div class='swiper-slide characters-list'>
+							<div class='inner'>
+								<div class='occupation-item occupation-civil-servant'></div>
+								<p class='title'>CIVIL SERVANT</p>
+							</div>
+						</div>
+						<div class='swiper-slide characters-list'>
+							<div class='inner'>
+								<div class='occupation-item occupation-executive'></div>
+								<p class='title'>EXECUTIVE</p>
+							</div>
+						</div>
+						<div class='swiper-slide characters-list'>
+							<div class='inner'>
+								<div class='occupation-item occupation-supervisor-manager'></div>
+								<p class='title'>SUPERVISOR/<br>MANAGER</p>
+							</div>
+						</div>
+						<div class='swiper-slide characters-list'>
+							<div class='inner'>
+								<div class='occupation-item occupation-intermediate-staff'></div>
+								<p class='title'>INTERMEDIATE<br>STAFF</p>
+							</div>
+						</div>
+						<div class='swiper-slide characters-list'>
+							<div class='inner'>
+								<div class='occupation-item occupation-career-starter'></div>
+								<p class='title'>CAREER<br>STARTER</p>
+							</div>
+						</div>
+						<div class='swiper-slide characters-list'>
+							<div class='inner'>
+								<div class='occupation-item occupation-self-employed'></div>
+								<p class='title'>SELF<br>EMPLOYED</p>
+							</div>
+						</div>
+					</div>
+					<i class='icon-switch icon-switch-left hidden'></i>
+					<i class='icon-switch icon-switch-right'></i>
+				</div>
+				<i class='icon-switch icon-switch-left'></i>
+				<i class='icon-switch icon-switch-right'></i>
+			</div>
+			<div class='middle'>
+				<p class='header_title'>Occupation</p>
+				<div class='content-container'>
+					<div class='character'>
+						<div class='big-lady'>
+						</div>
+					</div>
+					<div class='main-info'>
+					</div>
+				</div>
+				<div class='control-container'>
+					<p class='previous'>PREVIOUS</p>
+					<p class='next'>NEXT</p>
+				</div>
+			</div>
+			<div class='drag-item occupation-item occupation-intermediate-staff'>
+			</div>
+		</div>
+	</div>
+	<script src="../script/jquery.js"></script>
+	<!-- start data -->
+	<script src='../script/data/SubscribeItem.js'></script>
+	<script src='../script/data/ConfigData.js'></script>
+	<script src='../script/data/CharacterData.js'></script>
+	<script src='../script/data/DependentData.js'></script>
+	<script src='../script/data/HousingData.js'></script>
+	<script src='../script/data/GettingToKnowYouData.js'></script>
+
+	<script src='../script/data/retirement/RetirementConfigData.js'></script>
+	<script src='../script/data/retirement/RetirementIncomeAssetsData.js'></script>
+	<script src='../script/data/retirement/RetirementLifeStyleData.js'></script>
+	<script src='../script/data/retirement/RetirementPlanData.js'></script>
+
+	<script src='../script/data/insurance/InsurancePlanData.js'></script>
+	<script src='../script/data/investment/InvestmentGoalData.js'></script>
+
+	<script src='../script/data/EmotionalFactFindingData.js'></script>
+	<!-- end data -->
+	<!--start base control -->
+	<script src="../script/jquery.js"></script>
+	<script src='../script/plugin/jquery-ui-effect.js'></script>
+	<script src='../script/plugin/fastclick.js'></script>
+	<script src='../script/pos/range/jquery.nouislider.js'></script>
+	<script src='../script/plugin/jtouchswipe.js'></script>
+	<script src='../script/plugin/idangerous.swiper.scrollbar.js'></script>
+	<script src='../script/pos/SwiperCarousel.js'></script>
+	<script src='../script/pos/sortable-jquery-ui.js'></script>
+	<script src='../script/plugin/jquery.ui.touch-punch.js'></script>
+
+	<script src='../script/pos/range/NewSlider.js'></script>
+	<script src='../script/pos/IncrementControl.js'></script>
+	<script src='../script/pos/RadioGroup.js'></script>
+	<script src="../script/pos/page-management/PageElement.js"></script>
+	<script src="../script/pos/page-management/PageManagement.js"></script>
+	<!-- end base control -->
+	<script src='../script/pos/character/CharacterAge.js'></script>
+	<script src='../script/pages/getting_to_know_you/UserOccupation.js'></script>
+	<script>
+		/*global page, FastClick*/
+		FastClick.attach(document.body);
+		var occupation = new page.UserOccupation('.user-occupation', {
+			'isStandalone': true
+		});
+	</script>
+</body>
+
+</html>

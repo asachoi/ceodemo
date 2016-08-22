@@ -1,0 +1,1717 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-height, height=device-width, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi,  user-scalable=no" />
+	<!-- <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi,  user-scalable=no" /> -->
+    <link rel="stylesheet" type="text/css" href="../style/default.css">
+    <!-- <link rel="stylesheet" type="text/css" href="fna-rpq-css.css"> -->
+</head>
+
+<body>
+    <div id="pageWrapper">
+        <div id="pageOverlay"></div>
+        <div class="pageHeader" id="pageHeader" data-hw-module="app/modules/Header">
+            <div class="header-wrapper">
+                <div class="header-menu">
+                    <span class="imageIcon hamburgerManulifeMenuBtn"></span>
+                </div>
+                <div class="hader-title">
+                    <h1 class="title">FNA &amp; RPQ</h1>
+                </div>
+                <div class="header-control">
+                    <ul class="actions-list">
+                        <li>
+                            <span class="imageIcon imageIconTool"></span><span class="accessible">Tools</span>
+                        </li>
+                        <li>
+                            <span class="imageIcon imageIconClose"></span><span class="accessible">Close</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="app" class="page-fna-and-rpg">
+            <div class="swipe-panel-wrapper swipe-page">
+                <div class="swipe-page-wrap">
+                    <div class="swipe-page-content swiper-container">
+                        <ul class="swipe-panel swiper-wrapper">
+                            <li class="item active swiper-slide page-1">
+                                <div class="page-inner">
+                                    <!-- <div class="page-inner-content"> -->
+                                    <h2 class="page-title">Financial Needs Analysis</h2>
+                                    <p class="page-des">The Financial Needs Analysis is a financial tool that operates on the basis of the information provided by the applicant (Policyowner) and a number of assumptions. It is not designed to meet any specific need or cope with any specific situation. The analysis in respect of protection, retirement and wealth accumulations is for reference only and should not be construed as any actual future return. Regular review should be done to evaluate your financial needs. If you are in doubt about your financial needs, you should seek advice from your own financial advisor. Manulife (International) Limited (“Manulife”) accepts no responsibility with respect to your use of the tool or your reliance on the relevant analysis.</p>
+                                    <div class="question-block clearfix">
+                                        <h3 class="question-title">Personal Information</h3>
+
+                                        <div class="col col-2">
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Full Name</label>
+                                                </div>
+                                                <div class="question name-line">
+                                                    <p>Catherine Tang</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Gender</label>
+                                                </div>
+                                                <!-- <div class="question gender-line">
+                                                    <div class="radio-group gender-radio-group">
+                                                        <label  class="toggle-button">
+                                                            <input type="checkbox" value="0" />
+                                                            Male
+                                                        </label>
+                                                        <label class="toggle-button">
+                                                            <input type="checkbox" value="1" />
+                                                            Female
+                                                        </label>
+                                                    </div>
+                                                </div> -->
+                                                <div class="radio-group gender-radio" data-section="question-1">
+                                                    <div class="radio">
+                                                        <input id="gender-1" type="radio" name="gender">
+                                                        <label for="gender-1">Male</label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <input id="gender-2" type="radio" name="gender">
+                                                        <label for="gender-2">Female</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Date of birth</label>
+                                                </div>
+                                                <div class="question">
+                                                    <input type="date" class="validation-error date-birthday">
+                                                    <span class="validation-error">Please enter a valid date of birth</span>
+                                                </div>
+                                            </div>
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Marrital Status</label>
+                                                </div>
+                                                <!-- <div class="radio-group">
+                                                    <label  class="toggle-button">
+                                                        <input type="checkbox" value="0" />
+                                                        Single
+                                                    </label>
+                                                    <label class="toggle-button">
+                                                        <input type="checkbox" value="1" />
+                                                        Married
+                                                    </label>
+                                                    <label  class="toggle-button">
+                                                        <input type="checkbox" value="2" />
+                                                        Divorced
+                                                    </label>
+                                                    <label class="toggle-button">
+                                                        <input type="checkbox" value="3" />
+                                                        Widowed
+                                                    </label>
+                                                </div> -->
+                                                <div class="marrital-radio radio-group" data-section="question-2">
+                                                    <div class="radio">
+                                                        <input id="radio-1" type="radio" name="radio">
+                                                        <label for="radio-1">Single</label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <input id="radio-2" type="radio" name="radio">
+                                                        <label for="radio-2">Married</label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <input id="radio-3" type="radio" name="radio">
+                                                        <label for="radio-3">Divorced</label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <input id="radio-4" type="radio" name="radio">
+                                                        <label for="radio-4">Widowed</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">No. of Dependent</label>
+                                                </div>
+                                                <div class="question">
+                                                    <input type="number" class="validation-error"><i class="icon-info" title="Tooltip"></i><span class="validation-error">Please provide number of dependants</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col col-2 last">
+
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Contact Number</label>
+                                                </div>
+                                                <div class="question">
+                                                    <input type="tel" data-section="question-2">
+                                                </div>
+                                            </div>
+
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Occupation</label>
+                                                </div>
+                                                <div class="question">
+                                                    <select name="" id="">
+                                                        <option value="">Option 1</option>
+                                                        <option value="">Option 2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="question-line adress-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Address</label>
+                                                </div>
+                                                <div class="question">
+                                                    <input type="text">
+                                                    <input type="text">
+                                                    <input type="text">
+                                                    <select name="" id="">
+                                                        <option value="">Option 1</option>
+                                                        <option value="">Option 2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="question-block clearfix">
+                                        <h3 class="question-title">Monthly Total Expenses</h3>
+
+                                        <div class="col col-2">
+
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Family Expenses (HK$)</label>
+                                                    <span>(excluding mortgage monthly payment)</span>
+                                                </div>
+                                                <div class="question">
+                                                    <input type="number"><i class="icon-info" title="Tooltip"></i>
+                                                </div>
+                                            </div>
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Annual Income Needs (HK$)</label>
+                                                </div>
+                                                <div class="question">
+                                                    <input type="number" disabled>
+                                                </div>
+                                            </div>
+
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Monthly payment for the mortgage (HK$)</label>
+                                                </div>
+                                                <div class="question">
+                                                    <input type="number">
+                                                </div>
+                                            </div>
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Personal Expenses (HK$)</label>
+                                                </div>
+                                                <div class="question">
+                                                    <input type="number"><i class="icon-info" title="Tooltip"></i>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col col-2 last">
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Finacial Obligations (HK$)</label>
+                                                </div>
+                                                <div class="question">
+                                                    <input type="number"><i class="icon-info" title="Tooltip"></i>
+                                                </div>
+                                            </div>
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Total Expenses (HK$)</label>
+                                                </div>
+                                                <div class="question">
+                                                    <input type="number" disabled><i class="icon-info" title="Tooltip"></i>
+                                                </div>
+                                            </div>
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Number of years required to support the family (HK$)</label>
+                                                </div>
+                                                <div class="question">
+                                                    <input type="number">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="question-block clearfix">
+
+                                        <h3 class="question-title">Monthly Total Income</h3>
+
+                                        <div class="col col-2">
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Earned Income (HK$)</label>
+                                                    <span>(Salary &amp; Bonuses)</span>
+                                                </div>
+                                                <div class="question">
+                                                    <input type="number">
+                                                </div>
+                                            </div>
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Other Unearned Income (HK$)</label>
+                                                </div>
+                                                <div class="question">
+                                                    <input type="number"><i class="icon-info" title="Tooltip"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col col-2 last">
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Total Income (HK$)</label>
+                                                </div>
+                                                <div class="question">
+                                                    <input type="number" disabled><i class="icon-info" title="Tooltip"></i>
+                                                </div>
+                                            </div>
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Annual Cash Position (HK$)</label>
+                                                </div>
+                                                <div class="question">
+                                                    <input type="number" disabled><i class="icon-info" title="Tooltip"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="question-block clearfix">
+
+                                        <h3 class="question-title">Life Coverage Need</h3>
+
+                                        <div class="col col-2">
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Mortgage Loan Outstanding (HK$)</label>
+                                                </div>
+                                                <div class="question">
+                                                    <input type="number">
+                                                </div>
+                                            </div>
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Loans/Debts (HK$)</label>
+                                                </div>
+                                                <div class="question">
+                                                    <input type="number"><i class="icon-info" title="Tooltip"></i>
+                                                </div>
+                                            </div>
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Other Provisions (HK$)</label>
+                                                </div>
+                                                <div class="question">
+                                                    <input type="number"><i class="icon-info" title="Tooltip"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col col-2 last">
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Final &amp; Associated Expenses (HK$)</label>
+                                                </div>
+                                                <div class="question">
+                                                    <input type="number"><i class="icon-info" title="Tooltip"></i>
+                                                </div>
+                                            </div>
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Funds Requires to Support the Family (HK$)</label>
+                                                </div>
+                                                <div class="question">
+                                                    <input type="number" disabled><i class="icon-info" title="Tooltip"></i>
+                                                </div>
+                                            </div>
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Total Life Coverage Needed (HK$)</label>
+                                                </div>
+                                                <div class="question">
+                                                    <input type="number" disabled><i class="icon-info" title="Tooltip"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="question-block clearfix">
+
+                                        <h3 class="question-title">Usable Assets</h3>
+
+                                        <div class="col col-2">
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Existing Life Insurance (HK$)</label>
+                                                    <span>(excluding Cash Value)</span>
+                                                </div>
+                                                <div class="question">
+                                                    <input type="number">
+                                                </div>
+                                            </div>
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Group Life Insurance (HK$)</label>
+                                                </div>
+                                                <div class="question">
+                                                    <input type="number">
+                                                </div>
+                                            </div>
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Current &amp; Saving Account (HK$)</label>
+                                                </div>
+                                                <div class="question">
+                                                    <input type="number">
+                                                </div>
+                                            </div>
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Stock/Securities/Mutual Funds/Bonds (HK$)</label>
+                                                </div>
+                                                <div class="question">
+                                                    <input type="number">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col col-2 last">
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">ORSO/MPF (HK$)</label>
+                                                </div>
+                                                <div class="question">
+                                                    <input type="number">
+                                                </div>
+                                            </div>
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Others (HK$)</label>
+                                                </div>
+                                                <div class="question">
+                                                    <input type="number">
+                                                </div>
+                                            </div>
+                                            <div class="question-line">
+                                                <div class="label">
+                                                    <label class="label-bold">Total Usable Assets (HK$)</label>
+                                                </div>
+                                                <div class="question">
+                                                    <input type="number" disabled><i class="icon-info" title="Tooltip"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="question-block life-insurance-block clearfix">
+
+                                        <h3 class="question-title">Evaluation &amp; Recomendation</h3>
+
+                                        <h3 class="question-title">Life Insurance (excluding Cash Value)</h3>
+                                        <div class="life-insurance-rows">
+                                            <div class="life-insurance-row template">
+                                                <div class="col col-2">
+                                                    <div class="question-line">
+                                                        <div class="label">
+                                                            <label class="label-bold">Needs (HK$)</label>
+                                                        </div>
+                                                        <div class="question">
+                                                            <input type="number"><i class="icon-info" title="Tooltip"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="question-line">
+                                                        <div class="label">
+                                                            <label class="label-bold">Current Coverage/Reserve (HK$)</label>
+                                                        </div>
+                                                        <div class="question">
+                                                            <input type="number"><i class="icon-info" title="Tooltip"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="question-line">
+                                                        <div class="label">
+                                                            <label class="label-bold">Shortfall (HK$)</label>
+                                                        </div>
+                                                        <div class="question">
+                                                            <input type="number"><i class="icon-info" title="Tooltip"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col col-2 last">
+                                                    <div class="question-line textarea-line">
+                                                        <div class="label">
+                                                            <label class="label-bold">Reasons for Recomendation</label>
+                                                        </div>
+                                                        <div class="question">
+                                                            <textarea name="" id="" cols="50" rows="5"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="button-line">
+                                            <button type="button" class="button positiveButton button-add">Add others</button>
+                                        </div>
+
+                                    </div>
+                                    <div class="question-block choice-question question-1" data-section="question-1">
+                                        <span class="question-no">1. </span>
+                                        <h3 class="question-title">What are you purposes of buying our product?<span class="guide">(select one or more)</span></h3>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="multi-choice-question">
+                                                    <input id="life-protection" type="checkbox" name="checkbox">
+                                                    <label for="life-protection"><span class="order">A)</span> Life Protection</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="multi-choice-question">
+                                                    <input id="savings" type="checkbox" name="checkbox">
+                                                    <label for="savings"><span class="order">B)</span> Savings</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="multi-choice-question">
+                                                    <input id="investment" type="checkbox" name="checkbox">
+                                                    <label for="investment"><span class="order">C)</span> Investment</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="multi-choice-question">
+                                                    <input id="accident" type="checkbox" name="checkbox">
+                                                    <label for="accident"><span class="order">D)</span> Accident</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="multi-choice-question">
+                                                    <input id="retirement" type="checkbox" name="checkbox">
+                                                    <label for="retirement"><span class="order">E)</span> Retirement</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="multi-choice-question">
+                                                    <input id="education" type="checkbox" name="checkbox">
+                                                    <label for="education"><span class="order">F)</span> Education</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="multi-choice-question">
+                                                    <input id="health" type="checkbox" name="checkbox">
+                                                    <label for="health"><span class="order">G)</span> Health Cover</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="multi-choice-question">
+                                                    <input id="captial" type="checkbox" name="checkbox">
+                                                    <label for="captial"><span class="order">H)</span> Captial Investment Entrant Scheme ("CIES")</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="multi-choice-question">
+                                                    <input id="others" type="checkbox" name="checkbox">
+                                                    <label for="others"><span class="order">I)</span> Others (Please specify)</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                    <div class="question-block choice-question question-2" data-section="question-2">
+                                        <span class="question-no">2. </span>
+                                        <h3 class="question-title">What is your target horizon for insurance policy/investment-linked assurance scheme?</h3>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="1-year" type="radio" name="2-radio" value="0">
+                                                    <label for="1-year"><span class="order">A)</span>
+                                                        &lt; 1 year</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="one-choice-question">
+                                                    <input id="1-5-years" type="radio" name="2-radio" value="1">
+                                                    <label for="1-5-years"><span class="order">B)</span> 1 - 5 years</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="6-10-years" type="radio" name="2-radio" value="2">
+                                                    <label for="6-10-years"><span class="order">C)</span> 6 - 10 years</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="one-choice-question">
+                                                    <input id="11-20-years" type="radio" name="2-radio" value="3">
+                                                    <label for="11-20-years"><span class="order">D)</span> 11 - 20 years</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="20-years" type="radio" name="2-radio" value="4">
+                                                    <label for="20-years"><span class="order">E)</span> &gt; 20 years</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                    <div class="question-block choice-question question-3">
+                                        <span class="question-no">3. </span>
+                                        <h3 class="question-title">What is the highest level of education you have attained?</h3>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="primary-school-or-below" type="radio" name="3-radio" value="0">
+                                                    <label for="primary-school-or-below"><span class="order">A)</span> Primary school or below</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="one-choice-question">
+                                                    <input id="secondary-school" type="radio" name="3-radio" value="1">
+                                                    <label for="secondary-school"><span class="order">B)</span> Secondary school</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="post-secondary-college" type="radio" name="3-radio" value="2">
+                                                    <label for="post-secondary-college"><span class="order">C)</span> Post secondary/College</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="one-choice-question">
+                                                    <input id="bachelor-degree-or-above" type="radio" name="3-radio" value="3">
+                                                    <label for="bachelor-degree-or-above"><span class="order">D)</span> Bachelor's degree or above</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="question-block choice-question question-4-1">
+                                        <span class="question-no">4.1</span>
+                                        <h3 class="question-title">Your capacity to pay premiums for insurance or to contribute to investments:</h3>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question question-with-sub has-sub-question" data-sub-question=".specify-question" data-action="off">
+                                                    <input id="specific-amount" type="radio" name="4-1-radio" value="0">
+                                                    <label for="specific-amount"><span class="order">A)</span> Specific Amount:</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="one-choice-question question-with-sub has-sub-question" data-sub-question=".inrange-question" data-action="on">
+                                                    <input id="in-range" type="radio" name="4-1-radio" value="1">
+                                                    <label for="in-range"><span class="order">B)</span> In Range</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sub-question-content specify-question hidden">
+                                            <div class="question-line">
+                                                <div class="left-question">
+                                                    <input type="number" class="specify-input">
+                                                </div>
+                                                <div class="right-question">&nbsp;</div>
+                                            </div>
+                                        </div>
+                                        <div class="sub-question-content inrange-question hidden">
+                                            <div class="question-line">
+                                                <div class="left-question">
+                                                    <div class="one-choice-question">
+                                                        <input id="a" type="radio" name="4-1-1-radio">
+                                                        <label for="a"><span class="order">A)</span>
+                                                            &lt; HK$4,000</label>
+                                                    </div>
+                                                </div>
+                                                <div class="right-question">
+                                                    <div class="one-choice-question">
+                                                        <input id="b" type="radio" name="4-1-1-radio">
+                                                        <label for="b"><span class="order">B)</span> HK$4,000 - HK$9,999</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="question-line">
+                                                <div class="left-question">
+                                                    <div class="one-choice-question">
+                                                        <input id="c" type="radio" name="4-1-1-radio">
+                                                        <label for="c"><span class="order">C)</span> HK$10,000 - HK$19,999</label>
+                                                    </div>
+                                                </div>
+                                                <div class="right-question">
+                                                    <div class="one-choice-question">
+                                                        <input id="d" type="radio" name="4-1-1-radio">
+                                                        <label for="d"><span class="order">D)</span> HK$20,000 - HK$49,999</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="question-line">
+                                                <div class="left-question">
+                                                    <div class="one-choice-question">
+                                                        <input id="e" type="radio" name="4-1-1-radio">
+                                                        <label for="e"><span class="order">E)</span> HK$50,000 - HK$100,000</label>
+                                                    </div>
+                                                </div>
+                                                <div class="right-question">
+                                                    <div class="one-choice-question">
+                                                        <input id="f" type="radio" name="4-1-1-radio">
+                                                        <label for="f"><span class="order">F)</span> &gt; HK$100,000</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--
+                                        <div class="question-block choice-question sub-choice">
+
+                                        </div> -->
+                                    <div class="question-block choice-question question-4-2">
+                                        <span class="question-no">4.2</span>
+                                        <h3 class="question-title">Your capacity to pay premiums for insurance or to contribute to investments: What is your approximate current accumulative amount of liquid assets?</h3>
+                                        <div class="inline-question">
+                                            <div class="label">
+                                                <label class="label-bold">Please specify amount (HK$)</label>
+                                            </div>
+                                            <div class="question">
+                                                <input type="number">
+                                            </div>
+                                        </div>
+                                        <span class="note">Note: Liquid assets are assets which may be easily turned into cash, for example, cash, money in bank accounts, money market accounts, actively traded stocks, bonds and mutual funds and US Treasury bills. However, real estate, coin collection and artwork are not considered to be liquid assets.</span>
+                                    </div>
+                                    <div class="question-block choice-question question-4-3">
+                                        <span class="question-no">4.3</span>
+                                        <h3 class="question-title">For how long are you able to contribute to an insurance policy and/or investment plan?</h3>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="2-1-year" type="radio" name="4-3-radio" value="0">
+                                                    <label for="2-1-year"><span class="order">A)</span>
+                                                        &lt; 1 year</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="one-choice-question">
+                                                    <input id="2-1-5-years" type="radio" name="4-3-radio" value="1">
+                                                    <label for="2-1-5-years"><span class="order">B)</span> 1 - 5 years</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="2-6-10-years" type="radio" name="4-3-radio" value="2">
+                                                    <label for="2-6-10-years"><span class="order">C)</span> 6 - 10 years</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="one-choice-question">
+                                                    <input id="2-11-20-years" type="radio" name="4-3-radio" value="3">
+                                                    <label for="2-11-20-years"><span class="order">D)</span> 11 - 20 years</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="2-20-years" type="radio" name="4-3-radio" value="4">
+                                                    <label for="2-20-years"><span class="order">E)</span> &gt; 20 years</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                    <div class="question-block choice-question question-4-4">
+                                        <span class="question-no">4.4</span>
+                                        <h3 class="question-title">Approximately what percentage of your income would you be able to use to pay your monthly premium for the entire term of the insurance policy or investment plan in question 4.3?</h3>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="2-1-percent" type="radio" name="4-5-radio" value="0">
+                                                    <label for="2-1-percent"><span class="order">A)</span>&lt; 10%</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="one-choice-question">
+                                                    <input id="2-1-5-percent" type="radio" name="4-5-radio" value="1">
+                                                    <label for="2-1-5-percent"><span class="order">B)</span> 10% - 20%</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="2-6-10-percent" type="radio" name="4-5-radio" value="2">
+                                                    <label for="2-6-10-percent"><span class="order">C)</span> 21% - 30%</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="one-choice-question">
+                                                    <input id="2-11-20-percent" type="radio" name="4-5-radio" value="3">
+                                                    <label for="2-11-20-percent"><span class="order">D)</span> 31% - 50%</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="2-20-percent" type="radio" name="4-5-radio" value="4">
+                                                    <label for="2-20-percent"><span class="order">E)</span> &gt; 50%</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                    <div class="question-block choice-question question-4-5">
+                                        <span class="question-no">4.5</span>
+                                        <h3 class="question-title">In considering your ability to make payments, what are your sources of funds?<span class="guide">(select one or more)</span></h3>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="multi-choice-question">
+                                                    <input id="2-life-protection" type="checkbox" name="checkbox">
+                                                    <label for="2-life-protection"><span class="order">A)</span> Salary</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="multi-choice-question">
+                                                    <input id="2-savings" type="checkbox" name="checkbox">
+                                                    <label for="2-savings"><span class="order">B)</span> Income</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="multi-choice-question">
+                                                    <input id="2-investment" type="checkbox" name="checkbox">
+                                                    <label for="2-investment"><span class="order">C)</span> Savings</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="multi-choice-question">
+                                                    <input id="2-accident" type="checkbox" name="checkbox">
+                                                    <label for="2-accident"><span class="order">D)</span> Income from other investments</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="multi-choice-question">
+                                                    <input id="2-retirement" type="checkbox" name="checkbox">
+                                                    <label for="2-retirement"><span class="order">E)</span> Accumulative savings &amp; investments</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="multi-choice-question">
+                                                    <input id="2-education" type="checkbox" name="checkbox">
+                                                    <label for="2-education"><span class="order">F)</span> Others (Please Specify)</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- </div> -->
+                                </div>
+                            </li>
+                            <li class="item swiper-slide page-2">
+                                <div class="page-inner">
+                                    <h2 class="page-title">Risk Profile Questionnaire</h2>
+                                    <p class="page-des">This questionnaire serves to help you assess your risk profile before you determine whether a particular financial product and its underlying investment choices, if any, are suitable for you. Your answers to the ten questions below only provide some indication of your general personal risk profile, which may not accurately reflect your actual ability to take risk and risk tolerance level. When needed, you may choose to complete this questionnaire again in future to re-assess your risk profile.
+                                        <br />
+                                        <br />
+                                        <span class="guide">This will take around 5 minutes. Based on the answers you have provided, you can check your risk tolerance.</span>
+                                    </p>
+
+                                    <div class="question-block choice-question question-1" data-section="question-1">
+                                        <span class="question-no">1.</span>
+                                        <h3 class="question-title">What is your current age range?</h3>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="1-life-protection" type="radio" name="1-radio">
+                                                    <label for="1-life-protection"><span class="order">A)</span> 18-50</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="one-choice-question">
+                                                    <input id="1-savings" type="radio" name="1-radio">
+                                                    <label for="1-savings"><span class="order">B)</span> 51-55</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="1-investment" type="radio" name="1-radio">
+                                                    <label for="1-investment"><span class="order">C)</span> 56-60</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="one-choice-question">
+                                                    <input id="1-accident" type="radio" name="1-radio">
+                                                    <label for="1-accident"><span class="order">D)</span> 61-65</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="1-retirement" type="radio" name="1-radio">
+                                                    <label for="1-retirement"><span class="order">E)</span> &gt;65 or &lt; 85</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="question-block choice-question question-2" data-section="question-2">
+                                        <span class="question-no">2.</span>
+                                        <h3 class="question-title">What percentage of your total liquid assets will be invested in the financial product that you are currently considering?
+                                                    <span class="guide">
+                                                        (Note: Liquid assets are assets which may be easily turned into cash, for example, cash, money in bank accounts, money market accounts, actively traded stocks, bonds and mutual funds and US Treasury bills. However, real estate, coin collection and artwork are not considered to be liquid assets.)
+                                                    </span>
+                                                </h3>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="2-2-1-year" type="radio" name="2-radio">
+                                                    <label for="2-2-1-year"><span class="order">A)</span> &gt; 50%</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="one-choice-question">
+                                                    <input id="2-2-1-5-years" type="radio" name="2-radio">
+                                                    <label for="2-2-1-5-years"><span class="order">B)</span> 40% - 49%</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="2-2-6-10-years" type="radio" name="2-radio">
+                                                    <label for="2-2-6-10-years"><span class="order">C)</span> 30% - 39%</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="one-choice-question">
+                                                    <input id="2-2-11-20-years" type="radio" name="2-radio">
+                                                    <label for="2-2-11-20-years"><span class="order">D)</span> 20 - 29%</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="2-2-20-years" type="radio" name="2-radio">
+                                                    <label for="2-2-20-years"><span class="order">E)</span> &gt; 20%</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                    <div class="question-block choice-question question-3" data-section="question-3">
+                                        <span class="question-no">3.</span>
+                                        <h3 class="question-title">How long have you been investing in financial products that fluctuate in value?
+                                                    <span class="guide">
+                                                        (e.g. stocks, bonds, mutual funds, investment-linked insurance products, foreign currencies, commodities, derivatives, structured products, shares/share options for employees, retirement schemes)
+                                                    </span>
+                                                </h3>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="3-primary-school-or-below" type="radio" name="3-radio">
+                                                    <label for="3-primary-school-or-below"><span class="order">A)</span> Primary school or below</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="one-choice-question">
+                                                    <input id="3-secondary-school" type="radio" name="3-radio">
+                                                    <label for="3-secondary-school"><span class="order">B)</span> Secondary school</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="3-post-secondary-college" type="radio" name="3-radio">
+                                                    <label for="3-post-secondary-college"><span class="order">C)</span> Post secondary/College</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="one-choice-question">
+                                                    <input id="3-bachelor-degree-or-above" type="radio" name="3-radio">
+                                                    <label for="3-bachelor-degree-or-above"><span class="order">D)</span> Bachelor's degree or above</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="question-block choice-question clearfix question-4" data-section="question-4">
+                                        <span class="question-no">4.</span>
+                                        <h3 class="question-title">What channel(s) have you used or are currently using to obtain investment knowledge?
+                                                    <span class="guide">(select one or more)</span>
+                                                </h3>
+                                        <div class="question-line">
+                                        <div class="left-question">
+                                            <div class="question-line">
+                                                <div class="multi-choice-question">
+                                                    <input id="4-a" type="checkbox" name="checkbox">
+                                                    <label for="4-a"><span class="order">A)</span> No and/or not interested in any investment knowledge</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="question-line">
+                                                <div class="multi-choice-question">
+                                                    <input id="4-c" type="checkbox" name="checkbox">
+                                                    <label for="4-c"><span class="order">C)</span> Read and/or listen to investment or finance related news</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="question-line">
+                                                <div class="multi-choice-question">
+                                                    <input id="4-e" type="checkbox" name="checkbox">
+                                                    <label for="4-e"><span class="order">E)</span> Research investment or finance related topics or attend investment or finance related classes, forums, presentations, seminars or workshops</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right-question">
+                                            <div class="question-line">
+                                                <div class="multi-choice-question">
+                                                    <input id="4-b" type="checkbox" name="checkbox">
+                                                    <label for="4-b"><span class="order">B)</span> Discuss investment or finance related topics with friends, relatives and/or colleagues</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="question-line">
+                                                <div class="multi-choice-question">
+                                                    <input id="4-d" type="checkbox" name="checkbox">
+                                                    <label for="4-d"><span class="order">D)</span> Review investment or finance related materials from various sources</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="question-block choice-question clearfix question-5" data-section="question-5">
+                                        <span class="question-no">5.</span>
+                                        <h3 class="question-title">Which financial products have you ever held or are you currently holding?
+                                                    <span class="guide">(select one or more)</span>
+                                                </h3>
+                                        <div class="question-line">
+                                        <div class="left-question">
+                                            <div class="question-line">
+                                                <div class="multi-choice-question">
+                                                    <input id="5-fp-a" type="checkbox" name="checkbox">
+                                                    <label for="5-fp-a"><span class="order">A)</span> Cash, bank deposits, certificates of deposit, capital-protected products</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="question-line">
+                                                <div class="multi-choice-question">
+                                                    <input id="5-fp-c" type="checkbox" name="checkbox">
+                                                    <label for="5-fp-c"><span class="order">C)</span> Foreign currencies, non-capital-protected currency-linked structured products</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="question-line">
+                                                <div class="multi-choice-question">
+                                                    <input id="5-fp-e" type="checkbox" name="checkbox">
+                                                    <label for="5-fp-e"><span class="order">E)</span> Stocks, derivatives including but not limited to options, warrants and futures contracts</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="right-question">
+                                            <div class="question-line">
+                                                <div class="multi-choice-question">
+                                                    <input id="5-fp-b" type="checkbox" name="checkbox">
+                                                    <label for="5-fp-b"><span class="order">B)</span> Bonds, bond funds</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="question-line">
+                                                <div class="multi-choice-question">
+                                                    <input id="5-fp-d" type="checkbox" name="checkbox">
+                                                    <label for="5-fp-d"><span class="order">D)</span> Commodities, investment-linked insurance products, open-end mutual funds (excluding money market funds and bond funds), non-capital-protected equity-linked structured products</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="question-block choice-question question-6" data-section="question-6">
+                                        <span class="question-no">6.</span>
+                                        <h3 class="question-title">What percentage of your total liquid assets is currently held in financial products that fluctuate in value?</h3>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="6-2-1-year" type="radio" name="6-radio">
+                                                    <label for="6-2-1-year"><span class="order">A)</span> 0%</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="one-choice-question">
+                                                    <input id="6-2-1-5-years" type="radio" name="6-radio">
+                                                    <label for="6-2-1-5-years"><span class="order">B)</span> &gt; 0% - 10%</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="6-2-6-10-years" type="radio" name="6-radio">
+                                                    <label for="6-2-6-10-years"><span class="order">C)</span> &gt; 10 - 20%</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="one-choice-question">
+                                                    <input id="6-2-11-20-years" type="radio" name="6-radio">
+                                                    <label for="6-2-11-20-years"><span class="order">D)</span> &gt; 20% - 30%</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="6-2-20-years" type="radio" name="6-radio">
+                                                    <label for="6-2-20-years"><span class="order">E)</span> &gt; 30%</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                    <div class="question-block choice-question question-7" data-section="question-7">
+                                        <span class="question-no">7.</span>
+                                        <h3 class="question-title">What level of fluctuation in the value of a financial product would be generally acceptable to you?</h3>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="7-2-1-percent" type="radio" name="7-radio">
+                                                    <label for="7-2-1-percent"><span class="order">A)</span> &lt; 10% up or down</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="one-choice-question">
+                                                    <input id="7-2-1-5-percent" type="radio" name="7-radio">
+                                                    <label for="7-2-1-5-percent"><span class="order">B)</span> 10% up - 10% down</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="7-6-10-percent" type="radio" name="7-radio">
+                                                    <label for="7-6-10-percent"><span class="order">C)</span> 15% up - 15% down</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="one-choice-question">
+                                                    <input id="7-2-11-20-percent" type="radio" name="7-radio">
+                                                    <label for="7-2-11-20-percent"><span class="order">D)</span> 20% up - 20% down</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="7-2-20-percent" type="radio" name="7-radio">
+                                                    <label for="7-2-20-percent"><span class="order">E)</span> &gt; 20% up or down</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">&nbsp;</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="question-block choice-question question-8" data-section="question-8">
+                                        <span class="question-no">8.</span>
+                                        <h3 class="question-title">What percentage of your monthly income on average could be invested in financial products that fluctuate in value?</h3>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="8-2-1-percent" type="radio" name="8-radio">
+                                                    <label for="8-2-1-percent"><span class="order">A)</span> 0%</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="one-choice-question">
+                                                    <input id="8-2-1-5-percent" type="radio" name="8-radio">
+                                                    <label for="8-2-1-5-percent"><span class="order">B)</span> &gt; 0% - 10%</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="8-2-6-10-percent" type="radio" name="8-radio">
+                                                    <label for="8-2-6-10-percent"><span class="order">C)</span> &gt; 10% - 20%</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="one-choice-question">
+                                                    <input id="8-2-11-20-percent" type="radio" name="8-radio">
+                                                    <label for="8-2-11-20-percent"><span class="order">D)</span> &gt; 20% - 30%</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="8-2-20-percent" type="radio" name="8-radio">
+                                                    <label for="8-2-20-percent"><span class="order">E)</span> &gt; 30%</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">&nbsp;</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="question-block choice-question question-9" data-section="question-9">
+                                        <span class="question-no">9.</span>
+                                        <h3 class="question-title">How many months of your normal expenses could be covered by your reserved liquid assets in case of an unexpected event?</h3>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="9-2-1-percent" type="radio" name="9-radio">
+                                                    <label for="9-2-1-percent"><span class="order">A)</span> No reserved liquid assets for any unexpected event</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="one-choice-question">
+                                                    <input id="9-2-1-5-percent" type="radio" name="9-radio">
+                                                    <label for="9-2-1-5-percent"><span class="order">B)</span> &lt; &gt; 3 months</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="9-2-6-10-percent" type="radio" name="9-radio">
+                                                    <label for="9-2-6-10-percent"><span class="order">C)</span> 3 - 6 months</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">
+                                                <div class="one-choice-question">
+                                                    <input id="9-2-11-20-percent" type="radio" name="9-radio">
+                                                    <label for="9-2-11-20-percent"><span class="order">D)</span> 6 - 9 months</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question-line">
+                                            <div class="left-question">
+                                                <div class="one-choice-question">
+                                                    <input id="9-2-20-percent" type="radio" name="9-radio">
+                                                    <label for="9-2-20-percent"><span class="order">E)</span> &gt; 9 months</label>
+                                                </div>
+                                            </div>
+                                            <div class="right-question">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item last swiper-slide page-3">
+                                <div class="page-inner">
+                                    <h2 class="page-title summary-page-title">Financial Needs Analysis Summary</h2>
+
+
+                                    <div class="question-block clearfix">
+                                        <h3 class="question-title">Personal Information</h3>
+                                        <div class="col col-2">
+                                            <div class="summary-row clearfix">
+                                                <span class="label">Full Name</span>
+                                                <span class="value">Kevin Chung</span>
+                                            </div>
+                                            <div class="summary-row clearfix">
+                                                <span class="label">Gender</span>
+                                                <span class="value">Male</span>
+                                            </div>
+                                            <div class="summary-row clearfix">
+                                                <span class="label">Marital Status</span>
+                                                <span class="value">Single</span>
+                                            </div>
+                                            <div class="summary-row clearfix">
+                                                <span class="label">Occupation</span>
+                                                <span class="value">Manager</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col col-2 last">
+                                            <div class="summary-row clearfix">
+                                                <span class="label">Date of Birth</span>
+                                                <span class="value">12 Jun 2014</span>
+                                            </div>
+                                            <div class="summary-row clearfix">
+                                                <span class="label">Number of Dependents</span>
+                                                <span class="value">1</span>
+                                            </div>
+                                            <div class="summary-row clearfix">
+                                                <span class="label">Contact Number</span>
+                                                <span class="value">2456 7890</span>
+                                            </div>
+                                            <div class="summary-row clearfix">
+                                                <span class="label">Address</span>
+                                                <span class="value">
+                                                                        Lee Yun Sat Tower 12 Floor,<br />
+                                                                        Flat B, 233, Sugar Street,<br />
+                                                                        Causeway Bay
+                                                                    </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="question-block clearfix">
+                                        <h3 class="question-title">Monthly Total Expenses</h3>
+                                        <div class="col col-2">
+                                            <div class="summary-row clearfix">
+                                                <span class="label">
+                                                                        Family Expenses
+                                                                    </span>
+                                                <span class="value">HK$ 3,000</span>
+                                            </div>
+                                            <div class="label"><span>(excluding mortgage monthly payment)</span>
+                                            </div>
+                                            <br />
+                                            <div class="summary-row clearfix">
+                                                <span class="label">Monthly payment for the mortgage</span>
+                                                <span class="value">HK$ 3,000</span>
+                                            </div>
+                                            <div class="summary-row clearfix">
+                                                <span class="label">Personal Expenses</span>
+                                                <span class="value">HK$ 5,000</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col col-2 last">
+                                            <div class="summary-row clearfix">
+                                                <span class="label">Financial Obligations</span>
+                                                <span class="value">HK$ 5,000</span>
+                                            </div>
+                                            <div class="summary-row clearfix">
+                                                <span class="label">Annual Income Needs</span>
+                                                <span class="value">HK$ 36,000</span>
+                                            </div>
+                                            <div class="summary-row clearfix">
+                                                <span class="label">Number of years required to support the family</span>
+                                                <span class="value">10</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="question-block clearfix">
+                                        <h3 class="question-title">Monthly Total Income</h3>
+                                        <div class="col col-2">
+                                            <div class="summary-row clearfix">
+                                                <span class="label">Earned Income</span>
+                                                <span class="value">HK$ 30,000</span>
+                                            </div>
+                                            <div class="label"><span>(Salary & Bonuses)</span>
+                                            </div>
+                                            <br />
+                                            <div class="summary-row clearfix">
+                                                <span class="label">Total Income</span>
+                                                <span class="value">HK$ 60,000</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col col-2 last">
+                                            <div class="summary-row clearfix">
+                                                <span class="label">Other Unearned Income</span>
+                                                <span class="value">HK$ 30,000</span>
+                                            </div>
+                                            <div class="summary-row clearfix">
+                                                <span class="label">Annual Cash Position</span>
+                                                <span class="value">HK$ 60,000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="question-block clearfix">
+                                        <h3 class="question-title">Usable Assets</h3>
+                                        <div class="col col-2">
+                                            <div class="summary-row clearfix">
+                                                <span class="label">Existing Life Insurance</span>
+                                                <span class="value">HK$ 5,000</span>
+                                            </div>
+                                            <div class="label"><span>(excluding Cash Value)</span>
+                                            </div>
+                                            <br />
+                                            <div class="summary-row clearfix">
+                                                <span class="label">Group Life Insurance</span>
+                                                <span class="value">HK$ 5,000</span>
+                                            </div>
+                                            <div class="summary-row clearfix">
+                                                <span class="label">Current & Saving Account</span>
+                                                <span class="value">HK$ 5,000</span>
+                                            </div>
+                                            <div class="summary-row clearfix">
+                                                <span class="label">Total Usable Assets</span>
+                                                <span class="value">HK$ 15,000</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col col-2 last">
+                                            <div class="summary-row clearfix">
+                                                <span class="label">Stock/Securities/Mutual Funds/Bonds</span>
+                                                <span class="value">HK$ 5,000</span>
+                                            </div>
+                                            <div class="summary-row clearfix">
+                                                <span class="label">ORSO/MPF</span>
+                                                <span class="value">HK$ 5,000</span>
+                                            </div>
+                                            <div class="summary-row clearfix">
+                                                <span class="label">Others</span>
+                                                <span class="value">HK$ 5,000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="question-block clearfix">
+                                        <h3 class="question-title">Evaluation & Recommendation (Life Insurance - excluding cash value)</h3>
+                                        <div class="col col-2">
+                                            <div class="summary-row clearfix">
+                                                <span class="label">Needs</span>
+                                                <span class="value">HK$ 5,000</span>
+                                            </div>
+
+                                            <div class="summary-row clearfix">
+                                                <span class="label">Current Coverage/Reserve</span>
+                                                <span class="value">HK$ 5,000</span>
+                                            </div>
+                                            <div class="summary-row clearfix">
+                                                <span class="label">Shortfall</span>
+                                                <span class="value">HK$ 5,000</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col col-2 last">
+                                            <div class="summary-row clearfix">
+                                                <span class="label">Recommendation</span>
+                                                <span class="value">Lorem Ipsum is simply dummy text of the </span>
+                                            </div>
+                                            <div class="summary-row clearfix">
+                                                <span class="label">Reasons for recommendation</span>
+                                                <span class="value">Lorem Ipsum is simply dummy text of the </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="question-block clearfix">
+                                        <h3 class="questionnaire-title">Questionnaire</h3>
+                                        <ol class="questionnaire-summary">
+                                            <li>
+                                                <div class="answer-block page-1-question-1">
+                                                    What are your purposes of buying our product? (Select one or more)
+                                                    <div>
+                                                        <span>A) Life Protection</span>
+                                                        <span>C) Investment</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="answer-block page-1-question-2">
+                                                    What is your target horizon for insurance policy/investment-linked assurance scheme?
+                                                    <div>
+                                                        <span>B) 1-5 years</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="answer-block page-1-question-3">
+                                                    What is the highest level of education you have attained?
+                                                    <div>
+                                                        <span>D) Bachelor’s degree or above</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="has-sub-ques">
+                                                <ol>
+                                                    <li>
+                                                        <div class="answer-block page-1-question-4-1">
+                                                            Your capacity to pay premiums for insurance or to contribute to investments:
+                                                            <br />
+                                                            <br /> What is your average monthly income from all sources in the past 2 years?(Select one or more)
+
+                                                            <div>
+                                                                <span>B) d)HK$ 20,000 - HK$ 49,999</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="answer-block page-1-question-4-2">
+                                                            Your capacity to pay premiums for insurance or to contribute to investments:
+                                                            <br />
+                                                            <br /> What is your approximate current accumulative amount of liquid assets?
+
+                                                            <div>
+                                                                <span>HK$100000</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li>
+                                                        <div class="answer-block page-1-question-4-3">
+                                                            For how long are you able to contribute to an insurance policy and/or investment plan?
+                                                            <div>
+                                                                <span>D) 11 - 20 years</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li>
+                                                        <div class="answer-block page-1-question-4-4">
+                                                            Approximately what percentage of your income would you be able to use to pay your monthly premium for the entire term of the insurance policy or investment plan in the previous question?
+                                                            <div>
+                                                                <span>D) 31% - 50%</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li>
+                                                        <div class="answer-block page-1-question-4-5">
+                                                            In considering your ability to make payments, what are your sources of funds? (Select one or more)
+                                                            <div>
+                                                                <span>A) Salary</span>
+                                                                <span>D) Income from other investments</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                    </div>
+
+                                    <div class="question-block clearfix">
+                                        <h3 class="questionnaire-title">Risk Profile Questionaire Summary</h3>
+                                        <div class="question-board">
+                                            <div class="number">3</div>
+                                            <div class="right-question-board">
+                                                <h2>Your Risk Profile Category is: 3 (Medium)</h2>
+                                                <p>You can accept a balanced investment portfolio with capital growth potential and medium to high risk exposure and price fluctuation.</p>
+                                            </div>
+                                        </div>
+                                        <ol class="questionnaire-summary">
+                                            <li data-section="page-2-question-1">
+                                                <div class="answer-block">
+                                                    What is your current age?
+                                                    <div>
+                                                        <span>E) 18-50</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li data-section="page-2-question-2">
+                                                <div class="answer-block">
+                                                    What percentage of your total liquid assets will be invested in the financial product that you are currently considering?
+                                                    <div class="label">
+                                                        <span>(Note: Liquid assets are assets which may be easily turned into cash, for example, cash, money in bank accounts, money market accounts, actively traded stocks, bonds and mutual funds and US Treasury bills. However, real estate, coin collection and artwork are not considered to be liquid assets.)</span>
+                                                    </div>
+
+                                                    <div>
+                                                        <span>B) 40% - 49%</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li data-section="page-2-question-3">
+                                                <div class="answer-block">
+                                                    How long have you been investing in financial products that fluctuate in value?
+                                                    <div class="label">
+                                                        <span>(e.g. stocks, bonds, mutual funds, investment-linked insurance products, foreign currencies, commodities, derivatives, structured products, shares/share options for employees, retirement schemes)</span>
+                                                    </div>
+
+                                                    <div>
+                                                        <span>C) 2-4 years</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li data-section="page-2-question-4">
+                                                <div class="answer-block">
+                                                    What channel(s) have you used or are currently using to obtain investment knowledge? (Select one or more)
+
+                                                    <div>
+                                                        <span>A) No and/or not interested in any investment knowledge</span>
+                                                        <span>B) Discuss investment or finance related topics with friends, relatives and/or colleagues</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li data-section="page-2-question-5">
+                                                <div class="answer-block">
+                                                    Which financial products have you ever held or are you currently holding? (Select one or more)
+
+                                                    <div>
+                                                        <span>C) Foreign currencies, non-capital-protected currency-linked structured products</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li data-section="page-2-question-6">
+                                                <div class="answer-block">
+                                                    What level of fluctuation in the value of a financial product would be generally acceptable to you?
+                                                    <div>
+                                                        <span>C) &gt; 10 - 20%</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li data-section="page-2-question-7">
+                                                <div class="answer-block">
+                                                    What level of fluctuation in the value of a financial product would be generally acceptable to you?
+                                                    <div>
+                                                        <span>C) 15% up - 15% down</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li data-section="page-2-question-8">
+                                                <div class="answer-block">
+                                                    What percentage of your monthly income on average could be invested in financial products that fluctuate in value?
+                                                    <div>
+                                                        <span>C) &gt; 10 - 20%</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li hidden data-section="page-2-question-9">
+                                                <div class="answer-block">
+                                                    How many months of your normal expenses could be covered by your reserved liquid assets in case of an unexpected event?
+                                                    <div>
+                                                        <span>C) &gt; 3 - 6 months</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <span class="left-arrow swipe-button hidden"></span>
+                        <span class="right-arrow swipe-button"></span>
+                        <div class="active-panel hidden">
+                            <a href="#" class="proceed-link hidden">
+                                <button type="button" class="button positiveButton">Proceed</button>
+                            </a>
+                            <div class="active-panel-inner hidden">
+                                <div class="show-footer-menu">
+                                    <p class="step-text">Step <span class="curr-step">2</span> out of <span class="total-step">3</span>
+                                    </p>
+                                    <div class="up-arrow"></div>
+                                </div>
+                                <div class="active-panel-bar">
+                                    <div class="active-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="template-others" class="hidden">
+        <div class="question-block others-block clearfix">
+            <h3 class="question-title">Others</h3>
+            <div class="col col-2">
+                <div class="question-line">
+                    <div class="label">
+                        <label class="label-bold">Needs (HK$)</label>
+                    </div>
+                    <div class="question">
+                        <input type="number"><i class="icon-info" title="Tooltip"></i>
+                    </div>
+                </div>
+                <div class="question-line">
+                    <div class="label">
+                        <label class="label-bold">Current Coverage/Reserve (HK$)</label>
+                    </div>
+                    <div class="question">
+                        <input type="number"><i class="icon-info" title="Tooltip"></i>
+                    </div>
+                </div>
+                <div class="question-line">
+                    <div class="label">
+                        <label class="label-bold">Shortfall (HK$)</label>
+                    </div>
+                    <div class="question">
+                        <input type="number"><i class="icon-info" title="Tooltip"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-2 last">
+                <div class="question-line textarea-line">
+                    <div class="label">
+                        <label class="label-bold">Reasons for Recomendation</label>
+                    </div>
+                    <div class="question">
+                        <textarea name="" id="" cols="50" rows="5"></textarea><i class="icon-info" title="Tooltip"></i>
+                    </div>
+                </div>
+            </div>
+            <i class="imageIcon imageIconCloseGray button-remove-other"></i>
+        </div>
+    </div>
+    <script src="../script/jquery.js"></script>
+    <script src="../script/plugin/fastclick.js"></script>
+    <script src="../script/plugin/jtouchswipe.js"></script>
+    <script src="../script/plugin/idangerous.swiper.scrollbar.js"></script>
+    <script src="../script/plugin/jquery.tooltip.js"></script>
+    <script src="../script/pos/tooltip/Tooltip.js"></script>
+    <script src="../script/pos/NumberInput.js"></script>
+    <script src="../script/pos/RadioGroup.js"></script>
+    <script src="../script/pos/Radio.js"></script>
+    <script src="../script/pos/Select.js"></script>
+    <script src="../script/pos/SwipePanel.js"></script>
+    <script src="../script/pos/CheckBox.js"></script>
+
+    <script src="../script/FNARPQ.js"></script>
+    <script>
+        /*global pos, page, FastClick*/
+        FastClick.attach(document.body);
+        // $('.radio').each(function() {
+        //     new pos.Radio(this);
+        // });
+        // $('.multi-choice-question').each(function() {
+        //     new pos.CheckBox(this);
+        // });
+        // $('select').each(function() {
+        //     new pos.Select(this);
+        // });
+        // $('.one-choice-question').each(function() {
+        //     new pos.Radio(this);
+        // });
+        // new pos.SwipePanel($('.swiper-container'), {
+        //     showBarInLast: true
+        // });
+        new page.FNARPQ($('.page-fna-and-rpg'));
+
+    </script>
+</body>
+
+</html>

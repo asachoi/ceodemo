@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../style/default.css">
+	<link rel="stylesheet" type="text/css" href="../style/compgal.css">
+</head>
+<body>
+    <div>
+    	<div class="multi-choice-question">
+	        <input id="checkbox-1" type="checkbox" name="checkbox">
+	        <label for="checkbox-1"><span class="order">A)</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit qui aliquid pariatur labore totam iste repudiandae assumenda accusamus praesentium maxime laborum placeat, sunt sed animi quasi, consequatur libero quas, necessitatibus.First question Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint voluptatibus fugit reiciendis ad! Dolores saepe, dignissimos accusantium. Tempora, numquam nulla nihil quis maiores, molestiae eos consectetur nam aperiam quas dignissimos?</label>
+        </div>
+        <br>
+    	<div class="multi-choice-question">
+	        <input id="checkbox-2" type="checkbox" name="checkbox">
+	        <label for="checkbox-2">Second question</label>
+        </div>
+    </div>
+    <script src="../script/jquery.js"></script>
+    <script src="../script/plugin/fastclick.js"></script>
+    <script src="../script/pos/CheckBox.js"></script>
+    <script>
+        /*global pos, FastClick*/
+        FastClick.attach(document.body);
+        $(document).ready(function() {
+            $('.multi-choice-question').each(function() {
+                new pos.CheckBox(this);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../style/default.css">
+	<link rel="stylesheet" type="text/css" href="../style/compgal.css">
+</head>
+<body>
+	<div id="" class="accordians-control">
+		<ul class="accordians-header">
+			<li class="header"><p class="label-bold title">Expected Total Savings</p></li>
+			<li class="value"><p class="label-bold hk-value">HK$ 80,000</p></li>
+			<li><i class="expand-icon"></i></li>
+		</ul>
+		<div class="accordians-content">
+			<ul class="leaders">
+				<li>
+					<span>Current Monthly Income</span>
+					<span>HK$ 20,000</span>
+				</li>
+				<li>
+					<span>Current Monthly Income</span>
+					<span>HK$ 20,000</span>
+				</li>
+				<li>
+					<span>Current Monthly Income</span>
+					<span>HK$ 20,000</span>
+				</li>
+				<li>
+					<span>Current Monthly Income</span>
+					<span>HK$ 20,000</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="" class="accordians-control blue-color">
+		<ul class="accordians-header">
+			<li class="header"><p class="label-bold title">Expected Total Savings</p></li>
+			<li class="value"><p class="label-bold hk-value">HK$ 80,000</p></li>
+			<li><i class="expand-icon"></i></li>
+		</ul>
+		<div class="accordians-content">
+			<ul class="leaders">
+				<li>
+					<span>Current Monthly Income</span>
+					<span>HK$ 20,000</span>
+				</li>
+				<li>
+					<span>Current Monthly Income</span>
+					<span>HK$ 20,000</span>
+				</li>
+				<li>
+					<span>Current Monthly Income</span>
+					<span>HK$ 20,000</span>
+				</li>
+				<li>
+					<span>Current Monthly Income</span>
+					<span>HK$ 20,000</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="../script/jquery.js"></script>
+	<script src="../script/plugin/fastclick.js"></script>
+	<script src="../script/pos/Accordians.js"></script>
+	<script>
+		/*global pos:true, FastClick*/
+		FastClick.attach(document.body);
+		var accordians = new pos.Accordians($('.accordians-control'));
+		console.log(accordians);
+	</script>
+</body>
+</html>

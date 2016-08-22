@@ -1,0 +1,86 @@
+<fieldset>
+	<legend>Type of property</legend>
+	<div class="sideBySideBlock">
+		<div class="sideBySideBlock__fullBlock">
+			<label for="propertyType">Estimate for me based on the type of property I want to buy</label>
+		</div>
+		<div class="sideBySideBlock__rightBlock">
+		</div>
+	</div>
+	<div class="sameWidthBlock sameWidthBlock--4blocks">
+		<ul>
+			<li ng-repeat="homeType in homeTypes">
+				<div class="radio">
+					<input id="[{homeType.id}]" name="propertyType" type="radio" ng-model="data.homeType" ng-value="homeType">
+					<label for="[{homeType.id}]">[{homeType.name}]</label>
+				</div>
+			</li>
+			<li>
+				&nbsp;
+			</li>
+		</ul>
+	</div>
+</fieldset>
+
+<fieldset>
+	<legend>Size</legend>
+	<div class="sideBySideBlock">
+		<div class="sideBySideBlock__leftBlock">
+			<label for="homeSize">Size (sq. ft)</label>
+		</div>
+		<div class="sideBySideBlock__rightBlock">
+			<button type="button" class="button--arithmetic" myclick="homeSizeDown()">-</button>
+			<input name="homeSize" type="number" class="number" ng-model="data.homeSize" step="1000" max="6000", min="200">
+			<button type="button" class="button--arithmetic" myclick="homeSizeUp()">+</button>
+		</div>
+	</div>
+</fieldset>
+
+<fieldset>
+	<legend>Number of bedrooms</legend>
+	<div class="sideBySideBlock">
+		<div class="sideBySideBlock__leftBlock">
+			<label for="bedRooms">Number of bedrooms</label>
+		</div>
+		<div class="sideBySideBlock__rightBlock">
+			<button type="button" class="button--arithmetic" myclick="bedRoomsDown()">-</button>
+			<input name="bedRooms" type="number" class="number" ng-model="data.bedRooms">
+			<button type="button" class="button--arithmetic" myclick="bedRoomsUp()">+</button>
+		</div>
+	</div>
+</fieldset>
+
+<fieldset>
+	<legend>Location</legend>
+	<div class="sideBySideBlock">
+		<div class="sideBySideBlock__fullBlock">
+			<label for="district">Location</label>
+		</div>
+		<div class="sideBySideBlock__rightBlock">
+		</div>
+	</div>
+	<div class="sameWidthBlock sameWidthBlock--4blocks">
+		<ul>
+			<li ng-repeat="district in districts">
+				<div class="radio">
+					<input id="[{district.id}]" name="location" type="radio" ng-model="data.district" ng-value="district">
+					<label for="[{district.id}]">[{district.name}]</label>
+				</div>
+			</li>
+		</ul>
+	</div>
+</fieldset>
+
+<fieldset>
+	<legend>Inflation</legend>
+	<div class="sideBySideBlock" style="padding-bottom:20px;">
+		<div class="sideBySideBlock__leftBlock">
+			<label for="inflation">Expected rate of inflation (%)</label>
+		</div>
+		<div class="sideBySideBlock__rightBlock">
+			<button type="button" class="button--arithmetic" myclick="inflationDown()">-</button>
+			<input name="inflation" type="number" class="number" ng-model="data.inflation">
+			<button type="button" class="button--arithmetic" myclick="inflationUp()">+</button>
+		</div>
+	</div>
+</fieldset>

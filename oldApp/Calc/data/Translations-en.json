@@ -1,0 +1,334 @@
+{
+    "general_error": "The server encountered some error (__error__). Please refresh the page or try again later",
+    "403": "Access Denied",
+    "404": "The server is not available. Please refresh the page or try again later",
+    "408": "A time out error has occurred while uploading the file. Please try again",
+    "464": "The server encountered some error (EADVICE). Please refresh the page or try again later",
+    "465": "The server encountered some error (EADVICE). Please refresh the page or try again later",
+    "466": "The server encountered some error (TDS). Please refresh the page or try again later",
+    "467": "The server encountered some error (TDS). Please refresh the page or try again later",
+    "468": "The server encountered some error (TDS). Please refresh the page or try again later",
+    "469": "The server encountered some error (TDS). Please refresh the page or try again later",
+    "470": "The server encountered some error (TDS). Please refresh the page or try again later",
+    "471": "The server encountered some error (TDS). Please refresh the page or try again later",
+    "472": "The server encountered some error (TDS). Please refresh the page or try again later",
+
+    "currency":"HK$",
+
+    "generic": {
+        "select_language": "Select Language",
+        "next": "NEXT",
+        "previous": "PREVIOUS",
+        "complete":"COMPLETE",
+        "tools":"Tools",
+        "close":"Close",
+        "your_dreams":"YOUR DREAMS"
+    },
+
+    "formatting":{
+        "please_specify":"PLEASE SPECIFY"
+    },
+
+    "blocker":{
+        "title":"FOR BETTER EXPERIENCE,<br/>KINDLY ROTATE YOUR BROWSER."
+    },
+
+    "occupation": {
+        "default": "DEFAULT",
+        "student": "STUDENT",
+        "unemployed": "UNEMPLOYED",
+        "supervisor": "SUPERVISOR",
+        "self_employed": "SELF EMPLOYED",
+        "retired": "RETIRED",
+        "professional": "PROFESSIONAL",
+        "intermediate": "INTERMEDIATE",
+        "executive": "EXECUTIVE",
+        "civil_servant": "CIVIL SERVANT",
+        "career_starter": "CAREER STARTER"
+    },
+
+    "character":{
+        "baby":"BABY",
+        "infant_boy":"BOY",
+        "boy":"BOY",
+        "teen_boy":"TEEN BOY",
+        "infant_girl":"GIRL",
+        "girl":"GIRL",
+        "teen_girl":"TEEN GIRL",
+        "young_man":"MAN",
+        "man":"MAN",
+        "old_man":"MAN",
+        "young_woman":"WOMAN",
+        "woman":"WOMAN",
+        "old_woman":"WOMAN",
+        "grandfather":"GRANDFATHER",
+        "grandmother":"GRANDMOTHER"
+    },
+
+    "marital_status":{
+        "single":"SINGLE",
+        "married":"MARRIED",
+        "divorced":"DIVORCED",
+        "widowed":"WIDOWED"
+    },
+
+
+    "emotional_fact_finding":{
+        "header_title":"Manulife Shell",
+        "title":"THE MORE WE KNOW ABOUT YOU,<br/>THE BETTER ADVICE WE CAN GIVE",
+        "sub_title":"CHOOSE A SECTION TO GET STARTED",
+        "getting_to_know_you":"GETTING TO KNOW YOU",
+        "how_would_you_like_to_retire":"HOW WOULD YOU<br/>LIKE TO RETIRE ?",
+        "life_insurance_plans":"LIFE INSURANCE PLANS ?",
+        "investment_goals":"INVESTMENT GOALS ?",
+
+        "right_panel":{
+            "getting_to_know_you":"GETTING TO<br/>KNOW YOU",
+            "retirement":"RETIREMENT",
+            "life_insurance":"LIFE INSURANCE",
+            "investment_goals":"INVESTMENT GOALS"
+        }
+
+    },
+
+    "about_you": {
+        "title": "ABOUT YOU",
+        "male": "MALE",
+        "female": "FEMALE",
+        "getting_to_know_you": "GETTING TO KNOW YOU",
+        "age": "AGE",
+        "marital_status": "MARITAL STATUS",
+        "occupation": "OCCUPATION"
+    },
+
+
+    "children_choosing": {
+        "title": "CHILDREN",
+        "boy": "BOY",
+        "girl": "GIRL",
+        "name": "NAME",
+        "age": "AGE",
+        "annual_educational_expenses": "ANNUAL EDUCATION EXPENSES $t(currency)",
+        "expenses_start_age": "EXPENSES START AGE",
+        "number_of_year_to_support": "NUMBER OF YEAR TO SUPPORT",
+        "primary": "PRIMARY",
+        "secondary": "SECONDARY",
+        "university": "UNIVERSITY",
+        "public": "PUBLIC",
+        "private": "PRIVATE",
+        "oversea": "OVERSEA",
+        "oversea": "LOCAL",
+        "estimated_education_cost": "ESTIMATED EDUCATION COST"
+    },
+
+    "dependents_choosing": {
+        "title": "DEPENDENTS",
+        "grandfather": "GRANDFATHER",
+        "grandmother": "GRANDMOTHER",
+        "name": "NAME",
+        "age": "AGE"
+    },
+
+    "user_housing": {
+        "title": "HOUSING",
+        "mortgage":"MORTGAGE",
+        "fully_owned":"FULLY OWNED",
+        "rented":"RENTED",
+        "living_with_family":"LIVING WITH FAMILY",
+        "outstanding_mortgage": "OUSTANDING MORTAGE $t(currency)",
+        "monthly_mortgage_payment": "MONTHLY MORTGAGE PAYMENT $t(currency)",
+        "monthly_rental_expenses": "MONTHLY RENTAL EXPENSES $t(currency)",
+        "monthly_expenses": "MONTHLY EXPENSES $t(currency)",
+        "monthly_income": "MONTHLY INCOME RANGE $t(currency)",
+        "income_range":[
+            {"label":"Less than 4,000"},
+            {"label":"4,000-9,999"},
+            {"label":"10,000-19,999"},
+            {"label":"20,000-49,999"},
+            {"label":"50,000-100,000"},
+            {"label":"Over 100,000"}
+        ]
+    },
+
+
+    "dreams": {
+        "title": "YOUR DREAMS",
+        "buying_a_house": {
+            "title":"BUYING NEW HOUSE",
+            "options":{
+                "paid_public_apartment":"PAID PUBLIC APARTMENT<br/><b>$t(currency)&lt;3,000,000</b>",
+                "first_time_buyer":"FIRST TIME BUYER<br/><b>$t(currency)3,000,000-4,500,000</b>",
+                "upgrade":"UPGRADE<br/><b>$t(currency)5,000,000-9,000,000</b>",
+                "deluxe":"DELUXE<br/><b>$t(currency)9,000,000-20,000,000</b>",
+                "luxury":"LUXURY<br/><b>&gt;$t(currency)20,000,000</b>"
+            },
+            "options_summary":{
+                "paid_public_apartment":"PAID PUBLIC APARTMENT",
+                "first_time_buyer":"FIRST TIME BUYER",
+                "upgrade":"UPGRADE",
+                "deluxe":"DELUXE",
+                "luxury":"LUXURY"
+            }
+        },
+        "getting_married": {
+            "title":"DREAM WEDDING",
+            "options":{
+                "budget":"BUDGET<br/><b>$t(currency)&lt;150,000</b>",
+                "standard":"STANDARD<br/><b>$t(currency)150,000-250,000</b>",
+                "standard_with_honeymoon":"STANDARD WITH HONEYMOON<br/><b>$t(currency)250,000-350,000</b>",
+                "luxury":"LUXURY<br/><b>$t(currency)350,000-500,000</b>",
+                "dream":"DREAM<br/><b>$t(currency)&gt;500,000</b>"
+            },
+            "options_summary":{
+                "budget":"BUDGET",
+                "standard":"STANDARD",
+                "standard_with_honeymoon":"STANDARD WITH HONEYMOON",
+                "luxury":"LUXURY",
+                "dream":"DREAM"
+            }
+        },
+        "having_a_baby": {
+            "title":"HAVING A BABY",
+            "options":{
+                "government_hospital":"GOV. HOSPITAL PRIVATE WARD<br/><b>$t(currency)&lt;50,000</b>",
+                "private_hospital":"PRIVATE HOSPITAL<br/><b>$t(currency)50,000-500,000</b>",
+                "overseas_delivery":"OVERSEAS DELIVERY<br/><b>$t(currency)&gt;500,000</b>"
+            },
+            "options_summary":{
+                "government_hospital":"GOV. HOSPITAL PRIVATE WARD",
+                "private_hospital":"PRIVATE HOSPITAL",
+                "overseas_delivery":"OVERSEAS DELIVERY"
+            }
+        },
+        "plan_for_education": {
+            "title":"PLAN FOR EDUCATION",
+            "options":{
+                "local_private_college":"LOCAL PRIVATE COLLEGE SCHOOL<br/><b>$t(currency)300,000-1,000,000</b>",
+                "overseas_college":"OVERSEAS COLLEGE SCHOOL WITH <br/>EXPENSES <b>$t(currency)&gt;1,000,000</b>",
+                "local_university":"LOCAL UNIVERSITY<br/><b>$t(currency)300,000-1,000,000</b>",
+                "overseas_university":"OVERSEAS UNIVERSITY WITH EXPENSES<br/><b>$t(currency)&gt;1,000,000</b>"
+            },
+            "options_summary":{
+                "local_private_college":"LOCAL PRIVATE COLLEGE SCHOOL",
+                "overseas_college":"OVERSEAS COLLEGE SCHOOL WITH EXPENSES",
+                "local_university":"LOCAL UNIVERSITY",
+                "overseas_university":"OVERSEAS UNIVERSITY WITH EXPENSES"
+            }
+        },
+        "buy_a_new_car": {
+            "title":"BUYING NEW CAR",
+            "options":{
+                "microcar":"MICROCAR<br/><b>$t(currency)&lt;200,000</b>",
+                "small_family":"SMALL FAMILY<br/><b>$t(currency)200,000-300,000</b>",
+                "large_family":"LARGE FAMILY<br/><b>$t(currency)300,000-450,000</b>",
+                "mid_luxury":"MID LUXURY<br/><b$t(currency)>450,000-900,000</b>",
+                "luxury":"LUXURY<br/><b>$t(currency)900,000-2,000,000</b>",
+                "supercar":"SUPERCAR<br/><b>$t(currency)&gt;2,000,000</b>"
+            },
+            "options_summary":{
+                "microcar":"MICROCAR",
+                "small_family":"SMALL FAMILY",
+                "large_family":"LARGE FAMILY",
+                "mid_luxury":"MID LUXURY",
+                "luxury":"LUXURY",
+                "supercar":"SUPERCAR"
+            }
+        },
+        "plan_for_vacation": {
+            "title":"PLAN FOR VACATION",
+            "options":{
+                "asia_tour_for_two":"SHORT HAUL HOLIDAY<br/><b>$t(currency)10,000-$t(currency)25,000</b>",
+                "asia_luxury_tour":"LUXURY SHORT HAUL HOLIDAY<br/><b>&gt;$t(currency)25,000</b>",
+                "long_haul_tour_for_two":"LONG HAUL HOLIDAY<br/><b>$t(currency)50,000-100,000</b>",
+                "luxury_long_haul_tour":"LUXURY LONG HAUL HOLIDAY<br/><b>&gt;$t(currency)100,000</b>"
+            },
+            "options_summary":{
+                "asia_tour_for_two":"SHORT HAUL HOLIDAY",
+                "asia_luxury_tour":"LUXURY SHORT HAUL HOLIDAY",
+                "long_haul_tour_for_two":"LONG HAUL HOLIDAY",
+                "luxury_long_haul_tour":"LUXURY LONG HAUL HOLIDAY"
+            }
+        },
+        "early_retirement": {
+            "title":"EARLY RETIREMENT",
+            "options":{
+                "basic":"BASIC<br/><b>$t(currency)&lt;5,000,000</b>",
+                "moderate":"MODERATE<br/><b>$t(currency)5,000,000-12,000,000</b>",
+                "care_free":"CARE FREE<br/><b>$t(currency)12,000,000-20,000,000</b>",
+                "luxury":"LUXURY<br/><b>$t(currency)&gt;20,000,000</b>"
+            },
+            "options_summary":{
+                "basic":"BASIC",
+                "moderate":"MODERATE",
+                "care_free":"CARE FREE",
+                "luxury":"LUXURY"
+            }
+        }
+    },
+
+    "housing": {
+        "title" : "HOUSING NEEDS",
+        "mortgage" : "MORTGAGE",
+        "fully_owned" : "FULLY OWNED",
+        "rented" : "RENTED",
+        "living_with_family" : "LIVING WITH THE FAMILY"
+    },
+
+    "life_stage_need":{
+        "title" : "LIFE STAGE",
+        "description": "BASED ON YOUR SELECTION YOUR LIFE STAGE IS:",
+        "instruction": "(CLICK ARROWS TO CHANGE THE STAGE)",
+        "bottom_description": "FOR THIS LIFE STAGE PEOPLE USUALLY HAVE THE FOLLOWING NEEDS",
+        "bottom_instruction": "(PLEASE SELECT NEEDS RELEVANT TO YOU)",
+
+        "career_starter": "CAREER STARTER",
+        "starting_family": "STARTING A FAMILY",
+        "getting_married": "GETTING MARRIED",
+        "retiring": "PLANNING FOR RETIREMENT",
+
+        "career_starter_description": "START A CAREER THE RIGHT WAY. BEGIN PLANNING FOR YOU FINANCIAL FUTURE.<br/>SUCCESS COMES WITH A PLAN.JUST GRADUATED FROM COLLEGE?<br/>OR ARE YOU LOOKING TO START YOUR CAREER OR YOUR OWN BUSINESS?<br/>TAKE THE SMARTER FIRST STEP FORWARD BY ENSURING YOUR FINANCIAL PLANNING IS ON TRACK. WITH THE RIGHT PLANNING, YOU CAN ENSURE THAT EVERY STEP AND SUCCESS YOU MAKE WILL NOT BE HINDERED BY LIFE’S MANY CHALLENGES.",
+        "starting_family_description": "STARTING FAMILY DESCRIPTION HERE",
+        "getting_married_description": "GETTING MARRIED DESCRIPTION HERE",
+        "retiring_description": "RETIRING  DESCRIPTION HERE",
+
+
+        "protection": "PROTECTION",
+        "investing_and_saving": "INVESTING & SAVING",
+        "retirement": "RETIREMENT",
+        "other_planning": "OTHER PLANNING",
+
+        "personal_protection":{
+            "life_protection":"LIFE PROTECTION",
+            "critical_illness":"CRITICAL ILLNESS",
+            "accident_protection":"LIFE PROTECTION",
+            "disability_protection":"DISABILITY PROTECTION",
+            "medical_protection":"MEDICAL PROTECTION",
+            "build_your_wealth":"BUILD YOUR WEALTH",
+            "protect_your_wealth":"PROTECT YOUR WEALTH",
+            "enjoy_your_retirement":"ENJOY YOUR RETIREMENT",
+            "ilas":"ILAS",
+            "savings":"SAVINGS"
+        }
+
+    },
+
+    "concerns": {
+        "title": "CONCERNS",
+        "death":"WHAT IF I PASS AWAY?",
+        "illness":"WHAT IF I FALL SERIUOSLY ILL?",
+        "accident":"WHAT IF I HAVE AN ACCIDENT OR MAJOR INJURY?",
+        "health_costs":"HOW CAN I COVER EVERYDAY HEALTHCARE COSTS?",
+        "retirement":"HOW CAN I ENSURE A COMFORTABLE RETIREMENT?",
+        "future_expenses":"HOW WILL I COVER FUTURE EXPENSES?"
+    },
+
+    "getting_to_know_you_summary":{
+        "title":"SUMMARY",
+        "getting_to_know_you":"GETTING TO KNOW YOU",
+        "dreams":"DREAMS",
+        "life_stage":"LIFE STAGE",
+        "needs": "NEEDS",
+        "personal_protection": "PERSONAL PRIORITIES"
+    }
+
+}

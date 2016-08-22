@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Manulife Pos Technical</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../style/default.css">
+</head>
+
+<body>
+	<div class="emotional-base-page emotional-life-insurance-plan">
+		<div class="ebp-content-container">
+			<div class="ebp-left-container">
+				<div class="ebp-background-container">
+					<div class="ebp-background-header">
+					</div>
+				</div>
+				<div class="page-management">
+					<div class="page-container">
+					</div>
+				</div>
+			</div>
+			<div class="ebp-right-container">
+				<!-- start right panel -->
+				<div class="right-panel-know-you">
+					<div class="header">
+						<div class="title">
+							<p>Life Insurance</p>
+							<div class="page-selector">
+							</div>
+						</div>
+						<div class="dot-container pagination">
+							<ul>
+								<li class="active"></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+					</div>
+					<div class="line"></div>
+					<div class="content">
+						<div class="object-container">
+						</div>
+						<div class="graph-container hidden">
+							<div class="graph-title">
+								<p>YOU MAY HAVE THE<br> FOLLOWING NEEDS</p>
+							</div>
+							<span class="graph"></span>
+						</div>
+					</div>
+				</div>
+				<!-- end right panel -->
+			</div>
+		</div>
+	</div>
+	<!-- start data -->
+	<script src='../script/data/ConfigData.js'></script>
+	<script src='../script/data/CharacterData.js'></script>
+	<script src='../script/data/DependentData.js'></script>
+	<script src='../script/data/HousingData.js'></script>
+	<script src='../script/data/GettingToKnowYouData.js'></script>
+
+	<script src='../script/data/retirement/RetirementConfigData.js'></script>
+	<script src='../script/data/retirement/RetirementPlanData.js'></script>
+
+	<script src='../script/data/insurance/InsurancePlanData.js'></script>
+	<script src='../script/data/investment/InvestmentGoalData.js'></script>
+
+	<script src='../script/data/EmotionalFactFindingData.js'></script>
+	<!-- end data -->
+	<!--start base control -->
+	<script src="../script/jquery.js"></script>
+	<script src='../script/plugin/jquery-ui-effect.js'></script>
+	<script src='../script/plugin/fastclick.js'></script>
+	<script src='../script/plugin/idangerous.swiper.scrollbar.js'></script>
+	<script src='../script/plugin/jtouchswipe.js'></script>
+	<script src='../script/pos/SwiperCarousel.js'></script>
+	<script src="../script/pos/page-management/PageElement.js"></script>
+	<script src="../script/pos/page-management/PageManagement.js"></script>
+	<!-- end base control -->
+	<!-- start page element -->
+	<script src='../script/pages/insurance/LifeInsuranceIncomeAsset.js'></script>
+	<script src='../script/pages/retirement/RetirementLifeStyle.js'></script>
+	<script src='../script/pages/retirement/RetirementAnalysis.js'></script>
+	<!-- end page element -->
+	<script src="../script/pages/insurance/LifeInsurancePlan.js"></script>
+	<script>
+		var retirement = new page.insurance.LifeInsurancePlan(".emotional-life-insurance-plan", {
+			"isStandalone": true
+		});
+	</script>
+</body>
+
+</html>

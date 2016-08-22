@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../style/default.css">
+	<link rel="stylesheet" type="text/css" href="../style/compgal.css">
+    <style>
+        .toggle-button {
+            display: inline-block;
+            background: #d4ddd4;
+            color: #7b8c7b;
+            cursor: pointer;
+            height: 41px;
+            line-height: 41px;
+            padding: 0 10px;
+        }
+        .toggle-button > input[type="checkbox"] {
+            position: absolute;
+            clip: rect(0,0,0,0);
+            pointer-events: none;
+        }
+
+        .toggle-button:active {
+            background: #c2c9c2;
+        }
+
+        .toggle-button.selected {
+            background: #b0c566;
+            color: #33723b;
+        }
+
+        .toggle-button.selected:active {
+            background: #9caf5b;
+        }
+    </style>
+</head>
+<body>
+    <div class="panelAction">
+        <label id="sampleToggleButton" class="toggle-button">
+            <input type="checkbox"></input>
+            Toggle Button
+        </label>
+    </div>
+    <script src="../script/jquery.js"></script>
+    <script src="../script/pos/ToggleButton.js"></script>
+    <script>
+    /*global pos:true*/
+    var toggleButton = new pos.ToggleButton($('#sampleToggleButton'));
+    console.log(toggleButton);
+    </script>
+</body>
+</html>
+

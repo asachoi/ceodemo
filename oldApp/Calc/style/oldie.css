@@ -1,0 +1,632 @@
+/* Reset Styles */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_reset\.scss}line{font-family:\000039}}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  /*disable selection*/
+  -webkit-user-select: none;
+  /*disable tap color*/
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_reset\.scss}line{font-family:\0000323}}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_reset\.scss}line{font-family:\0000325}}
+blockquote, q {
+  quotes: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_reset\.scss}line{font-family:\0000326}}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_reset\.scss}line{font-family:\0000328}}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_reset\.scss}line{font-family:\0000329}}
+a img {
+  border: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_reset\.scss}line{font-family:\0000331}}
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* tables still need cellspacing="0" in the markup */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_reset\.scss}line{font-family:\0000334}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_reset\.scss}line{font-family:\0000336}}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_reset\.scss}line{font-family:\0000338}}
+input, select {
+  vertical-align: middle;
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_reset\.scss}line{font-family:\0000341}}
+input {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_base\.scss}line{font-family:\000032}}
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: Frutiger, Arial, Helvetica, sans-serif;
+  background: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_base\.scss}line{font-family:\0000312}}
+.skipLink {
+  display: block;
+  padding: 4px;
+  position: absolute;
+  left: -9999px;
+  z-index: 1000;
+  color: #fff;
+  background: #222;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_base\.scss}line{font-family:\0000320}}
+.skipLink:focus {
+  left: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_base\.scss}line{font-family:\0000324}}
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_base\.scss}line{font-family:\0000328}}
+.accessible {
+  position: absolute;
+  left: -9999px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_base\.scss}line{font-family:\0000335}}
+.row:after {
+  visibility: hidden;
+  clear: both;
+  content: ".";
+  height: 0;
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_base\.scss}line{font-family:\0000344}}
+html,
+body {
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_base\.scss}line{font-family:\0000350}}
+body {
+  font-family: Frutiger, Arial, Helvetica, sans-serif;
+  background: #f5f5f5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_base\.scss}line{font-family:\0000355}}
+#pageWrapper {
+  min-height: 100%;
+  background: #f5f5f5;
+  position: relative;
+  left: 0;
+  overflow: hidden;
+  -webkit-transition: left 1s ease-in-out;
+  transition: left 1s ease-in-out;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_base\.scss}line{font-family:\0000365}}
+#pageWrapper.pageMenuOpen {
+  left: 271px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_base\.scss}line{font-family:\0000368}}
+#pageWrapper.pageMenuOpen #pageOverlay {
+  visibility: visible;
+  opacity: 0.5;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_base\.scss}line{font-family:\0000374}}
+#pageWrapper #pageOverlay {
+  position: absolute;
+  visibility: hidden;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_base\.scss}line{font-family:\0000387}}
+* {
+  box-sizing: border-box;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_base\.scss}line{font-family:\00003100}}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_base\.scss}line{font-family:\00003106}}
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_base\.scss}line{font-family:\00003115}}
+.clearfix {
+  *zoom: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_global\.scss}line{font-family:\000032}}
+body {
+  font-family: Frutiger;
+  font-size: 15px;
+  color: #333333;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_global\.scss}line{font-family:\000037}}
+.text-bold {
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_global\.scss}line{font-family:\0000311}}
+input, textarea, checkbox, radio {
+  font-family: inherit;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_global\.scss}line{font-family:\0000316}}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_global\.scss}line{font-family:\0000321}}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_global\.scss}line{font-family:\0000325}}
+input[type="date"] {
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_global\.scss}line{font-family:\0000328}}
+button {
+  font-family: inherit;
+  outline: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_global\.scss}line{font-family:\0000332}}
+.block {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_global\.scss}line{font-family:\0000336}}
+.user-info .content-parent {
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_global\.scss}line{font-family:\0000339}}
+.user-info .header-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_global\.scss}line{font-family:\0000345}}
+.user-info .content-container {
+  padding-top: 70px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_global\.scss}line{font-family:\0000349}}
+.footer-btn-wrap {
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  background: #f5f5f5;
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_global\.scss}line{font-family:\0000360}}
+.annual-rate .title > p {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_global\.scss}line{font-family:\0000369}}
+.full-width {
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_global\.scss}line{font-family:\0000373}}
+.half-line {
+  display: block;
+  margin: 20px 0;
+  height: 1px;
+  position: relative;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_global\.scss}line{font-family:\0000379}}
+.half-line:before {
+  content: '';
+  display: inline-block;
+  width: 50%;
+  height: 1px;
+  background: #e5e5e5;
+  position: absolute;
+  left: 50%;
+  margin-left: -25%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\000031}}
+.imageIcon {
+  display: inline-block;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\000038}}
+.hamburgerMenuBtn {
+  width: 25px;
+  height: 20px;
+  background-image: url("../images/background/icon-menu.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\0000314}}
+.imageIconTool {
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/background/icon-tool.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\0000320}}
+.imageIconClose {
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/background/icon-close.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\0000326}}
+.imageIconOffline {
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/background/icon-offline.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\0000332}}
+.imageIconExpand {
+  width: 25px;
+  height: 25px;
+  background-image: url("../images/background/icon-round-expand.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\0000338}}
+.imageIconForeward {
+  width: 25px;
+  height: 25px;
+  background-image: url("../images/background/icon-round-chevron.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\0000344}}
+.imageIconNotExistingCustomer {
+  width: 25px;
+  height: 25px;
+  background-image: url("../images/background/icon-head-off.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\0000350}}
+.imageIconExistingCustomer {
+  width: 25px;
+  height: 25px;
+  background-image: url("../images/background/icon-head-on.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\0000356}}
+.imageIconCompleted {
+  width: 13px;
+  height: 10px;
+  background-image: url("../images/background/icon-tick-tray.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\0000362}}
+.imageIconForewardArrow {
+  width: 12px;
+  height: 20px;
+  background-image: url("../images/background/chevron.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\0000368}}
+.imageIconLoadVideo {
+  width: 55px;
+  height: 55px;
+  background-image: url("../images/background/icon-video.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\0000374}}
+.imageIconPDF {
+  width: 60px;
+  height: 60px;
+  background-image: url("../images/background/icon-pdf.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\0000380}}
+.imageIconDownload {
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/background/icon-download.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\0000386}}
+.imageIconStar {
+  width: 22px;
+  height: 20px;
+  background-image: url("../images/background/icon-star.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\0000392}}
+.status {
+  width: 9px;
+  height: 9px;
+  background-image: url("../images/background/icon-dot-off.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\0000398}}
+.unread {
+  width: 9px;
+  height: 9px;
+  background-image: url("../images/background/icon-dot-on.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\00003103}}
+.imageIconLock {
+  width: 10px;
+  height: 15px;
+  background-image: url("../images/background/menu/icon-lock.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\00003108}}
+.imageIconHome {
+  width: 25px;
+  height: 23px;
+  background-image: url("../images/background/menu/icon-home-white.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\00003113}}
+.imageIconUser {
+  width: 25px;
+  height: 25px;
+  background-image: url("../images/background/menu/icon-head-white.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\00003118}}
+.imageIconCustomers {
+  width: 35px;
+  height: 24px;
+  background-image: url("../images/background/menu/icon-customer.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\00003123}}
+.imageIconSolutions {
+  width: 25px;
+  height: 24px;
+  background-image: url("../images/background/menu/icon-cube.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\00003128}}
+.imageIconProposals {
+  width: 25px;
+  height: 28px;
+  background-image: url("../images/background/menu/icon-clipboard.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\00003133}}
+.imageIconTools {
+  width: 25px;
+  height: 25px;
+  background-image: url("../images/background/menu/icon-square-boxes.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\00003138}}
+.imageIconResources {
+  width: 25px;
+  height: 25px;
+  background-image: url("../images/background/menu/icon-tag.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\00003143}}
+.imageIconApplication {
+  width: 25px;
+  height: 26px;
+  background-image: url("../images/background/menu/icon-write-document.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\00003148}}
+.imageIconLogout {
+  width: 18px;
+  height: 18px;
+  background-image: url("../images/background/menu/icon-logout.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\00003153}}
+.imageIconMagifyGlass {
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/background/icon-magnifying-glass.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\00003161}}
+.agentMenu .imageIconHome {
+  background-image: url("../images/background/menu/icon-home-agent.png");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\00003164}}
+.agentMenu .imageIconCustomers {
+  background-image: url("../images/background/menu/icon-customer-agent.png");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\00003167}}
+.agentMenu .imageIconTools {
+  background-image: url("../images/background/menu/icon-square-boxes-agent.png");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\00003170}}
+.agentMenu .imageIconResources {
+  background-image: url("../images/background/menu/icon-tag-agent.png");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\00003173}}
+.agentMenu .imageIconSolutions {
+  background-image: url("../images/background/menu/icon-cube-agent.png");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\00003176}}
+.agentMenu .imageIconProposals {
+  background-image: url("../images/background/menu/icon-clipboard-agent.png");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\00003179}}
+.agentMenu .imageIconApplication {
+  background-image: url("../images/background/menu/icon-write-document-agent.png");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\00003182}}
+.agentMenu .imageIconSupport {
+  width: 22px;
+  height: 22px;
+  background-image: url("../images/background/menu/icon-support-agent.png");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\00003187}}
+.agentMenu .imageIconSettings {
+  width: 22px;
+  height: 22px;
+  background-image: url("../images/background/menu/icon-settings-agent.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\00003194}}
+.hamburgerManulifeMenuBtn {
+  width: 87px;
+  height: 29px;
+  background-image: url("../images/background/icon-manulife.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\00003199}}
+.icon-info {
+  width: 20px;
+  height: 21px;
+  background-image: url("../images/icon-info.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\00003205}}
+.icon-info:active {
+  background-position: right top;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\00003212}}
+.imageIconCloseGray {
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/icon-close-gray.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\00003217}}
+.icons {
+  background: url(../images/sprites-icon.png) no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\00003223}}
+.icon-attach {
+  background: url(../images/icon-attachment.png) no-repeat;
+  background-position: 0 0;
+  width: 25px;
+  height: 25px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/global\/_imageIcon\.scss}line{font-family:\00003228}}
+.icon-attach:active {
+  background-position: right top;
+}
+
+@media print {
+  /* Print Styles */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_print\.scss}line{font-family:\000039}}
+  body {
+    background: White;
+    color: Black;
+    font: 12pt "New Century Schoolbook", "Times New Roman", TimesNR, Times, serif;
+    text-align: left;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_print\.scss}line{font-family:\0000316}}
+  a {
+    color: Blue;
+    text-decoration: underline;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_print\.scss}line{font-family:\0000320}}
+  a img {
+    border: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_print\.scss}line{font-family:\0000323}}
+  img {
+    display: block;
+    margin: 12pt 0;
+  }
+
+  /* TODO:: list classes and ids to remove from printing here */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/aqeelbhat\/Documents\/manulife-pos\/sass\/_print\.scss}line{font-family:\0000329}}
+  .exampleClass,
+  #exampleID {
+    display: none;
+    visibility: hidden;
+  }
+}

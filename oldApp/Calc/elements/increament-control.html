@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../style/default.css">
+	<link rel="stylesheet" type="text/css" href="../style/compgal.css">
+    <style>
+        .dummy-bg {
+            background: #e8bb6d;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="increment-control" class="increment-control">
+        <li class="sub"><span class="increment-button"></span></li>
+        <li>
+            <p class="value"></p>
+            <input type="number"/>
+        </li>
+        <li class="add"><span class="increment-button"></span></li>
+    </ul>
+    <br>
+    <ul class="increment-control no-input" data-suffix="years">
+        <li class="sub"><span class="increment-button"></span></li>
+        <li>
+            <p class="value"></p>
+            <input type="number"/>
+        </li>
+        <li class="add"><span class="increment-button"></span></li>
+    </ul>
+    <br>
+    <div class="dummy-bg">
+        <ul id="increment-control" class="increment-control white">
+            <li class="sub"><span class="increment-button"></span></li>
+            <li>
+                <p class="value"></p>
+                <input type="number"/>
+            </li>
+            <li class="add"><span class="increment-button"></span></li>
+        </ul>
+        <br>
+        <ul class="increment-control no-input white" data-suffix="years">
+            <li class="sub"><span class="increment-button"></span></li>
+            <li>
+                <p class="value"></p>
+                <input type="number"/>
+            </li>
+            <li class="add"><span class="increment-button"></span></li>
+        </ul>
+    </div>
+    <script src="../script/jquery.js"></script>
+    <script src="../script/plugin/fastclick.js"></script>
+    <script src="../script/pos/NumberInput.js"></script>
+    <script src="../script/pos/IncrementControl.js"></script>
+    <script>
+    /*global pos:true FastClick*/
+    FastClick.attach(document.body);
+    $('.increment-control').each(function() {
+        new pos.IncrementControl(this);
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../style/default.css">
+	<link rel="stylesheet" type="text/css" href="../style/compgal.css">
+</head>
+<body>
+    <div>
+    	<div class="one-choice-question">
+	        <input id="radio-1" type="radio" name="radio">
+	        <label for="radio-1"><span class="order">A)</span>First question</label>
+        </div>
+        <br>
+    	<div class="one-choice-question">
+	        <input id="radio-2" type="radio" name="radio">
+	        <label for="radio-2">Second question</label>
+        </div>
+    </div>
+    <script src="../script/jquery.js"></script>
+    <script src="../script/plugin/fastclick.js"></script>
+    <script src="../script/pos/Radio.js"></script>
+    <script>
+        /*global pos, FastClick*/
+        FastClick.attach(document.body);
+        $('.one-choice-question').each(function() {
+            new pos.Radio(this);
+        })
+    </script>
+</body>
+</html>

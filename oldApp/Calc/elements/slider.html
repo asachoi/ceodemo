@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../style/default.css">
+    <link rel="stylesheet" type="text/css" href="../style/compgal.css">
+    <style>
+        .dummy-bg {
+            background: #e8bb6d;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="new-slider-component single">
+        <div class="slider-container"></div>
+        <div class="content">
+            <input type="text" name="fname" class="textinput">
+        </div>
+    </div>
+    <br>
+    <div class="dummy-bg">
+        <div class="new-slider-component single white">
+            <div class="content clearfix">
+                <label class="label">Text here</label>
+                <input type="text" name="fname" class="textinput">
+            </div>
+            <div class="slider-container"></div>
+        </div>
+    </div>
+
+    <script src="../script/jquery.js"></script>
+    <script src="../script/pos/range/jquery.nouislider.js"></script>
+    <script src="../script/pos/range/NewSlider.js"></script>
+    <script>
+    // var slider = new pos.NewSlider(".new-slider-component", {
+    //     value: 20,
+    //     minValue: 0,
+    //     maxValue: 30
+    // });
+        /*global pos*/
+        $('.new-slider-component').each(function() {
+            new pos.NewSlider(this, {
+                value: 20,
+                minValue: 0,
+                maxValue: 30
+            });
+        })
+    </script>
+</body>
+
+</html>

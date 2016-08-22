@@ -1,0 +1,42 @@
+<section ng-controller="simple-illustration-detail-ctrl" >
+
+	<div class="actionIcons">
+<!-- 		<span class="imageIcon imageIconPDF"></span>
+ -->		<nav class="horizontalNav horizontalNav--withBottomBorder">
+			<ul>
+				<li class="item" ng-class='{"is-active" : isActive(0)}' myclick='toggleTab(0)'><a href="#">Accumulated illustration</a></li>
+				<li class="item" ng-class='{"is-active" : isActive(1)}' myclick='toggleTab(1)'><a href="#">Regular withdrawal illustration</a></li>
+				<li class="item" ng-class='{"is-active" : isActive(2)}' myclick='toggleTab(2)'><a href="#">Complete rollover illustration</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="scrollable scrollable--vertical" style="height: 400px;">
+		<div ng-init="init('container')">
+			<div class="grid">
+				<div class="span8">
+					<div style="padding-top: 12px;">
+						<div id="container" ng-init="init('container')"></div>
+					</div>
+				</div>
+				<div class="span4">
+
+					<div class="checkboxContainers">
+						<div class="checkboxContainer checkboxContainer--stackedBox" ng-class='{"is-active" : isSeriesVisible($index)}' id="checkboxContainer[{$index}]" ng-repeat="s in series">
+							<div class="checkbox" >
+								<input name="form" id="[{s.name}]" type="checkbox" ng-model='seriesChecked[$index]' ng-change="toggleDisplay($index)">
+								<label for="[{s.name}]">[{s.name}]</label>
+							</div>
+							<label class="checkboxContainer__label" for="[{s.name}]">[{s.name}]</label>
+							<span class="checkboxContainer__graphLegend" style="background-color:[{s.color}]" myclick="toggleDisplay($index)"></span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="placeholderImage"><img src="../images/content/basic-info-table.jpg" alt="" /></div>
+		</div>
+	</div>
+
+</section>
+<script src="../js/Highcharts-4.1.9/js/highcharts.js"></script>
+<script src="../js/controller/simple-illustration-detail.js"></script>

@@ -1,0 +1,26 @@
+<svg xml:space="preserve" enable-background="new 0 0 320 340" viewBox="0 0 320 340" height="340px" width="320px" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="svg-layer" version="1.1">
+<ellipse ry="4" rx="36" cy="308" cx="200" fill="#26715E">
+    <animate repeatCount="indefinite" calcMode="spline" keyTimes="
+            0;0.4;1" keySplines="
+            0.6 0.1 0.8 0.1; 
+            0.1 0.8 0.1 1" values="200;160;200" dur="1.5s" begin="0s" to="200" from="200" attributeName="cx"/>   
+    <animate repeatCount="indefinite" calcMode="spline" keyTimes="
+            0;0.4;1" keySplines="
+            0.6 0.0 0.8 0.0; 
+            0.0 0.8 0.0 1" values="36;10;36" dur="1.5s" begin="0s" to="36" from="36" attributeName="rx"/>
+	<animate repeatCount="indefinite" calcMode="spline" keyTimes="
+            0;0.4;1" keySplines="
+            0.6 0.0 0.8 0.0; 
+            0.0 0.8 0.0 1" values="#2C7D68;#26715E;#2C7D68" dur="1.5s" begin="0s" to="#2C7D68" from="#2C7D68" attributeName="fill"/>
+</ellipse>
+<ellipse ry="12" rx="16" cy="20" cx="160" fill="#FBC602">
+    <animate repeatCount="indefinite" calcMode="spline" keyTimes="
+            0;0.4;1" keySplines="
+            0.6 0.1 0.8 0.1; 
+            0.1 0.8 0.1 1" values="20;300;20" dur="1.5s" begin="0s" to="20" from="20" attributeName="cy"/>
+    <animate repeatCount="indefinite" calcMode="spline" keyTimes="
+            0;0.4;1" keySplines="
+            0.6 0.0 0.8 0.0; 
+            0.0 0.8 0.0 1" values="16;12;16" dur="1.5s" begin="0s" to="16" from="16" attributeName="ry"/>
+</ellipse>
+</svg>

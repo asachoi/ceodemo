@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../style/default.css">
+</head>
+
+<body>
+    <div class="calc-page-wrap about-you">
+        <!-- start left panl -->
+        <div class="calc-page-content">
+            <div class="content-wrapper">
+                <div class="calc-page-title">
+                    <p class="title">About You</p>
+                </div>
+                <!-- start content view -->
+                <div class="inner-content">
+                    <div class="age-info">
+                        <div class="new-slider-component range">
+                            <div class="header">
+                                <div class="content left">
+                                    <span class="title">Current Age</span>
+                                    <input type="number" name="fname" class="textinput">
+                                </div>
+                                <div class="content right">
+                                    <span class="title">Target Retirement Age</span>
+                                    <input type="number" name="fname" class="textinput">
+                                </div>
+                            </div>
+                            <div class="slider-container"></div>
+                        </div>
+                    </div>
+                    <div class="monthly-income">
+                        <div class="slider-title">Current Monthly Income (HK$)</div>
+                        <div class="new-slider-component single">
+                            <div class="slider-container"></div>
+                            <div class="content">
+                                <input type="number" name="fname" class="textinput">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="exist-balance">
+                        <div class="slider-title">Existing MPF Balance (HK$)</div>
+                        <div class="new-slider-component single">
+                            <div class="slider-container"></div>
+                            <div class="content">
+                                <input type="number" name="fname" class="textinput">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="monthly-mpf">
+                        <div class="slider-title">Monthly MPF Contributions (HK$)</div>
+                        <div class="new-slider-component single">
+                            <div class="slider-container"></div>
+                            <div class="content">
+                                <input type="number" name="fname" class="textinput">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="saving-investment">
+                        <div class="slider-title">Saving &amp; Investments (excluding property) (HK$)</div>
+                        <div class="new-slider-component single">
+                            <div class="slider-container"></div>
+                            <div class="content">
+                                <input type="number" name="fname" class="textinput">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="expect-rate clearfix">
+                        <div class="title label-bold">Choose a Method for Calculating Your Expected Rate of Return (%/yr)</div>
+                        <!-- <div class="radio-group">
+                            <label class="toggle-button">
+                                <input type="checkbox" value="1" /> Variable
+                            </label>
+                            <label class="toggle-button">
+                                <input type="checkbox" value="0" /> Single
+                            </label>
+                        </div> -->
+                        <div class="radio-group">
+                            <div class="radio">
+                                <input id="gender-1" type="radio" name="method" value="variable">
+                                <label for="gender-1">Variable</label>
+                            </div>
+                            <div class="radio">
+                                <input id="gender-2" type="radio" name="method" value="single" checked="checked">
+                                <label for="gender-2">Single</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rate-container">
+                        <div class="single">
+                            <div class="annual-rate clearfix">
+                                <div class="title label-bold">
+                                    <p>Assumed Annual Rate of Return (%)</p>
+                                    <div class="icon icon-info" title="Tooltip"></div>
+                                </div>
+                                <div class="incerement-container">
+                                    <ul id="increment-control" class="increment-control">
+                                        <li class="sub"><span class="increment-button"></span>
+                                        </li>
+                                        <li>
+                                            <p class="value"></p>
+                                            <input type="number" />
+                                        </li>
+                                        <li class="add"><span class="increment-button"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="annual-rate clearfix">
+                                <div class="title label-bold">
+                                    <p>Assumed Annual Rate of Return (%)</p>
+                                    <div class="icon icon-info" title="Tooltip"></div>
+                                </div>
+                                <div class="incerement-container">
+                                    <ul id="increment-control" class="increment-control">
+                                        <li class="sub"><span class="increment-button"></span>
+                                        </li>
+                                        <li>
+                                            <p class="value"></p>
+                                            <input type="number" />
+                                        </li>
+                                        <li class="add"><span class="increment-button"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="variable">
+                            <div class="pre-retirement clearfix">
+                                <div class="title label-bold">
+                                    <p>Assumed Annual Rate of Return (%)</p>
+                                    <p>(pre-retirement)</p>
+                                </div>
+                                <div class="incerement-container">
+                                    <ul id="increment-control" class="increment-control">
+                                        <li class="sub"><span class="increment-button"></span>
+                                        </li>
+                                        <li>
+                                            <p class="value"></p>
+                                            <input type="number" />
+                                        </li>
+                                        <li class="add"><span class="increment-button"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="post-retirement clearfix">
+                                <div class="title label-bold">
+                                    <p>Assumed Annual Rate of Return (%)</p>
+                                    <p>(post-retirement)</p>
+                                </div>
+                                <div class="incerement-container">
+                                    <ul class="increment-control">
+                                        <li class="sub"><span class="increment-button"></span>
+                                        </li>
+                                        <li>
+                                            <p class="value"></p>
+                                            <input type="number" />
+                                        </li>
+                                        <li class="add"><span class="increment-button"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end content view -->
+            </div>
+        </div>
+        <!-- end left panl -->
+        <div class="calc-page-graph"><div class="graph-control clearfix"></div></div>
+    </div>
+    <script src="../script/jquery.js"></script>
+    <script src="../script/plugin/fastclick.js"></script>
+    <script src="../script/plugin/jquery.tooltip.js"></script>
+    <script src="../script/pos/range/jquery.nouislider.js"></script>
+    <script src="../script/pos/NumberInput.js"></script>
+    <script src="../script/pos/tooltip/Tooltip.js"></script>
+    <script src="../script/pos/range/NewRangeSlider.js"></script>
+    <script src="../script/pos/range/NewSlider.js"></script>
+    <script src="../script/pos/RadioGroup.js"></script>
+    <script src="../script/pos/IncrementControl.js"></script>
+    <script src="../script/RetirementUserInfo.js"></script>
+    <script src="../script/pos/Graph.js"></script>
+    <script>
+    /*global page, FastClick*/
+    FastClick.attach(document.body);
+    var retirementUser = new page.RetirementUserInfo(".about-you", {});
+    </script>
+</body>
+
+</html>

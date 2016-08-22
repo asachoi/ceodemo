@@ -1,0 +1,186 @@
+
+<nav class="horizontalNav" ng-controller="personal-information-ctrl">
+	<ul>
+		<li class="item" ng-class="{'is-active' : selectedTab == 0}" myclick="setSelectedTab(0)"><a href="#">Policyholder & Insured</a></li>
+		<li class="item" ng-class="{'is-active' : selectedTab == 1}" myclick="setSelectedTab(1)"><a href="#">Beneficiary</a></li>
+	</ul>
+</nav>
+
+<section class="row">
+	<section class="panelz panelz--withTabs">
+		<div class="scrollable scrollable--vertical">
+			<div class="content padded">
+
+				<div class="editButton editButton--viewDetailMode"><span class="imageIcon imageIconEdit"></span></div>
+
+				<h2 class="mainTitle">About You - policyholder &amp; insured</h2>
+
+				<section class="viewDetailBlock viewDetailBlock--firstBlock">
+					<div class="viewDetailBlock__header">
+						<h3 class="viewDetailBlock__title">Basic</h3>
+					</div>
+					<div class="viewDetailBlock__content">
+						<div class="grid">
+							<section class="span12">
+
+								<div class="valuePairBlock">
+									<div class="valuePairBlock__leftBlock">
+										<span class="valuePairBlock__description">Name</span>
+									</div>
+									<div class="valuePairBlock__rightBlock">
+										<span class="valuePairBlock__value">Chan Tai Man</span>
+									</div>
+								</div>
+
+								<div class="valuePairBlock">
+									<div class="valuePairBlock__leftBlock">
+										<span class="valuePairBlock__description">Gender</span>
+									</div>
+									<div class="valuePairBlock__rightBlock">
+										<span class="valuePairBlock__value">Male</span>
+									</div>
+								</div>
+
+								<div class="valuePairBlock">
+									<div class="valuePairBlock__leftBlock">
+										<span class="valuePairBlock__description">Date of birth</span>
+									</div>
+									<div class="valuePairBlock__rightBlock">
+										<span class="valuePairBlock__value">15  May  1985</span>
+									</div>
+								</div>
+
+							</section>
+							<section class="span0">
+							</section>
+						</div>
+					</div>
+				</section>
+
+				<section class="viewDetailBlock">
+					<div class="viewDetailBlock__header">
+						<h3 class="viewDetailBlock__title">Contact</h3>
+					</div>
+					<div class="viewDetailBlock__content">
+						<div class="grid">
+							<section class="span12">
+
+								<div class="valuePairBlock">
+									<div class="valuePairBlock__leftBlock">
+										<span class="valuePairBlock__description">Address</span>
+									</div>
+									<div class="valuePairBlock__rightBlock">
+										<span class="valuePairBlock__value">Lee Yun Sat Tower, 12 Floor, Flat B,<br/>233 Sugar Street, Causeway Bay</span>
+									</div>
+								</div>
+
+								<div class="valuePairBlock">
+									<div class="valuePairBlock__leftBlock">
+										<span class="valuePairBlock__description">Telephone number</span>
+									</div>
+									<div class="valuePairBlock__rightBlock">
+										<span class="valuePairBlock__value">9200 7870</span>
+									</div>
+								</div>
+
+								<div class="valuePairBlock">
+									<div class="valuePairBlock__leftBlock">
+										<span class="valuePairBlock__description">Email</span>
+									</div>
+									<div class="valuePairBlock__rightBlock">
+										<span class="valuePairBlock__value">chan.taiman@netvigator.com</span>
+									</div>
+								</div>
+
+								<div class="valuePairBlock">
+									<div class="valuePairBlock__leftBlock">
+										<span class="valuePairBlock__description">HKID</span>
+									</div>
+									<div class="valuePairBlock__rightBlock">
+										<span class="valuePairBlock__value">Z881288(3) <a href="#" style="color:#00693c;">Capture HKID</a></span>
+									</div>
+								</div>
+
+							</section>
+							<section class="span0">
+							</section>
+						</div>
+					</div>
+				</section>
+
+				<section class="viewDetailBlock">
+					<div class="viewDetailBlock__header">
+						<h3 class="viewDetailBlock__title">Job</h3>
+					</div>
+					<div class="viewDetailBlock__content">
+						<div class="grid">
+							<section class="span12">
+
+								<div class="valuePairBlock">
+									<div class="valuePairBlock__leftBlock">
+										<span class="valuePairBlock__description">Employer</span>
+									</div>
+									<div class="valuePairBlock__rightBlock">
+										<span class="valuePairBlock__value">ACME Industries Ltd.</span>
+									</div>
+								</div>
+
+								<div class="valuePairBlock">
+									<div class="valuePairBlock__leftBlock">
+										<span class="valuePairBlock__description">Occupation code</span>
+									</div>
+									<div class="valuePairBlock__rightBlock">
+										<span class="valuePairBlock__value">1234AABB</span>
+									</div>
+								</div>
+
+								<div class="valuePairBlock">
+									<div class="valuePairBlock__leftBlock">
+										<span class="valuePairBlock__description">Job title</span>
+									</div>
+									<div class="valuePairBlock__rightBlock">
+										<span class="valuePairBlock__value">Junior Business Analyst</span>
+									</div>
+								</div>
+
+								<div class="valuePairBlock">
+									<div class="valuePairBlock__leftBlock">
+										<span class="valuePairBlock__description">Years with Employer</span>
+									</div>
+									<div class="valuePairBlock__rightBlock">
+										<span class="valuePairBlock__value">3 years</span>
+									</div>
+								</div>
+
+								<div class="valuePairBlock">
+									<div class="valuePairBlock__leftBlock">
+										<span class="valuePairBlock__description">Annual income</span>
+									</div>
+									<div class="valuePairBlock__rightBlock">
+										<span class="valuePairBlock__value">HK$ 720,000</span>
+									</div>
+								</div>
+
+								<div class="valuePairBlock">
+									<div class="valuePairBlock__leftBlock">
+										<span class="valuePairBlock__description">Household annual income</span>
+									</div>
+									<div class="valuePairBlock__rightBlock">
+										<span class="valuePairBlock__value">HK$ 720,000</span>
+									</div>
+								</div>
+
+							</section>
+							<section class="span0">
+							</section>
+						</div>
+					</div>
+				</section>
+
+			</div>
+		</div>
+	</section>
+</section>
+
+<script src="../js/controller/personal-information.js"></script>
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../style/default.css">
+	<link rel="stylesheet" type="text/css" href="../style/compgal.css">
+</head>
+<body>
+
+    <div class="new-slider-component range">
+            <div class="header">
+                <div class="content left">
+                    <span class="title">Current Age</span>
+                    <input type="text" name="fname" class="textinput">
+                </div>
+                <div class="content right">
+                    <span class="title">Target Retirement Age</span>
+                    <input type="text" name="fname" class="textinput">
+                </div>
+            </div>
+            <div class="slider-container"></div>
+    </div>
+    <script src="../script/jquery.js"></script>
+    <script src="../script/pos/range/jquery.nouislider.js"></script>
+    <script src="../script/pos/range/NewRangeSlider.js"></script>
+    <script>
+        //var sliderObj = new pos.RangeSlider(".slider-component.range", {
+          //  });
+        var slider = new pos.NewRangeSlider(".new-slider-component.range", {
+            lowValue:10,
+            highValue:20,
+            minValue: 0,
+            maxValue: 30
+        });
+    </script>
+</body>
+</html>
+

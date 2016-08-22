@@ -1,0 +1,188 @@
+<div class="scrollable" ng-controller="quantity-goal-buy-a-home-ctrl">
+	<form name="myForm3" class="my-form3 commonForm">
+
+		<fieldset>
+			<legend>Age</legend>
+			<div class="sideBySideBlock">
+				<div class="sideBySideBlock__leftBlock">
+					<label for="currentAge">Current Age</label>
+					<span class="age"><input name="currentAge" type="number" min="0" max="100" ng-model="ageSlider.currentAge"></span>
+				</div>
+				<div class="sideBySideBlock__rightBlock">
+					<label for="targetAge">Target Age</label>
+					<span class="age"><input name="targetAge" type="number" min="0" max="100" ng-model="ageSlider.targetAge"></span>
+				</div>
+			</div>
+			<rzslider rz-slider-model="ageSlider.currentAge" rz-slider-high="ageSlider.targetAge" rz-slider-options="ageSlider.options">></rzslider>
+		</fieldset>
+
+		<fieldset>
+			<legend>Options</legend>
+			<div class="sameWidthBlock sameWidthBlock--4blocks sameWidthBlock--usedAsOptions">
+				<ul>
+					<li>
+						<!--
+						<div class="radio">
+							<input id="styleBasic" name="styleRadio" type="radio" myclick="">
+							<label for="styleBasic">Basic</label>
+						</div>
+						-->
+						&nbsp;
+					</li>
+					<li ng-repeat="tab in tabs">
+						<div class="radio">
+							<input id="[{tab.id}]" name="optionRadio" type="radio" ng-click="setTab($index)" ng-model="data.calcType" ng-value="tab.id">
+							<label for="[{tab.id}]">[{tab.name}]</label>
+						</div>
+					</li>
+<!-- 					<li>
+						<div class="radio">
+							<input id="optionAmount" name="optionRadio" type="radio" myclick="">
+							<label for="optionAmount">Amount</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio">
+							<input id="optionPropertyType" name="optionRadio" type="radio" myclick="">
+							<label for="optionPropertyType">Property Type</label>
+						</div>
+					</li>
+-->
+					<li>
+						<div class="radio">
+							<input id="optionAffordability" name="optionRadio" type="radio" disabled>
+							<label for="optionAffordability">Affordability</label>
+						</div>
+					</li>
+ 				</ul>
+			</div>
+		</fieldset>
+
+		<section ng-repeat="tab in tabs" ng-include="tab.page" ng-class="{ 'is-active': isSetTab($index) }" ng-hide="!isSetTab($index)" class="optionContent" style="z-index:[{tabs.length - $index}]"></section>
+
+<!-- 		<section class="optionContent">
+			<fieldset>
+	<legend>How long</legend>
+	<div class="sideBySideBlock sideBySideBlock--7030">
+		<div class="sideBySideBlock__leftBlock">
+			<label for="downPayment">I know the amount I need to save for down payment (HK$)</label>
+		</div>
+		<div class="sideBySideBlock__rightBlock">
+			<input name="downPayment" type="number" class="number" ng-model="data.downPayment" step="10000" min="100000" max="10000000">
+		</div>
+	</div>
+</fieldset>
+
+<fieldset>
+	<legend>Inflation</legend>
+	<div class="sideBySideBlock">
+		<div class="sideBySideBlock__leftBlock">
+			<label for="inflation">Expected rate of inflation (%)</label>
+		</div>
+		<div class="sideBySideBlock__rightBlock">
+			<button type="button" class="button--arithmetic" myclick="inflationDown()">-</button>
+			<input name="inflation" type="number" class="number number--withButton" ng-model="data.inflation">
+			<button type="button" class="button--arithmetic" myclick="inflationUp()">+</button>
+		</div>
+	</div>
+</fieldset>
+
+		</section>
+
+		<section class="optionContent is-active">
+			<fieldset>
+	<legend>Type of property</legend>
+	<div class="sideBySideBlock">
+		<div class="sideBySideBlock__fullBlock">
+			<label for="propertyType">Estimate for me based on the type of property I want to buy</label>
+		</div>
+		<div class="sideBySideBlock__rightBlock">
+		</div>
+	</div>
+	<div class="sameWidthBlock sameWidthBlock--4blocks">
+		<ul>
+			<li ng-repeat="homeType in homeTypes">
+				<div class="radio">
+					<input id="[{homeType.id}]" name="propertyType" type="radio" ng-model="data.homeType" ng-value="homeType">
+					<label for="[{homeType.id}]">[{homeType.name}]</label>
+				</div>
+			</li>
+			<li>
+				&nbsp;
+			</li>
+		</ul>
+	</div>
+</fieldset>
+
+<fieldset>
+	<legend>Size</legend>
+	<div class="sideBySideBlock">
+		<div class="sideBySideBlock__leftBlock">
+			<label for="homeSize">Size (sq. ft)</label>
+		</div>
+		<div class="sideBySideBlock__rightBlock">
+			<button type="button" class="button--arithmetic" myclick="homeSizeDown()">-</button>
+			<input name="homeSize" type="number" class="number" ng-model="data.homeSize" step="1000" max="6000", min="200">
+			<button type="button" class="button--arithmetic" myclick="homeSizeUp()">+</button>
+		</div>
+	</div>
+</fieldset>
+
+<fieldset>
+	<legend>Number of bedrooms</legend>
+	<div class="sideBySideBlock">
+		<div class="sideBySideBlock__leftBlock">
+			<label for="bedRooms">Number of bedrooms</label>
+		</div>
+		<div class="sideBySideBlock__rightBlock">
+			<button type="button" class="button--arithmetic" myclick="bedRoomsDown()">-</button>
+			<input name="bedRooms" type="number" class="number" ng-model="data.bedRooms">
+			<button type="button" class="button--arithmetic" myclick="bedRoomsUp()">+</button>
+		</div>
+	</div>
+</fieldset>
+
+<fieldset>
+	<legend>Location</legend>
+	<div class="sideBySideBlock">
+		<div class="sideBySideBlock__fullBlock">
+			<label for="district">Location</label>
+		</div>
+		<div class="sideBySideBlock__rightBlock">
+		</div>
+	</div>
+	<div class="sameWidthBlock sameWidthBlock--4blocks">
+		<ul>
+			<li ng-repeat="district in districts">
+				<div class="radio">
+					<input id="[{district.id}]" name="location" type="radio" ng-model="data.district" ng-value="district">
+					<label for="[{district.id}]">[{district.name}]</label>
+				</div>
+			</li>
+		</ul>
+	</div>
+</fieldset>
+
+<fieldset>
+	<legend>Inflation</legend>
+	<div class="sideBySideBlock" style="padding-bottom:20px;">
+		<div class="sideBySideBlock__leftBlock">
+			<label for="inflation">Expected rate of inflation (%)</label>
+		</div>
+		<div class="sideBySideBlock__rightBlock">
+			<button type="button" class="button--arithmetic" myclick="inflationDown()">-</button>
+			<input name="inflation" type="number" class="number" ng-model="data.inflation">
+			<button type="button" class="button--arithmetic" myclick="inflationUp()">+</button>
+		</div>
+	</div>
+</fieldset>
+		</section>
+
+		<section class="optionContent">
+ -->			<!--
+			
+			-->
+		<!-- </section> -->
+
+	</form>
+</div>

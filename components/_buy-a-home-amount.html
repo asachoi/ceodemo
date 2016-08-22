@@ -1,0 +1,25 @@
+<fieldset>
+	<legend>How long</legend>
+	<div class="sideBySideBlock sideBySideBlock--7030">
+		<div class="sideBySideBlock__leftBlock">
+			<label for="downPayment">I know the amount I need to save for down payment (HK$)</label>
+		</div>
+		<div class="sideBySideBlock__rightBlock">
+			<input name="downPayment" type="number" class="number" ng-model="data.downPayment" step="10000" min="100000" max="10000000">
+		</div>
+	</div>
+</fieldset>
+
+<fieldset>
+	<legend>Inflation</legend>
+	<div class="sideBySideBlock">
+		<div class="sideBySideBlock__leftBlock">
+			<label for="inflation">Expected rate of inflation (%)</label>
+		</div>
+		<div class="sideBySideBlock__rightBlock">
+			<button type="button" class="button--arithmetic" myclick="inflationDown()">-</button>
+			<input name="inflation" type="number" class="number number--withButton" ng-model="data.inflation">
+			<button type="button" class="button--arithmetic" myclick="inflationUp()">+</button>
+		</div>
+	</div>
+</fieldset>

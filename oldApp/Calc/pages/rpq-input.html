@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../style/default.css">
+    <!-- <link rel="stylesheet" type="text/css" href="fna-rpq-css.css"> -->
+</head>
+
+<body>
+    <div id="pageWrapper">
+        <div id="pageOverlay"></div>
+        <div class="pageHeader" id="pageHeader" data-hw-module="app/modules/Header">
+            <div class="headerMenu">
+                <button class="imageIcon hamburgerManulifeMenuBtn" type="button">
+                    <!--Menu-->
+                </button>
+            </div>
+            <h1 class="logo">FNA &amp; RPQ</h1>
+            <div class="headerControl">
+                <ul>
+                    <li>
+                        <button><span class="imageIcon imageIconTool"></span><span class="accessible">Tools</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button><span class="imageIcon imageIconClose"></span><span class="accessible">Close</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="headerList">
+                <ul>
+                    <li><a href="#"><span class="icon"></span> Delete Profile</a>
+                    </li>
+                    <li><a href="#"><span class="icon"></span> Email</a>
+                    </li>
+                    <li><a href="#"><span class="icon"></span> Print</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="app" class="page-fna-and-rpg page-rpq-input">
+            <div class="page-inner">
+                <h2 class="page-title">Risk Profile Questionnaire</h2>
+                <p class="page-des">This questionnaire serves to help you assess your risk profile before you determine whether a particular financial product and its underlying investment choices, if any, are suitable for you. Your answers to the ten questions below only provide some indication of your general personal risk profile, which may not accurately reflect your actual ability to take risk and risk tolerance level. When needed, you may choose to complete this questionnaire again in future to re-assess your risk profile.
+                    <br />
+                    <br />
+                    <span class="guide">This will take around 5 minutes. Based on the answers you have provided, you can check your risk tolerance.</span>
+                </p>
+
+                <div class="question-block choice-question">
+                    <span class="question-no">1.</span>
+                    <h3 class="question-title">What is your current age range?</h3>
+                    <div class="question-line">
+                        <div class="left-question">
+                            <div class="one-choice-question">
+                                <input id="life-protection" type="radio" name="1-radio">
+                                <label for="life-protection">A) 18-50</label>
+                            </div>
+                        </div>
+                        <div class="right-question">
+                            <div class="one-choice-question">
+                                <input id="savings" type="radio" name="1-radio">
+                                <label for="savings">B) 51-55</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question-line">
+                        <div class="left-question">
+                            <div class="one-choice-question">
+                                <input id="investment" type="radio" name="1-radio">
+                                <label for="investment">C) 56-60</label>
+                            </div>
+                        </div>
+                        <div class="right-question">
+                            <div class="one-choice-question">
+                                <input id="accident" type="radio" name="1-radio">
+                                <label for="accident">D) 61-65</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question-line">
+                        <div class="left-question">
+                            <div class="one-choice-question">
+                                <input id="retirement" type="radio" name="1-radio">
+                                <label for="retirement">E) &gt;65 or &lt; 85</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-block choice-question">
+                    <span class="question-no">2.</span>
+                    <h3 class="question-title">What percentage of your total liquid assets will be invested in the financial product that you are currently considering?
+                                    <span class="guide">
+                                        (Note: Liquid assets are assets which may be easily turned into cash, for example, cash, money in bank accounts, money market accounts, actively traded stocks, bonds and mutual funds and US Treasury bills. However, real estate, coin collection and artwork are not considered to be liquid assets.)
+                                    </span>
+                                </h3>
+                    <div class="question-line">
+                        <div class="left-question">
+                            <div class="one-choice-question">
+                                <input id="1-year" type="radio" name="2-radio">
+                                <label for="1-year">A) &gt; 50%;</label>
+                            </div>
+                        </div>
+                        <div class="right-question">
+                            <div class="one-choice-question">
+                                <input id="1-5-years" type="radio" name="2-radio">
+                                <label for="1-5-years">B) 40% - 49%</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question-line">
+                        <div class="left-question">
+                            <div class="one-choice-question">
+                                <input id="6-10-years" type="radio" name="2-radio">
+                                <label for="6-10-years">C) 30% - 39%</label>
+                            </div>
+                        </div>
+                        <div class="right-question">
+                            <div class="one-choice-question">
+                                <input id="11-20-years" type="radio" name="2-radio">
+                                <label for="11-20-years">D) 20 - 29%</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question-line">
+                        <div class="left-question">
+                            <div class="one-choice-question">
+                                <input id="20-years" type="radio" name="2-radio">
+                                <label for="20-years">E) &gt; 20%</label>
+                            </div>
+                        </div>
+                        <div class="right-question">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="question-block choice-question">
+                    <span class="question-no">3.</span>
+                    <h3 class="question-title">How long have you been investing in financial products that fluctuate in value?
+                                    <span class="guide">
+                                        (e.g. stocks, bonds, mutual funds, investment-linked insurance products, foreign currencies, commodities, derivatives, structured products, shares/share options for employees, retirement schemes)
+                                    </span>
+                                </h3>
+                    <div class="question-line">
+                        <div class="left-question">
+                            <div class="one-choice-question">
+                                <input id="primary-school-or-below" type="radio" name="3-radio">
+                                <label for="primary-school-or-below">A) Primary school or below</label>
+                            </div>
+                        </div>
+                        <div class="right-question">
+                            <div class="one-choice-question">
+                                <input id="secondary-school" type="radio" name="3-radio">
+                                <label for="secondary-school">B) Secondary school</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question-line">
+                        <div class="left-question">
+                            <div class="one-choice-question">
+                                <input id="post-secondary-college" type="radio" name="3-radio">
+                                <label for="post-secondary-college">C) Post secondary/College</label>
+                            </div>
+                        </div>
+                        <div class="right-question">
+                            <div class="one-choice-question">
+                                <input id="bachelor-degree-or-above" type="radio" name="3-radio">
+                                <label for="bachelor-degree-or-above">D) Bachelor's degree or above</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-block choice-question clearfix">
+                    <span class="question-no">4.</span>
+                    <h3 class="question-title">What channel(s) have you used or are currently using to obtain investment knowledge?
+                                    <span class="guide">(select one or more)</span>
+                                </h3>
+
+                    <div class="col col-2">
+                        <div class="question-line">
+                            <div class="multi-choice-question">
+                                <input id="a" type="checkbox" name="checkbox">
+                                <label for="a">A) No and/or not interested in any investment knowledge</label>
+                            </div>
+                        </div>
+
+                        <div class="question-line">
+                            <div class="multi-choice-question">
+                                <input id="c" type="checkbox" name="checkbox">
+                                <label for="c">C) Read and/or listen to investment or finance related news</label>
+                            </div>
+                        </div>
+
+                        <div class="question-line">
+                            <div class="multi-choice-question">
+                                <input id="e" type="checkbox" name="checkbox">
+                                <label for="e">E) Research investment or finance related topics or attend investment or finance related classes, forums, presentations, seminars or workshops</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col col-2 last no-border">
+                        <div class="question-line">
+                            <div class="multi-choice-question">
+                                <input id="b" type="checkbox" name="checkbox">
+                                <label for="b">B) Discuss investment or finance related topics with friends, relatives and/or colleagues</label>
+                            </div>
+                        </div>
+
+                        <div class="question-line">
+                            <div class="multi-choice-question">
+                                <input id="d" type="checkbox" name="checkbox">
+                                <label for="d">D) Review investment or finance related materials from various sources</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="question-block choice-question clearfix">
+                    <span class="question-no">5.</span>
+                    <h3 class="question-title">Which financial products have you ever held or are you currently holding?
+                                    <span class="guide">(select one or more)</span>
+                                </h3>
+
+                    <div class="col col-2">
+                        <div class="question-line">
+                            <div class="multi-choice-question">
+                                <input id="fp-a" type="checkbox" name="checkbox">
+                                <label for="fp-a">A) Cash, bank deposits, certificates of deposit, capital-protected products</label>
+                            </div>
+                        </div>
+
+                        <div class="question-line">
+                            <div class="multi-choice-question">
+                                <input id="fp-c" type="checkbox" name="checkbox">
+                                <label for="fp-c">C) Foreign currencies, non-capital-protected currency-linked structured products</label>
+                            </div>
+                        </div>
+
+                        <div class="question-line">
+                            <div class="multi-choice-question">
+                                <input id="fp-e" type="checkbox" name="checkbox">
+                                <label for="fp-e">E) Stocks, derivatives including but not limited to options, warrants and futures contracts</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col col-2 last no-border">
+                        <div class="question-line">
+                            <div class="multi-choice-question">
+                                <input id="fp-b" type="checkbox" name="checkbox">
+                                <label for="fp-b">B) Bonds, bond funds</label>
+                            </div>
+                        </div>
+
+                        <div class="question-line">
+                            <div class="multi-choice-question">
+                                <input id="fp-d" type="checkbox" name="checkbox">
+                                <label for="fp-d">D) Commodities, investment-linked insurance products, open-end mutual funds (excluding money market funds and bond funds), non-capital-protected equity-linked structured products</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="question-block choice-question">
+                    <span class="question-no">6.</span>
+                    <h3 class="question-title">What percentage of your total liquid assets is currently held in financial products that fluctuate in value?</h3>
+                    <div class="question-line">
+                        <div class="left-question">
+                            <div class="one-choice-question">
+                                <input id="2-1-year" type="radio" name="6-radio">
+                                <label for="2-1-year">A) 0%</label>
+                            </div>
+                        </div>
+                        <div class="right-question">
+                            <div class="one-choice-question">
+                                <input id="2-1-5-years" type="radio" name="6-radio">
+                                <label for="2-1-5-years">B) &gt; 0% - 10%</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question-line">
+                        <div class="left-question">
+                            <div class="one-choice-question">
+                                <input id="2-6-10-years" type="radio" name="6-radio">
+                                <label for="2-6-10-years">C) &gt; 10 - 20%</label>
+                            </div>
+                        </div>
+                        <div class="right-question">
+                            <div class="one-choice-question">
+                                <input id="2-11-20-years" type="radio" name="6-radio">
+                                <label for="2-11-20-years">D) &gt; 20% - 30%</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question-line">
+                        <div class="left-question">
+                            <div class="one-choice-question">
+                                <input id="2-20-years" type="radio" name="6-radio">
+                                <label for="2-20-years">E) &gt; 30%</label>
+                            </div>
+                        </div>
+                        <div class="right-question">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="question-block choice-question">
+                    <span class="question-no">7.</span>
+                    <h3 class="question-title">What level of fluctuation in the value of a financial product would be generally acceptable to you?</h3>
+                    <div class="question-line">
+                        <div class="left-question">
+                            <div class="one-choice-question">
+                                <input id="2-1-percent" type="radio" name="7-radio">
+                                <label for="2-1-percent">A) &lt; 10% up or down</label>
+                            </div>
+                        </div>
+                        <div class="right-question">
+                            <div class="one-choice-question">
+                                <input id="2-1-5-percent" type="radio" name="7-radio">
+                                <label for="2-1-5-percent">B) 10% up - 10% down</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question-line">
+                        <div class="left-question">
+                            <div class="one-choice-question">
+                                <input id="2-6-10-percent" type="radio" name="7-radio">
+                                <label for="2-6-10-percent">C) 15% up - 15% down</label>
+                            </div>
+                        </div>
+                        <div class="right-question">
+                            <div class="one-choice-question">
+                                <input id="2-11-20-percent" type="radio" name="7-radio">
+                                <label for="2-11-20-percent">D) 20% up - 20% down</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question-line">
+                        <div class="left-question">
+                            <div class="one-choice-question">
+                                <input id="2-20-percent" type="radio" name="7-radio">
+                                <label for="2-20-percent">E) &gt; 20% up or down</label>
+                            </div>
+                        </div>
+                        <div class="right-question">&nbsp;</div>
+                    </div>
+                </div>
+
+                <div class="question-block choice-question">
+                    <span class="question-no">8.</span>
+                    <h3 class="question-title">What percentage of your monthly income on average could be invested in financial products that fluctuate in value?</h3>
+                    <div class="question-line">
+                        <div class="left-question">
+                            <div class="one-choice-question">
+                                <input id="8-2-1-percent" type="radio" name="8-radio">
+                                <label for="8-2-1-percent">A) 0%</label>
+                            </div>
+                        </div>
+                        <div class="right-question">
+                            <div class="one-choice-question">
+                                <input id="8-2-1-5-percent" type="radio" name="8-radio">
+                                <label for="8-2-1-5-percent">B) &gt; 0% - 10%</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question-line">
+                        <div class="left-question">
+                            <div class="one-choice-question">
+                                <input id="8-2-6-10-percent" type="radio" name="8-radio">
+                                <label for="8-2-6-10-percent">C) &gt; 10% - 20%</label>
+                            </div>
+                        </div>
+                        <div class="right-question">
+                            <div class="one-choice-question">
+                                <input id="8-2-11-20-percent" type="radio" name="8-radio">
+                                <label for="8-2-11-20-percent">D) &gt; 20% - 30%</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question-line">
+                        <div class="left-question">
+                            <div class="one-choice-question">
+                                <input id="8-2-20-percent" type="radio" name="8-radio">
+                                <label for="8-2-20-percent">E) &gt; 30%</label>
+                            </div>
+                        </div>
+                        <div class="right-question">&nbsp;</div>
+                    </div>
+                </div>
+
+                <div class="question-block choice-question">
+                    <span class="question-no">9.</span>
+                    <h3 class="question-title">How many months of your normal expenses could be covered by your reserved liquid assets in case of an unexpected event?</h3>
+                    <div class="question-line">
+                        <div class="left-question">
+                            <div class="one-choice-question">
+                                <input id="9-2-1-percent" type="radio" name="9-radio">
+                                <label for="9-2-1-percent">A) No reserved liquid assets for any unexpected event</label>
+                            </div>
+                        </div>
+                        <div class="right-question">
+                            <div class="one-choice-question">
+                                <input id="9-2-1-5-percent" type="radio" name="9-radio">
+                                <label for="9-2-1-5-percent">B) &lt;
+                                    &gt; 3 months</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question-line">
+                        <div class="left-question">
+                            <div class="one-choice-question">
+                                <input id="9-2-6-10-percent" type="radio" name="9-radio">
+                                <label for="9-2-6-10-percent">C) 3 - 6 months</label>
+                            </div>
+                        </div>
+                        <div class="right-question">
+                            <div class="one-choice-question">
+                                <input id="9-2-11-20-percent" type="radio" name="9-radio">
+                                <label for="9-2-11-20-percent">D) 6 - 9 months</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question-line">
+                        <div class="left-question">
+                            <div class="one-choice-question">
+                                <input id="9-2-20-percent" type="radio" name="9-radio">
+                                <label for="9-2-20-percent">E) &gt; 9 months</label>
+                            </div>
+                        </div>
+                        <div class="right-question">&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+            <a href="fna-input.html" class="left-arrow"></a>
+            <a href="fna-rpq-summary.html" class="right-arrow"></a>
+        </div>
+    </div>
+</body>
+
+</html>

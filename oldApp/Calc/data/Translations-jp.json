@@ -1,0 +1,327 @@
+﻿{
+  "general_error": "JP - The server encountered some error (__error__). Please refresh the page or try again later",
+  "403": "JP - Access Denied",
+  "404": "JP - The server is not available. Please refresh the page or try again later",
+  "408": "JP - A time out error has occurred while uploading the file. Please try again",
+  "464": "JP - The server encountered some error (EADVICE). Please refresh the page or try again later",
+  "465": "JP - The server encountered some error (EADVICE). Please refresh the page or try again later",
+  "466": "JP - The server encountered some error (TDS). Please refresh the page or try again later",
+  "467": "JP - The server encountered some error (TDS). Please refresh the page or try again later",
+  "468": "JP - The server encountered some error (TDS). Please refresh the page or try again later",
+  "469": "JP - The server encountered some error (TDS). Please refresh the page or try again later",
+  "470": "JP - The server encountered some error (TDS). Please refresh the page or try again later",
+  "471": "JP - The server encountered some error (TDS). Please refresh the page or try again later",
+  "472": "JP - The server encountered some error (TDS). Please refresh the page or try again later",
+
+  "currency":"HK$",
+
+  "generic": {
+        "select_language": "Select Language JP",
+        "next": "NEXT JP",
+        "previous": "PREV JP",
+        "complete":"COMPLETE JP",
+        "tools":"Tools JP",
+        "close":"Close JP",
+        "your_dreams":"YOUR DREAMS JP"
+    },
+
+    "blocker":{
+        "title":"FOR BETTER EXPERIENCE,<br/>KINDLY ROTATE YOUR BROWSER JP."
+    },
+
+
+   "formatting":{
+        "please_specify":"PLEASE SPECIFY JP"
+    },
+
+    "occupation": {
+        "default": "DEFAULT JP",
+        "student": "STUDENT JP",
+        "unemployed": "UNEMPLOYED JP",
+        "supervisor": "SUPERVISOR JP",
+        "self_employed": "SELF EMPLOYED JP",
+        "retired": "RETIRED JP",
+        "professional": "PROFESSIONAL JP",
+        "intermediate": "INTERMEDIATE JP",
+        "executive": "EXECUTIVE JP",
+        "civil_servant": "CIVIL SERVANT JP",
+        "career_starter": "CAREER STARTER JP"
+    },
+
+     "character":{
+        "baby":"BABY JP",
+        "infant_boy":"BOY JP",
+        "boy":"BOY",
+        "teen_boy":"TEEN BOY JP",
+        "infant_girl":"GIRL JP",
+        "girl":"GIRL JP",
+        "teen_girl":"TEEN GIRL JP",
+        "young_man":"MAN JP",
+        "man":"MAN JP",
+        "old_man":"MAN JP",
+        "young_woman":"WOMAN JP",
+        "woman":"WOMAN JP",
+        "old_woman":"WOMAN JP",
+        "grandfather":"GRANDFATHER JP",
+        "grandmother":"GRANDMOTHER JP"
+    },
+
+    "marital_status":{
+        "single":"SINGLE JP",
+        "married":"MARRIED JP",
+        "divorced":"DIVORCED JP",
+        "widowed":"WIDOWED JP"
+    },
+
+    "emotional_fact_finding":{
+        "header_title":"Manulife Shell JP",
+        "title":"THE MORE WE KNOW ABOUT YOU,<br/>THE BETTER ADVICE WE CAN GIVE JP",
+        "sub_title":"CHOOSE A SECTION TO GET STARTED JP",
+        "getting_to_know_you":"GETTING TO KNOW YOU JP",
+        "how_would_you_like_to_retire":"HOW WOULD YOU<br/>LIKE TO RETIRE JP?",
+        "life_insurance_plans":"LIFE INSURANCE PLANS JP?",
+        "investment_goals":"INVESTMENT GOALS JP?",
+
+        "right_panel":{
+            "getting_to_know_you":"GETTING TO<br/>KNOW YOU JP",
+            "retirement":"RETIREMENT JP",
+            "life_insurance":"LIFE INSURANCE JP",
+            "investment_goals":"INVESTMENT GOALS JP"
+        }
+
+    },
+
+    "about_you": {
+        "title": "ABOUT YOU JP",
+        "male": "MALE JP",
+        "female": "FEMALE JP",
+        "getting_to_know_you": "GETTING TO KNOW YOU JP",
+        "age": "AGE JP",
+        "marital_status": "MARITAL STATUS JP",
+        "occupation": "OCCUPATION JP"
+    },
+
+    "children_choosing": {
+        "title": "CHILDREN JP",
+        "boy": "BOY JP",
+        "girl": "GIRL JP",
+        "name": "NAME JP",
+        "age": "AGE JP",
+        "annual_educational_expenses": "ANNUAL EDUCATION EXPENSES (HK$) JP",
+        "expenses_start_age": "EXPENSES START AGE JP",
+        "number_of_year_to_support": "NUMBER OF YEAR TO SUPPORT JP",
+        "primary": "PRIMARY JP",
+        "secondary": "SECONDARY JP",
+        "university": "UNIVERSITY JP",
+        "public": "PUBLIC JP",
+        "private": "PRIVATE JP",
+        "oversea": "OVERSEA JP",
+        "oversea": "LOCAL JP",
+        "estimated_education_cost": "ESTIMATED EDUCATION COST JP"
+    },
+
+    "dependents_choosing": {
+        "title": "DEPENDENTS JP",
+        "grandfather": "GRANDFATHER JP",
+        "grandmother": "GRANDMOTHER JP",
+        "name": "NAME JP",
+        "age": "AGE JP"
+    },
+
+    "user_housing": {
+        "title": "HOUSING JP",
+        "mortgage":"MORTGAGE JP",
+        "fully_owned":"FULLY OWNED JP",
+        "rented":"RENTED JP",
+        "living_with_family":"LIVING WITH FAMILY JP",
+        "outstanding_mortgage": "OUSTANDING MORTAGE $t(currency) JP",
+        "monthly_mortgage_payment": "MONTHLY MORTGAGE PAYMENT $t(currency) JP",
+        "monthly_rental_expenses": "MONTHLY RENTAL EXPENSES $t(currency) JP",
+        "monthly_expenses": "MONTHLY EXPENSES $t(currency) JP",
+        "monthly_income": "MONTHLY INCOME RANGE $t(currency) JP",
+        "income_range":[
+            {"label":"Less than $t(currency)4,000 JP"},
+            {"label":"$t(currency)4,000-9,999 JP"},
+            {"label":"$t(currency)10,000-19,999 JP"},
+            {"label":"$t(currency)20,000-49,999 JP"},
+            {"label":"$t(currency)50,000-100,000 JP"},
+            {"label":"Over $t(currency)100,000 JP"}
+        ]
+    },
+
+
+    "dreams": {
+        "title": "YOUR DREAMS JP",
+        "buying_a_house": {
+            "title":"BUYING NEW HOUSE JP",
+            "options":{
+                "paid_public_apartment":"PAID PUBLIC APARTMENT<br/><b>$t(currency)&lt;3,000,000 JP</b>",
+                "first_time_buyer":"FIRST TIME BUYER<br/><b>$t(currency)3,000,000-4,500,000 JP</b>",
+                "upgrade":"UPGRADE<br/><b>$t(currency)5,000,000-9,000,000 JP</b>",
+                "deluxe":"DELUXE<br/><b>$t(currency)9,000,000-20,000,000 JP</b>",
+                "luxury":"LUXURY<br/><b>&gt;$t(currency)20,000,000 JP</b>"
+            },
+            "options_summary":{
+                "paid_public_apartment":"PAID PUBLIC APARTMENT JP",
+                "first_time_buyer":"FIRST TIME BUYER JP",
+                "upgrade":"UPGRADE JP",
+                "deluxe":"DELUXE JP",
+                "luxury":"LUXURY JP"
+            }
+        },
+        "getting_married": {
+            "title":"DREAM WEDDING",
+            "options":{
+                "budget":"BUDGET<br/><b>$t(currency)&lt;150,000 JP</b>",
+                "standard":"STANDARD<br/><b>$t(currency)150,000-250,000 JP</b>",
+                "standard_with_honeymoon":"STANDARD WITH HONEYMOON<br/><b>$t(currency)250,000-350,000 JP</b>",
+                "luxury":"LUXURY<br/><b>$t(currency)350,000-500,000 JP</b>",
+                "dream":"DREAM<br/><b>$t(currency)&gt;500,000 JP</b>"
+            },
+            "options_summary":{
+                "budget":"BUDGET JP",
+                "standard":"STANDARD JP",
+                "standard_with_honeymoon":"STANDARD WITH HONEYMOON JP",
+                "luxury":"LUXURY JP",
+                "dream":"DREAM JP"
+            }
+        },
+        "having_a_baby": {
+            "title":"HAVING A BABY JP",
+            "options":{
+                "government_hospital":"GOV. HOSPITAL PRIVATE WARD<br/><b>$t(currency)&lt;50,000 JP</b>",
+                "private_hospital":"PRIVATE HOSPITAL<br/><b>$t(currency)50,000-500,000 JP</b>",
+                "overseas_delivery":"OVERSEAS DELIVERY<br/><b>$t(currency)&gt;500,000 JP</b>"
+            },
+            "options_summary":{
+                "government_hospital":"GOV. HOSPITAL PRIVATE WARD JP",
+                "private_hospital":"PRIVATE HOSPITAL JP",
+                "overseas_delivery":"OVERSEAS DELIVERY JP"
+            }
+        },
+        "plan_for_education": {
+            "title":"PLAN FOR EDUCATION JP",
+            "options":{
+                "local_private_college":"LOCAL PRIVATE COLLEGE SCHOOL<br/><b>$t(currency)300,000-1,000,000 JP</b>",
+                "overseas_college":"OVERSEAS COLLEGE SCHOOL WITH <br/>EXPENSES <b>$t(currency)&gt;1,000,000 JP</b>",
+                "local_university":"LOCAL UNIVERSITY<br/><b>$t(currency)300,000-1,000,000 JP</b>",
+                "overseas_university":"OVERSEAS UNIVERSITY WITH EXPENSES<br/><b>$t(currency)&gt;1,000,000 JP</b>"
+            },
+            "options_summary":{
+                "local_private_college":"LOCAL PRIVATE COLLEGE SCHOOL JP",
+                "overseas_college":"OVERSEAS COLLEGE SCHOOL WITH EXPENSES JP",
+                "local_university":"LOCAL UNIVERSITY JP",
+                "overseas_university":"OVERSEAS UNIVERSITY WITH EXPENSES JP"
+            }
+        },
+        "buy_a_new_car": {
+            "title":"BUYING NEW CAR JP",
+            "options":{
+                "microcar":"MICROCAR<br/><b>$t(currency)&lt;200,000 JP</b>",
+                "small_family":"SMALL FAMILY<br/><b>$t(currency)200,000-300,000 JP</b>",
+                "large_family":"LARGE FAMILY<br/><b>$t(currency)300,000-450,000 JP</b>",
+                "mid_luxury":"MID LUXURY<br/><b$t(currency)>450,000-900,000 JP</b>",
+                "luxury":"LUXURY<br/><b>$t(currency)900,000-2,000,000 JP</b>",
+                "supercar":"SUPERCAR<br/><b>$t(currency)&gt;2,000,000 JP</b>"
+            },
+            "options_summary":{
+                "microcar":"MICROCAR JP",
+                "small_family":"SMALL FAMILY JP",
+                "large_family":"LARGE FAMILY JP",
+                "mid_luxury":"MID LUXURY JP",
+                "luxury":"LUXURY JP",
+                "supercar":"SUPERCAR JP"
+            }
+        },
+        "plan_for_vacation": {
+            "title":"PLAN FOR VACATION JP",
+            "options":{
+                "asia_tour_for_two":"SHORT HAUL HOLIDAY<br/><b>$t(currency)10,000-$t(currency)25,000</b> JP",
+                "asia_luxury_tour":"LUXURY SHORT HAUL HOLIDAY<br/><b>&gt;$t(currency)25,000</b> JP",
+                "long_haul_tour_for_two":"LONG HAUL HOLIDAY<br/><b>$t(currency)50,000-100,000</b> JP",
+                "luxury_long_haul_tour":"LUXURY LONG HAUL HOLIDAY<br/><b>&gt;$t(currency)100,000</b> JP"
+            },
+            "options_summary":{
+                "asia_tour_for_two":"SHORT HAUL HOLIDAY JP",
+                "asia_luxury_tour":"LUXURY SHORT HAUL HOLIDAY JP",
+                "long_haul_tour_for_two":"LONG HAUL HOLIDAY JP",
+                "luxury_long_haul_tour":"LUXURY LONG HAUL HOLIDAY JP"
+            }
+        },
+        "early_retirement": {
+            "title":"EARLY RETIREMENT JP",
+            "options":{
+                "basic":"BASIC<br/><b>$t(currency)&lt;5,000,000 JP</b>",
+                "moderate":"MODERATE<br/><b>$t(currency)5,000,000-12,000,000 JP</b>",
+                "care_free":"CARE FREE<br/><b>$t(currency)12,000,000-20,000,000 JP</b>",
+                "luxury":"LUXURY<br/><b>$t(currency)&gt;20,000,000 JP</b>"
+            },
+            "options_summary":{
+                "basic":"BASIC JP",
+                "moderate":"MODERATE JP",
+                "care_free":"CARE FREE JP",
+                "luxury":"LUXURY JP"
+            }
+        }
+    },
+
+
+    "life_stage_need":{
+        "title" : "LIFE STAGE JP",
+        "description": "BASED ON YOUR SELECTION YOUR LIFE STAGE IS JP:",
+        "instruction": "(CLICK ARROWS TO CHANGE THE STAGE JP)",
+        "bottom_description": "FOR THIS LIFE STAGE PEOPLE USUALLY HAVE THE FOLLOWING NEEDS JP",
+        "bottom_instruction": "(PLEASE SELECT NEEDS RELEVANT TO YOU JP)",
+
+        "career_starter": "CAREER STARTER JP",
+        "starting_family": "STARTING FAMILY JP",
+        "getting_married": "GETTING MARRIED JP",
+        "retiring": "RETIRING JP",
+
+        "career_starter_description": "START A CAREER THE RIGHT WAY. BEGIN PLANNING FOR YOU FINANCIAL FUTURE.<br/>SUCCESS COMES WITH A PLAN.JUST GRADUATED FROM COLLEGE?<br/>OR ARE YOU LOOKING TO START YOUR CAREER OR YOUR OWN BUSINESS?<br/>TAKE THE SMARTER FIRST STEP FORWARD BY ENSURING YOUR FINANCIAL PLANNING IS ON TRACK. WITH THE RIGHT PLANNING, YOU CAN ENSURE THAT EVERY STEP AND SUCCESS YOU MAKE WILL NOT BE HINDERED BY LIFE’S MANY CHALLENGES JP.",
+        "starting_family_description": "STARTING FAMILY DESCRIPTION HERE JP",
+        "getting_married_description": "GETTING MARRIED DESCRIPTION HERE JP",
+        "retiring_description": "RETIRING  DESCRIPTION HERE JP",
+
+
+        "protection": "PROTECTION  JP",
+        "investing_and_saving": "INVESTING & SAVING JP",
+        "retirement": "RETIREMENT JP",
+        "other_planning": "OTHER PLANNING JP",
+
+        "personal_protection":{
+            "life_protection":"LIFE PROTECTION JP",
+            "critical_illness":"CRITICAL ILLNESS JP",
+            "accident_protection":"LIFE PROTECTION JP",
+            "disability_protection":"DISABILITY PROTECTION JP",
+            "medical_protection":"MEDICAL PROTECTION JP",
+            "build_your_wealth":"BUILD YOUR WEALTH JP",
+            "protect_your_wealth":"PROTECT YOUR WEALTH JP",
+            "enjoy_your_retirement":"ENJOY YOUR RETIREMENT JP",
+            "ilas":"ILAS JP",
+            "savings":"SAVINGS JP"
+        }
+    },
+
+
+     "concerns": {
+        "title": "CONCERNS JP",
+        "death":"WHAT IF I PASS AWAY JP?",
+        "illness":"WHAT IF I FALL SERIUOSLY ILL JP?",
+        "accident":"WHAT IF I HAVE AN ACCIDENT OR MAJOR INJURY JP?",
+        "health_costs":"HOW CAN I COVER EVERYDAY HEALTHCARE COSTS JP?",
+        "retirement":"HOW CAN I ENSURE A COMFORTABLE RETIREMENT JP?",
+        "future_expenses":"HOW WILL I COVER FUTURE EXPENSES JP?"
+    },
+
+
+    "getting_to_know_you_summary":{
+        "title":"SUMMARY JP",
+        "getting_to_know_you":"GETTING TO KNOW YOU JP",
+        "dreams":"DREAMS JP",
+        "life_stage":"LIFE STAGE JP",
+        "needs": "NEEDS JP",
+        "personal_protection": "PERSONAL PRIORITIES JP"
+    }
+
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../style/default.css">
+</head>
+<body>
+	<div class="container">
+	</div>
+	<!--
+	<div class='character-age'>
+		<div class='age-section'>
+			<label class="title">AGE</label>
+			<label class='age-num'>60</label>
+			<div class='age-icon'></div>
+		</div>
+		<div class='character-image-section'>
+			<img class='age-image'>
+			</img>
+		</div>
+	</div>
+	-->
+	<script src="../script/data/CharacterData.js"></script>
+	<script src="../script/jquery.js"></script>
+	<script src="../script/plugin/jtouchswipe.js"></script>
+	<script src="../script/pos/character/CharacterAge.js"></script>
+	<script>
+		var imageList = [
+			"../images/content/characters/baby.png",
+			"../images/content/characters/boy.png",
+			"../images/content/characters/teenagerboy.png",
+			"../images/content/characters/man.png",
+			"../images/content/characters/grandpa.png"
+		];
+
+		/*
+    		var characterAge = new pos.CharacterAge(".character-age", {
+    			"ageImageList": imageList,
+    			"ageMin" : 20,
+    			"ageMax" : 80,
+    			isActiveEvent: true,
+    			"initAge" : 50
+    		});
+*/
+		var characterAge = new pos.CharacterAge(null, {
+			"gender": data.CharacterData.FEMALE,
+    			"ageImageList": imageList,
+    			"ageMin" : 1,
+    			"ageMax" : 80,
+    			isActiveEvent: true,
+    			"initAge" : 50
+    		});
+		$(".container").append(characterAge.$el);
+		characterAge.initialize();
+		characterAge.fadInAgeSection();
+    	</script>
+</body>
+</html>
+

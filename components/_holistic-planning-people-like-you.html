@@ -1,0 +1,42 @@
+<section class="row financialPlan">
+	<div class="grid">
+		<div class="span8">
+
+			<section class="panelz panelz--withTabs">
+			    <div class="content padded">
+
+					<section class="titleBlock">
+						<h2 class="mainTitle">Financial plan pyramid</h2>
+						<div class="titleBlock__information"><a href="#"><span class="icon icon--question"></span> Why do people need insurance?</a></div>
+					</section>
+
+					<section class="financialPlan__graph">
+						<div><img src="[{planningGroups[selectedTypeIndex].pyramidImg}]" alt="" /></div>
+					</section>
+
+			    </div>
+			</section>
+
+		</div>
+		<div class="span4">
+			<section class="panelz panelz--withTabs">
+			    <div class="content padded">
+
+					<section class="titleBlock">
+						<h2 class="mainTitle">Select your type <a href="#" class="icon icon--information"></a></h2>
+					</section>
+
+					<section class="financialPlan__typeSelector">
+						<ul>
+							<li ng-repeat="planningGroup in planningGroups" ng-if="$index > 0">
+								<button type="button" ng-class="{ selected : isSelectedType($index)}" myclick="selectType($index)" ng-disabled="planningGroup.disabled">[{planningGroup.type}]</button>
+							</li>
+						</ul>
+					</section>
+
+			    </div>
+			</section>
+		</div>
+	</div>
+</section>
+

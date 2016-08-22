@@ -1,0 +1,48 @@
+
+
+<section id="bar-chart" ng-controller="quantity-goals-ctrl" ng-init="setTab(0)">
+	<div class="grid">
+		<div class="span8">
+
+			<section class="panelz">
+				<div class="content padded">
+					<article class="slidingPanelContainer">
+						<nav class="horizontalNav">
+							<ul>
+								<li class="item" ng-class="{ 'is-active': isSetTab($index) }" ng-repeat="tab in tabs"><a href="#" myclick="setGoal($index)">[{tab.name}] <span ng-repeat="i in [0,1]" class="star" ng-class="{starFilled : hasMoreStarThan(tab, i)}"></span></a></li>
+							</ul>
+						</nav>
+
+						<section ng-repeat="tab in tabs" ng-include="tab.page" ng-class="{ 'is-active': isSetTab($index) }" ng-hide="!isSetTab($index)" ng-swipe-right="nextGoal()" ng-swipe-left="prevGoal()" class="slide slide-animation tabContent" style="z-index:[{tabs.length - $index}]"></section>
+					</article>
+				</div>
+			</section>
+
+		</div>
+		<div class="span4">
+
+			<section class="panelz">
+				<div class="content padded">
+
+					<div class="barChart">
+						<div class="barChart__description">
+							<p>At age [{targetAge}] you will need</p>
+						</div>
+						<div id="container" class="barChart__height" ng-init="initChart('container')"></div>
+						<div class="barChart__value">
+							<p><strong>HK$</strong> [{neededPerYear | number: 0}]</p>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+		</div>
+	</div>
+
+</section>
+
+<script src="../js/Highcharts-4.1.9/js/highcharts.js"></script>
+<script src="../js/controller/quantity-goals.js"></script>
+<script src="../js/controller/quantity-goal-save-for-retirement.js"></script>
+<script src="../js/controller/quantity-goal-buy-a-home.js"></script>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../style/default.css">
+</head>
+<body>
+	<div class="container" style="background-color: #aacad2;">
+	</div>
+	<script src="../script/jquery.js"></script>
+	<script src="../script/plugin/jtouchswipe.js"></script>
+	<script src="../script/pos/incomes/IncomeAssetComponent.js"></script>
+	<script>
+		var imageList = [
+			"../images/emotional/icons/retirement-income-money-icon-1.png",
+			"../images/emotional/icons/retirement-income-money-icon-1.png",
+			"../images/emotional/icons/retirement-income-money-icon-1.png",
+			"../images/emotional/icons/retirement-income-money-icon-1.png",
+			"../images/emotional/icons/retirement-income-money-icon-1.png"
+		];
+
+		var incomeCom = new pos.IncomeAssetComponent(null, {
+    			"ageImageList": imageList,
+    			"valueMin" : 1,
+    			"valueMax" : 80000,
+    			isActiveEvent: true,
+    			"initValue" : 50000
+    		});
+		$(".container").append(incomeCom.$el);
+		incomeCom.initialize();
+		//characterAge.fadInAgeSection();
+    	</script>
+</body>
+</html>
+

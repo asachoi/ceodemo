@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class='no-js lt-ie9 lt-ie8 lt-ie7'> <![endif]-->
+<!--[if IE 7]>         <html class='no-js lt-ie9 lt-ie8'> <![endif]-->
+<!--[if IE 8]>         <html class='no-js lt-ie9'> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='no-js'>
+<!--<![endif]-->
+
+
+<head>
+	<title>Emotional Retirement</title>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
+	<meta name='apple-mobile-web-app-capable' content='yes' />
+	<link rel='stylesheet' type='text/css' href='../style/default.css'>
+</head>
+
+<body>
+	<div class='emotional-life-insurance-income-asset'>
+		<div class='left-container'>
+			<div class='header'>
+				<div class='container'>
+					<div class='characters-list'>
+						<div class='inner'>
+						<div class='character-icon icon-mortgage'></div>
+						<p class='title'>Mortgage</p>
+						</div>
+					</div>
+					<div class='characters-list'>
+						<div class='inner'>
+						<div class='character-icon icon-fully-owned'></div>
+						<p class='title'>Fully owned</p>
+						</div>
+					</div>
+					<div class='characters-list'>
+						<div class='inner'>
+						<div class='character-icon icon-rented'></div>
+						<p class='title'>Rented</p>
+						</div>
+					</div>
+					<div class='characters-list'>
+						<div class='inner'>
+						<div class='character-icon icon-living-with-family'></div>
+						<p class='title'>Living with family</p>
+						</div>
+					</div>
+					<div class='characters-list'>
+						<div class='inner'>
+						<div class='character-icon icon-living-with-family'></div>
+						<p class='title'>Living with family</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='middle'>
+				<p class='title'>Life Insurance Income/Assets</p>
+				<div class='content-container'>
+				</div>
+				<div class='control-container'>
+					<p class='previous'>PREVIOUS</p>
+					<p class='next'>NEXT</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- start data -->
+	<script src='../script/data/ConfigData.js'></script>
+	<script src='../script/data/CharacterData.js'></script>
+	<script src='../script/data/DependentData.js'></script>
+	<script src='../script/data/HousingData.js'></script>
+	<script src='../script/data/GettingToKnowYouData.js'></script>
+
+	<script src='../script/data/retirement/RetirementConfigData.js'></script>
+	<script src='../script/data/retirement/RetirementPlanData.js'></script>
+
+	<script src='../script/data/insurance/InsurancePlanData.js'></script>
+	<script src='../script/data/investment/InvestmentGoalData.js'></script>
+
+	<script src='../script/data/EmotionalFactFindingData.js'></script>
+	<!-- end data -->
+	<!-- start component -->
+	<script src='../script/jquery.js'></script>
+	<script src='../script/plugin/jquery-ui-effect.js'></script>
+	<script src='../script/plugin/fastclick.js'></script>
+	<script src='../script/plugin/idangerous.swiper.scrollbar.js'></script>
+	<script src='../script/plugin/jtouchswipe.js'></script>
+	<script src='../script/pos/SwiperCarousel.js'></script>
+	<script src="../script/pos/page-management/PageElement.js"></script>
+	<script src="../script/pos/page-management/PageManagement.js"></script>
+	<!-- end component-->
+	<script src='../script/pages/insurance/LifeInsuranceIncomeAsset.js'></script>
+	<script>
+	/*global page, FastClick*/
+	FastClick.attach(document.body);
+	 new page.insurance.LifeInsuranceIncomeAsset('.emotional-life-insurance-income-asset', {
+		'isStandalone': true
+	});
+	</script>
+</body>
+
+</html>

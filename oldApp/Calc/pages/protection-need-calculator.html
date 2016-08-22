@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-height, height=device-width, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi,  user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../style/default.css">
+</head>
+
+<body>
+    <div id="pageWrapper" class="protection-need-calculator">
+        <div id="pageOverlay" class="pageOverlay"></div>
+        <div class="pageHeader" id="pageHeader" data-hw-module="app/modules/Header">
+            <div class="header-wrapper">
+                <div class="header-menu">
+                    <span class="imageIcon hamburgerManulifeMenuBtn"></span>
+                </div>
+                <div class="hader-title">
+                    <h1 class="title">Protection Needs Calculator</h1>
+                </div>
+                <div class="header-control">
+                    <ul class="actions-list">
+                        <li>
+                            <span class="imageIcon imageIconTool"></span><span class="accessible">Tools</span>
+                        </li>
+                        <li>
+                            <span class="imageIcon imageIconClose"></span><span class="accessible">Close</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="swipe-panel-wrapper swipe-page">
+            <div class="swipe-page-wrap">
+                <div class="swipe-page-content swiper-container">
+                    <ul class="swipe-panel swiper-wrapper">
+                        <li class="item active swiper-slide">
+                            <!--start coverage/reserve -->
+                            <div class="calc-page-wrap protection-coverage">
+                                <!-- start left panl -->
+                                <div class="calc-page-content">
+                                    <div class="content-wrapper">
+                                        <div class="calc-page-title">
+                                            <p class="title">Current Coverage / Reserve</p>
+                                        </div>
+                                        <!-- start content view -->
+                                        <div class="inner-content">
+                                            <div class="saving-investment">
+                                                <div class="slider-title">Current Savings and Investments (excluding residential property) (HK$)</div>
+                                                <div class="new-slider-component single">
+                                                    <div class="slider-container"></div>
+                                                    <div class="content">
+                                                        <input type="number" name="fname" class="textinput">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="target-amount">
+                                                <div class="slider-title">Current Life Protection Coverage (HK$)</div>
+                                                <div class="new-slider-component single">
+                                                    <div class="slider-container"></div>
+                                                    <div class="content">
+                                                        <input type="number" name="fname" class="textinput">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end content view -->
+                                    </div>
+                                </div>
+                                <!-- end left panl -->
+                                <div class="calc-page-graph">
+                                    <div class="graph-control clearfix"></div>
+                                </div>
+                            </div>
+                            <!--end coverage/reserve -->
+                        </li>
+                        <li class="item swiper-slide">
+                            <!-- start life coverage -->
+                            <div class="calc-page-wrap protection-life-coverage">
+                                <!-- start left panl -->
+                                <div class="calc-page-content">
+                                    <div class="content-wrapper">
+                                        <div class="calc-page-title">
+                                            <p class="title">Basic Life Coverage Need</p>
+                                        </div>
+                                        <!-- start content view -->
+                                        <div class="inner-content">
+                                            <div class="saving-investment">
+                                                <div class="slider-title">Outstanding Mortgage Balance and Debts (HK$)</div>
+                                                <div class="new-slider-component single">
+                                                    <div class="slider-container"></div>
+                                                    <div class="content">
+                                                        <input type="number" name="fname" class="textinput">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="target-amount">
+                                                <div class="slider-title">Monthly Family Expenses (excluding mortgage payment (HK$)</div>
+                                                <div class="new-slider-component single">
+                                                    <div class="slider-container"></div>
+                                                    <div class="content">
+                                                        <input type="number" name="fname" class="textinput">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="year-support clearfix">
+                                                <div class="title slider-title">
+                                                    <p>Number of Years to Support Your Family</p>
+                                                </div>
+                                                <div class="incerement-container">
+                                                    <ul id="increment-control" class="increment-control no-input" data-suffix="years">
+                                                        <li class="sub"><span class="increment-button"></span>
+                                                        </li>
+                                                        <li>
+                                                            <p class="value"></p>
+                                                            <input type="number" />
+                                                        </li>
+                                                        <li class="add"><span class="increment-button"></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="asscoiate-expense">
+                                                <div class="slider-title">Final &amp; Asscoiated Expenses (HK$)</div>
+                                                <div class="new-slider-component single">
+                                                    <div class="slider-container"></div>
+                                                    <div class="content">
+                                                        <input type="number" name="fname" class="textinput">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="rate-return clearfix">
+                                                <div class="title slider-title">
+                                                    <p>Assumed Annual Rate of Return (%) </p>
+                                                    <div class="icon icon-info" title="Tooltip"></div>
+                                                </div>
+                                                <div class="incerement-container">
+                                                    <ul id="increment-control" class="increment-control">
+                                                        <li class="sub"><span class="increment-button"></span>
+                                                        </li>
+                                                        <li>
+                                                            <p class="value"></p>
+                                                            <input type="number" />
+                                                        </li>
+                                                        <li class="add"><span class="increment-button"></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="rate-inflation clearfix">
+                                                <div class="title slider-title">
+                                                    <p>Assumed Annual Rate of Inflation (%) </p>
+                                                    <div class="icon icon-info" title="Tooltip"></div>
+                                                </div>
+                                                <div class="incerement-container">
+                                                    <ul class="increment-control">
+                                                        <li class="sub"><span class="increment-button"></span>
+                                                        </li>
+                                                        <li>
+                                                            <p class="value"></p>
+                                                            <input type="number" />
+                                                        </li>
+                                                        <li class="add"><span class="increment-button"></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end content view -->
+                                    </div>
+                                </div>
+                                <!-- end left panl -->
+                                <div class="calc-page-graph">
+                                    <div class="graph-control clearfix"></div>
+                                </div>
+                            </div>
+                            <!-- end life coverage -->
+                        </li>
+                        <li class="item swiper-slide">
+                            <!-- start education fund -->
+                            <div class="calc-page-wrap protection-education-fund">
+                                <div class="calc-page-content">
+                                    <div class="content-wrapper">
+                                        <div class="calc-page-title">
+                                            <p class="title">Education Fund</p>
+                                            <i class="icons icon-attach"></i>
+                                        </div>
+                                        <div class="inner-content">
+                                            <div class="life-style-container">
+                                                <p class="label-bold">Number of Children</p>
+                                                <div class="radio-group">
+                                                    <label class="toggle-button icon-basic">
+                                                        <input type="checkbox" value="0" /> None
+                                                    </label>
+                                                    <label class="toggle-button icon-moderate">
+                                                        <input type="checkbox" value="1" /> One
+                                                    </label>
+                                                    <label class="toggle-button icon-care-free">
+                                                        <input type="checkbox" value="2" /> Two
+                                                    </label>
+                                                    <label class="toggle-button icon-luxury">
+                                                        <input type="checkbox" value="3" /> Three
+                                                    </label>
+                                                    <label class="toggle-button icon-luxury">
+                                                        <input type="checkbox" value="4" /> Four
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="children-container">
+                                                <div class="tab-component">
+                                                    <div class="tabs">
+                                                        <ul>
+                                                            <li><a href="#tabs-1">1st Child</a>
+                                                            </li>
+                                                            <li><a href="#tabs-2">2nd Child</a>
+                                                            </li>
+                                                            <li><a href="#tabs-3">3rd Child</a>
+                                                            </li>
+                                                            <li><a href="#tabs-4">4th Child</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div id="tabs-1">
+                                                            <div class="education-expense">
+                                                                <div class="slider-title">1st Child - Annual Education Expenses (HK$)</div>
+                                                                <div class="new-slider-component single">
+                                                                    <div class="slider-container"></div>
+                                                                    <div class="content">
+                                                                        <input type="number" name="fname" class="textinput">
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="age-info">
+                                                                <div class="new-slider-component range">
+                                                                    <div class="header">
+                                                                        <div class="content left">
+                                                                            <span class="title">Age</span>
+                                                                            <input type="number" name="fname" class="textinput">
+                                                                        </div>
+                                                                        <div class="content right">
+                                                                            <span class="title">Expenses Start Age</span>
+                                                                            <input type="number" name="fname" class="textinput">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="slider-container"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="year-support clearfix">
+                                                                <div class="title slider-title">Number of Years to Support Your 1st Child</div>
+                                                                <div class="incerement-container">
+                                                                    <ul id="increment-control" class="increment-control no-input" data-suffix="years">
+                                                                        <li class="sub"><span class="increment-button"></span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <p class="value"></p>
+                                                                            <input type="number" />
+                                                                        </li>
+                                                                        <li class="add"><span class="increment-button"></span>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="tabs-2">
+                                                            <div class="education-expense">
+                                                                <div class="slider-title">2nd Child - Annual Education Expenses (HK$)</div>
+                                                                <div class="new-slider-component single">
+                                                                    <div class="slider-container"></div>
+                                                                    <div class="content">
+                                                                        <input type="number" name="fname" class="textinput">
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="age-info">
+                                                                <div class="new-slider-component range">
+                                                                    <div class="header">
+                                                                        <div class="content left">
+                                                                            <span class="title">Age</span>
+                                                                            <input type="number" name="fname" class="textinput">
+                                                                        </div>
+                                                                        <div class="content right">
+                                                                            <span class="title">Expenses Start Age</span>
+                                                                            <input type="number" name="fname" class="textinput">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="slider-container"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="year-support clearfix">
+                                                                <div class="title slider-title">Number of Years to Support Your 2nd Child</div>
+                                                                <div class="incerement-container">
+                                                                    <ul id="increment-control" class="increment-control no-input" data-suffix="years">
+                                                                        <li class="sub"><span class="increment-button"></span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <p class="value"></p>
+                                                                            <input type="number" />
+                                                                        </li>
+                                                                        <li class="add"><span class="increment-button"></span>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="tabs-3">
+                                                            <div class="education-expense">
+                                                                <div class="slider-title">3rd Child - Annual Education Expenses (HK$)</div>
+                                                                <div class="new-slider-component single">
+                                                                    <div class="slider-container"></div>
+                                                                    <div class="content">
+                                                                        <input type="number" name="fname" class="textinput">
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="age-info">
+                                                                <div class="new-slider-component range">
+                                                                    <div class="header">
+                                                                        <div class="content left">
+                                                                            <span class="title">Age</span>
+                                                                            <input type="number" name="fname" class="textinput">
+                                                                        </div>
+                                                                        <div class="content right">
+                                                                            <span class="title">Expenses Start Age</span>
+                                                                            <input type="number" name="fname" class="textinput">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="slider-container"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="year-support clearfix">
+                                                                <div class="title slider-title">Number of Years to Support Your 3rd Child</div>
+                                                                <div class="incerement-container">
+                                                                    <ul id="increment-control" class="increment-control no-input" data-suffix="years">
+                                                                        <li class="sub"><span class="increment-button"></span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <p class="value"></p>
+                                                                            <input type="number" />
+                                                                        </li>
+                                                                        <li class="add"><span class="increment-button"></span>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="tabs-4">
+                                                            <div class="education-expense">
+                                                                <div class="slider-title">4rd Child - Annual Education Expenses (HK$)</div>
+                                                                <div class="new-slider-component single">
+                                                                    <div class="slider-container"></div>
+                                                                    <div class="content">
+                                                                        <input type="number" name="fname" class="textinput">
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="age-info">
+                                                                <div class="new-slider-component range">
+                                                                    <div class="header">
+                                                                        <div class="content left">
+                                                                            <span class="title">Age</span>
+                                                                            <input type="number" name="fname" class="textinput">
+                                                                        </div>
+                                                                        <div class="content right">
+                                                                            <span class="title">Expenses Start Age</span>
+                                                                            <input type="number" name="fname" class="textinput">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="slider-container"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="year-support clearfix">
+                                                                <div class="title slider-title">Number of Years to Support Your 4th Child</div>
+                                                                <div class="incerement-container">
+                                                                    <ul id="increment-control" class="increment-control no-input" data-suffix="years">
+                                                                        <li class="sub"><span class="increment-button"></span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <p class="value"></p>
+                                                                            <input type="number" />
+                                                                        </li>
+                                                                        <li class="add"><span class="increment-button"></span>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="line"></div>
+                                                <div class="half-line"></div>
+                                                <div class="note">
+                                                    The estimated family expenses and education fund are based on an assumed rate of return of 5% and assumed rate of inflation of 3%. Such amounts are for reference only.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calc-page-graph">
+                                    <div class="graph-control clearfix"></div>
+                                </div>
+                            </div>
+                            <!-- end education fund -->
+                        </li>
+                        <li class="item swiper-slide">
+                            <!-- start analysis -->
+                            <div class="calc-page-wrap protection-analysis">
+                                <div class="calc-page-content">
+                                    <div class="content-wrapper">
+                                        <!--start content wrapper -->
+                                        <!-- <h3 class="page-title">Analysis</h3> -->
+                                        <div class="calc-page-title">
+                                            <p class="title">Analysis</p>
+                                        </div>
+                                        <div class="inner-content">
+                                            <div id="" class="accordians-control">
+                                                <ul class="accordians-header">
+                                                    <li class="header">
+                                                        <p class="title label-bold">Current Coverage / Reserve</p>
+                                                    </li>
+                                                    <li class="value">
+                                                        <p class="hk-value label-bold">HK$ 600,000</p>
+                                                    </li>
+                                                    <li><i class="expand-icon"></i>
+                                                    </li>
+                                                </ul>
+                                                <div class="accordians-content">
+                                                    <ul class="leaders">
+                                                        <li>
+                                                            <span>Current Savings &amp; Investments (excluding <span class="block">residential property)</span></span>
+                                                            <span>HK$ 300,000</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Current Life Protection Coverage</span>
+                                                            <span>HK$ 300,000</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div id="" class="accordians-control blue-color">
+                                                <ul class="accordians-header">
+                                                    <li class="header">
+                                                        <p class="title label-bold">Basic Life Coverage Need</p>
+                                                    </li>
+                                                    <li class="value">
+                                                        <p class="hk-value label-bold">HK$ 2,909,000</p>
+                                                    </li>
+                                                    <li><i class="expand-icon"></i>
+                                                    </li>
+                                                </ul>
+                                                <div class="accordians-content">
+                                                    <ul class="leaders">
+                                                        <li>
+                                                            <span>Estimated Family Expenses</span>
+                                                            <span>HK$ 1,000,000</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Outstanding Mortgage Balance and Debts</span>
+                                                            <span>HK$ 1,000,000</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Final &amp; Associated Expenses</span>
+                                                            <span>HK$ 909,000</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div id="" class="accordians-control light-purple">
+                                                <ul class="accordians-header">
+                                                    <li class="header">
+                                                        <p class="title label-bold">Education Fund</p>
+                                                    </li>
+                                                    <li class="value">
+                                                        <p class="hk-value label-bold">HK$ 1,089,000</p>
+                                                    </li>
+                                                    <li><i class="expand-icon"></i>
+                                                    </li>
+                                                </ul>
+                                                <div class="accordians-content">
+                                                    <ul class="leaders">
+                                                        <li>
+                                                            <span>Estimated Education Fund</span>
+                                                            <span>HK$ 1,089,000</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="ideal-retirement">
+                                                <ul class="leaders">
+                                                    <li>
+                                                        <span class="label-bold">Life Coverage Shortfall</span>
+                                                        <span class="highlight label-bold">HK$ 300,000</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- end content wrapper -->
+                                    </div>
+                                </div>
+                                <div class="calc-page-graph with-action">
+                                        <div class="graph-control clearfix"></div>
+
+                                        <div class="slide-in-panel-wrapper" data-toggle-button=".action" data-toggle-class="show">
+                                            <div class="slide-in-panel">
+                                                <div class="action">
+                                                    <span class="left-arrow-content"></span>
+                                                </div>
+                                                <div class="slide-in-content">
+                                                    <div class="age">
+                                                        <label class="label-bold">Age</label>
+                                                        <div class="content-value">
+                                                            <input type="number" name="fname" class="textinput">
+                                                        </div>
+                                                    </div>
+                                                    <div class="target-retirement-age">
+                                                        <label class="label-bold">Target Retirement Age</label>
+                                                        <div class="content-value">
+                                                            <input type="number" name="fname" class="textinput" value="65">
+                                                        </div>
+                                                    </div>
+                                                    <div class="expected-year-retirement">
+                                                        <label class="label-bold">Expected Years of Retirement</label>
+                                                        <div class="content-value">
+                                                            <input type="number" name="fname" class="textinput">
+                                                        </div>
+                                                    </div>
+                                                    <div class="mpf-balance">
+                                                        <label class="label-bold">Existing MPF Balance (HK$)</label>
+                                                        <div class="content-value">
+                                                            <input type="number" name="fname" class="textinput">
+                                                        </div>
+                                                    </div>
+                                                    <div class="mpf-contribution">
+                                                        <label class="label-bold">Monthly MPF Contributions (HK$)</label>
+                                                        <div class="content-value">
+                                                            <input type="number" name="fname" class="textinput">
+                                                        </div>
+                                                    </div>
+                                                    <div class="current-assets">
+                                                        <label class="label-bold">Current Assets (HK$) (Excluding property)</label>
+                                                        <div class="content-value">
+                                                            <input type="number" name="fname" class="textinput">
+                                                        </div>
+                                                    </div>
+                                                    <div class="pre-retirement">
+                                                        <label class="label-bold">Assumed Annual Rate of Return (%) (pre-retirement)</label>
+                                                        <ul class="increment-control">
+                                                            <li class="sub"><span class="increment-button"></span>
+                                                            </li>
+                                                            <li>
+                                                                <p class="value"></p>
+                                                                <input type="number" />
+                                                            </li>
+                                                            <li class="add"><span class="increment-button"></span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="post-retirement">
+                                                        <label class="label-bold">Assumed Annual Rate of Return (%) (post-retirement)</label>
+                                                        <ul class="increment-control">
+                                                            <li class="sub"><span class="increment-button"></span>
+                                                            </li>
+                                                            <li>
+                                                                <p class="value"></p>
+                                                                <input type="number" />
+                                                            </li>
+                                                            <li class="add"><span class="increment-button"></span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="rate-inflation">
+                                                        <label class="label-bold">Assumed Annual Rate of Inflation (%)</label>
+                                                        <ul class="increment-control">
+                                                            <li class="sub"><span class="increment-button"></span>
+                                                            </li>
+                                                            <li>
+                                                                <p class="value"></p>
+                                                                <input type="number" />
+                                                            </li>
+                                                            <li class="add"><span class="increment-button"></span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <!-- end ianalysis -->
+                        </li>
+                    </ul>
+                    <span class="left-arrow swipe-button hidden"></span>
+                    <span class="right-arrow swipe-button"></span>
+
+                    <div class="active-panel">
+                        <a href="#" class="proceed-link hidden">
+                            <button type="button" class="button positiveButton">Proceed</button>
+                        </a>
+                        <div class="active-panel-inner">
+                            <div class="show-footer-menu">
+                                <p class="step-text">Step <span class="curr-step">2</span> out of <span class="total-step">3</span>
+                                </p>
+                                <div class="up-arrow"></div>
+                            </div>
+                            <div class="active-panel-bar">
+                                <div class="active-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="footer-menu" class="footer-menu">
+                        <ul class="menu-list"></ul>
+                        <div id="white-overlay" class="white-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../script/jquery.js"></script>
+    <script src="../script/plugin/idangerous.swiper.scrollbar.js"></script>
+    <script src="../script/plugin/fastclick.js"></script>
+    <script src="../script/plugin/jquery.tooltip.js"></script>
+    <script src="../script/pos/NumberInput.js"></script>
+    <script src="../script/pos/tooltip/Tooltip.js"></script>
+    <script src="../script/plugin/jtouchswipe.js"></script>
+    <script src="../script/pos/range/jquery.nouislider.js"></script>
+    <script src="../script/pos/range/NewRangeSlider.js"></script>
+    <script src="../script/pos/range/NewSlider.js"></script>
+    <script src="../script/pos/RadioGroup.js"></script>
+    <script src="../script/pos/IncrementControl.js"></script>
+    <script src="../script/pos/Accordians.js"></script>
+    <script src="../script/pos/Graph.js"></script>
+    <script src="../script/pos/SlideInControl.js"></script>
+    <script src="../script/pos/SwipePanel.js"></script>
+    <script src="../script/pos/tab/TabComponent.js"></script>
+    <script src="../script/pos/tab/TabControl.js"></script>
+
+    <script src="../script/ProtectionCoverageReserve.js"></script>
+    <script src="../script/ProtectionLifeCoverage.js"></script>
+    <script src="../script/ProtectionEducationFund.js"></script>
+    <script src="../script/ProtectionAnalysis.js"></script>
+    <script>
+    /*global FastClick, page*/
+    FastClick.attach(document.body);
+    var swipePanel = new pos.SwipePanel($('.swiper-container'));
+    var protectionCoverage = new page.ProtectionCoverageReserve(".protection-coverage", {});
+    var protectionLifeCoverage = new page.ProtectionLifeCoverage(".protection-life-coverage", {});
+    var protectionEducationFund = new page.ProtectionEducationFund(".protection-education-fund", {});
+    var protectionAnalysis = new page.ProtectionAnalysis(".protection-analysis", {});
+    </script>
+</body>
+
+</html>

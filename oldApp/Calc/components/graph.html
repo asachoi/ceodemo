@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../style/default.css">
+	<link rel="stylesheet" type="text/css" href="../style/compgal.css">
+	<style>.graph-control {height:500px}</style>
+</head>
+<body>
+	<a href="javascript:void(0);" id="update">Update Graph</a>
+	<br /><br />
+	<div id="" class="graph-control clearfix">
+
+	</div>
+	<script src="../script/jquery.js"></script>
+	<script src="../script/pos/Graph.js"></script>
+	<script>
+		/*global pos:true*/
+		var graph = new pos.Graph($('.graph-control'), {
+			title: 'At Age 65 you will have',
+			background: '#eaeaea',
+			pushLeft:'105px;',
+			width: '75px',
+			height: '350px',
+			shortfall: true,
+			currency: 'HK$ ',
+			data: {
+				max: 50000,
+				columns: [
+					{
+						color: '#efb112',
+						label: 'HK$ 100',
+						value: 45000
+					},
+					{
+						color: '#1471ad',
+						label: 'HK$ 150',
+						value: 50000
+					}
+				]
+			}
+		});
+		console.log(graph);
+
+		$('#update').on('click', function () {
+			graph.updateValue([
+				{
+					label: 'HK$ 200',
+					value: 200
+				},
+				{
+					label: 'HK$ 50000',
+					value: 50000
+				}
+			]);
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+﻿{
+    "403": "JP - Access Denied",
+    "404": "JP - The server is not available. Please refresh the page or try again later",
+    "408": "JP - A time out error has occurred while uploading the file. Please try again",
+    "464": "JP - The server encountered some error (EADVICE). Please refresh the page or try again later",
+    "465": "JP - The server encountered some error (EADVICE). Please refresh the page or try again later",
+    "466": "JP - The server encountered some error (TDS). Please refresh the page or try again later",
+    "467": "JP - The server encountered some error (TDS). Please refresh the page or try again later",
+    "468": "JP - The server encountered some error (TDS). Please refresh the page or try again later",
+    "469": "JP - The server encountered some error (TDS). Please refresh the page or try again later",
+    "470": "JP - The server encountered some error (TDS). Please refresh the page or try again later",
+    "471": "JP - The server encountered some error (TDS). Please refresh the page or try again later",
+    "472": "JP - The server encountered some error (TDS). Please refresh the page or try again later",
+    "general_error": "JP - The server encountered some error (__error__). Please refresh the page or try again later",
+    "currency": "HK$",
+    "generic": {
+        "select_language": "Select Language CN",
+        "next": "NEXT CN",
+        "previous": "PREV CN",
+        "complete": "COMPLETE CN",
+        "tools": "Tools CN",
+        "close": "Close CN",
+        "your_dreams": "YOUR DREAMS CN"
+    },
+    "blocker": {
+        "title": "FOR BETTER EXPERIENCE,<br/>KINDLY ROTATE YOUR BROWSER CN."
+    },
+    "formatting": {
+        "please_specify": "PLEASE SPECIFY CN"
+    },
+    "occupation": {
+        "default": "DEFAULT CN",
+        "student": "STUDENT CN",
+        "unemployed": "UNEMPLOYED CN",
+        "supervisor": "SUPERVISOR CN",
+        "self_employed": "SELF EMPLOYED CN",
+        "retired": "RETIRED CN",
+        "professional": "PROFESSIONAL CN",
+        "intermediate": "INTERMEDIATE CN",
+        "executive": "EXECUTIVE CN",
+        "civil_servant": "CIVIL SERVANT CN",
+        "career_starter": "CAREER STARTER CN"
+    },
+    "character": {
+        "baby": "BABY CN",
+        "infant_boy": "BOY CN",
+        "boy": "BOY",
+        "teen_boy": "TEEN BOY CN",
+        "infant_girl": "GIRL CN",
+        "girl": "GIRL CN",
+        "teen_girl": "TEEN GIRL CN",
+        "young_man": "MAN CN",
+        "man": "MAN CN",
+        "old_man": "MAN CN",
+        "young_woman": "WOMAN CN",
+        "woman": "WOMAN CN",
+        "old_woman": "WOMAN CN",
+        "grandfather": "GRANDFATHER CN",
+        "grandmother": "GRANDMOTHER CN"
+    },
+    "marital_status": {
+        "single": "SINGLE CN",
+        "married": "MARRIED CN",
+        "divorced": "DIVORCED CN",
+        "widowed": "WIDOWED CN"
+    },
+    "emotional_fact_finding": {
+        "header_title": "Manulife Shell CN",
+        "title": "THE MORE WE KNOW ABOUT YOU,<br/>THE BETTER ADVICE WE CAN GIVE CN",
+        "sub_title": "CHOOSE A SECTION TO GET STARTED CN",
+        "getting_to_know_you": "GETTING TO KNOW YOU CN",
+        "how_would_you_like_to_retire": "HOW WOULD YOU<br/>LIKE TO RETIRE CN?",
+        "life_insurance_plans": "LIFE INSURANCE PLANS CN?",
+        "investment_goals": "INVESTMENT GOALS CN?",
+        "right_panel": {
+            "getting_to_know_you": "GETTING TO<br/>KNOW YOU CN",
+            "retirement": "RETIREMENT CN",
+            "life_insurance": "LIFE INSURANCE CN",
+            "investment_goals": "INVESTMENT GOALS CN"
+        }
+    },
+    "about_you": {
+        "title": "ABOUT YOU CN",
+        "male": "MALE CN",
+        "female": "FEMALE CN",
+        "getting_to_know_you": "GETTING TO KNOW YOU CN",
+        "age": "AGE CN",
+        "marital_status": "MARITAL STATUS CN",
+        "occupation": "OCCUPATION CN"
+    },
+    "children_choosing": {
+        "title": "CHILDREN CN",
+        "boy": "BOY CN",
+        "girl": "GIRL CN",
+        "name": "NAME CN",
+        "age": "AGE CN",
+        "annual_educational_expenses": "ANNUAL EDUCATION EXPENSES (HK$) CN",
+        "expenses_start_age": "EXPENSES START AGE CN",
+        "number_of_year_to_support": "NUMBER OF YEAR TO SUPPORT CN",
+        "primary": "PRIMARY CN",
+        "secondary": "SECONDARY CN",
+        "university": "UNIVERSITY CN",
+        "public": "PUBLIC CN",
+        "private": "PRIVATE CN",
+        "oversea": "LOCAL CN",
+        "estimated_education_cost": "ESTIMATED EDUCATION COST CN"
+    },
+    "dependents_choosing": {
+        "title": "DEPENDENTS CN",
+        "grandfather": "GRANDFATHER CN",
+        "grandmother": "GRANDMOTHER CN",
+        "name": "NAME CN",
+        "age": "AGE CN"
+    },
+    "user_housing": {
+        "title": "HOUSING CN",
+        "mortgage": "MORTGAGE CN",
+        "fully_owned": "FULLY OWNED CN",
+        "rented": "RENTED CN",
+        "living_with_family": "LIVING WITH FAMILY CN",
+        "outstanding_mortgage": "OUSTANDING MORTAGE $t(currency) CN",
+        "monthly_mortgage_payment": "MONTHLY MORTGAGE PAYMENT $t(currency) CN",
+        "monthly_rental_expenses": "MONTHLY RENTAL EXPENSES $t(currency) CN",
+        "monthly_expenses": "MONTHLY EXPENSES $t(currency) CN",
+        "monthly_income": "MONTHLY INCOME RANGE $t(currency) CN",
+        "income_range": [
+            {
+                "label": "Less than $t(currency)4,000 CN"
+            },
+            {
+                "label": "$t(currency)4,000-9,999 CN"
+            },
+            {
+                "label": "$t(currency)10,000-19,999 CN"
+            },
+            {
+                "label": "$t(currency)20,000-49,999 CN"
+            },
+            {
+                "label": "$t(currency)50,000-100,000 CN"
+            },
+            {
+                "label": "Over $t(currency)100,000 CN"
+            }
+        ]
+    },
+    "dreams": {
+        "title": "YOUR DREAMS CN",
+        "buying_a_house": {
+            "title": "BUYING NEW HOUSE CN",
+            "options": {
+                "paid_public_apartment": "PAID PUBLIC APARTMENT<br/><b>$t(currency)&lt;3,000,000 CN</b>",
+                "first_time_buyer": "FIRST TIME BUYER<br/><b>$t(currency)3,000,000-4,500,000 CN</b>",
+                "upgrade": "UPGRADE<br/><b>$t(currency)5,000,000-9,000,000 CN</b>",
+                "deluxe": "DELUXE<br/><b>$t(currency)9,000,000-20,000,000 CN</b>",
+                "luxury": "LUXURY<br/><b>&gt;$t(currency)20,000,000 CN</b>"
+            },
+            "options_summary": {
+                "paid_public_apartment": "PAID PUBLIC APARTMENT CN",
+                "first_time_buyer": "FIRST TIME BUYER CN",
+                "upgrade": "UPGRADE CN",
+                "deluxe": "DELUXE CN",
+                "luxury": "LUXURY CN"
+            }
+        },
+        "getting_married": {
+            "title": "DREAM WEDDING",
+            "options": {
+                "budget": "BUDGET<br/><b>$t(currency)&lt;150,000 CN</b>",
+                "standard": "STANDARD<br/><b>$t(currency)150,000-250,000 CN</b>",
+                "standard_with_honeymoon": "STANDARD WITH HONEYMOON<br/><b>$t(currency)250,000-350,000 CN</b>",
+                "luxury": "LUXURY<br/><b>$t(currency)350,000-500,000 CN</b>",
+                "dream": "DREAM<br/><b>$t(currency)&gt;500,000 CN</b>"
+            },
+            "options_summary": {
+                "budget": "BUDGET CN",
+                "standard": "STANDARD CN",
+                "standard_with_honeymoon": "STANDARD WITH HONEYMOON CN",
+                "luxury": "LUXURY CN",
+                "dream": "DREAM CN"
+            }
+        },
+        "having_a_baby": {
+            "title": "HAVING A BABY CN",
+            "options": {
+                "government_hospital": "GOV. HOSPITAL PRIVATE WARD<br/><b>$t(currency)&lt;50,000 CN</b>",
+                "private_hospital": "PRIVATE HOSPITAL<br/><b>$t(currency)50,000-500,000 CN</b>",
+                "overseas_delivery": "OVERSEAS DELIVERY<br/><b>$t(currency)&gt;500,000 CN</b>"
+            },
+            "options_summary": {
+                "government_hospital": "GOV. HOSPITAL PRIVATE WARD CN",
+                "private_hospital": "PRIVATE HOSPITAL CN",
+                "overseas_delivery": "OVERSEAS DELIVERY CN"
+            }
+        },
+        "plan_for_education": {
+            "title": "PLAN FOR EDUCATION CN",
+            "options": {
+                "local_private_college": "LOCAL PRIVATE COLLEGE SCHOOL<br/><b>$t(currency)300,000-1,000,000 CN</b>",
+                "overseas_college": "OVERSEAS COLLEGE SCHOOL WITH <br/>EXPENSES <b>$t(currency)&gt;1,000,000 CN</b>",
+                "local_university": "LOCAL UNIVERSITY<br/><b>$t(currency)300,000-1,000,000 CN</b>",
+                "overseas_university": "OVERSEAS UNIVERSITY WITH EXPENSES<br/><b>$t(currency)&gt;1,000,000 CN</b>"
+            },
+            "options_summary": {
+                "local_private_college": "LOCAL PRIVATE COLLEGE SCHOOL CN",
+                "overseas_college": "OVERSEAS COLLEGE SCHOOL WITH EXPENSES CN",
+                "local_university": "LOCAL UNIVERSITY CN",
+                "overseas_university": "OVERSEAS UNIVERSITY WITH EXPENSES CN"
+            }
+        },
+        "buy_a_new_car": {
+            "title": "BUYING NEW CAR CN",
+            "options": {
+                "microcar": "MICROCAR<br/><b>$t(currency)&lt;200,000 CN</b>",
+                "small_family": "SMALL FAMILY<br/><b>$t(currency)200,000-300,000 CN</b>",
+                "large_family": "LARGE FAMILY<br/><b>$t(currency)300,000-450,000 CN</b>",
+                "mid_luxury": "MID LUXURY<br/><b$t(currency)>450,000-900,000 CN</b>",
+                "luxury": "LUXURY<br/><b>$t(currency)900,000-2,000,000 CN</b>",
+                "supercar": "SUPERCAR<br/><b>$t(currency)&gt;2,000,000 CN</b>"
+            },
+            "options_summary": {
+                "microcar": "MICROCAR CN",
+                "small_family": "SMALL FAMILY CN",
+                "large_family": "LARGE FAMILY CN",
+                "mid_luxury": "MID LUXURY CN",
+                "luxury": "LUXURY CN",
+                "supercar": "SUPERCAR CN"
+            }
+        },
+        "plan_for_vacation": {
+            "title": "PLAN FOR VACATION CN",
+            "options": {
+                "asia_tour_for_two": "SHORT HAUL HOLIDAY<br/><b>$t(currency)10,000-$t(currency)25,000</b> CN",
+                "asia_luxury_tour": "LUXURY SHORT HAUL HOLIDAY<br/><b>&gt;$t(currency)25,000</b> CN",
+                "long_haul_tour_for_two": "LONG HAUL HOLIDAY<br/><b>$t(currency)50,000-100,000</b> CN",
+                "luxury_long_haul_tour": "LUXURY LONG HAUL HOLIDAY<br/><b>&gt;$t(currency)100,000</b> CN"
+            },
+            "options_summary": {
+                "asia_tour_for_two": "SHORT HAUL HOLIDAY CN",
+                "asia_luxury_tour": "LUXURY SHORT HAUL HOLIDAY CN",
+                "long_haul_tour_for_two": "LONG HAUL HOLIDAY CN",
+                "luxury_long_haul_tour": "LUXURY LONG HAUL HOLIDAY CN"
+            }
+        },
+        "early_retirement": {
+            "title": "EARLY RETIREMENT CN",
+            "options": {
+                "basic": "BASIC<br/><b>$t(currency)&lt;5,000,000 CN</b>",
+                "moderate": "MODERATE<br/><b>$t(currency)5,000,000-12,000,000 CN</b>",
+                "care_free":"CARE FREE<br/><b>$t(currency)12,000,000-20,000,000 CN</b>",
+                "luxury":"LUXURY<br/><b>$t(currency)&gt;20,000,000 CN</b>"
+            },
+            "options_summary": {
+                "basic": "BASIC CN",
+                "moderate": "MODERATE CN",
+                "care_free": "CARE FREE CN",
+                "luxury": "LUXURY CN"
+            }
+        }
+    },
+    "life_stage_need": {
+        "title": "LIFE STAGE CN",
+        "description": "BASED ON YOUR SELECTION YOUR LIFE STAGE IS CN:",
+        "instruction": "(CLICK ARROWS TO CHANGE THE STAGE CN)",
+        "bottom_description": "FOR THIS LIFE STAGE PEOPLE USUALLY HAVE THE FOLLOWING NEEDS CN",
+        "bottom_instruction": "(PLEASE SELECT NEEDS RELEVANT TO YOU CN)",
+
+        "career_starter": "CAREER STARTER CN",
+        "starting_family": "STARTING FAMILY CN",
+        "getting_married": "GETTING MARRIED CN",
+        "retiring": "RETIRING CN",
+
+        "career_starter_description": "START A CAREER THE RIGHT WAY. BEGIN PLANNING FOR YOU FINANCIAL FUTURE.<br/>SUCCESS COMES WITH A PLAN.JUST GRADUATED FROM COLLEGE?<br/>OR ARE YOU LOOKING TO START YOUR CAREER OR YOUR OWN BUSINESS?<br/>TAKE THE SMARTER FIRST STEP FORWARD BY ENSURING YOUR FINANCIAL PLANNING IS ON TRACK. WITH THE RIGHT PLANNING, YOU CAN ENSURE THAT EVERY STEP AND SUCCESS YOU MAKE WILL NOT BE HINDERED BY LIFE’S MANY CHALLENGES CN.",
+        "starting_family_description": "STARTING FAMILY DESCRIPTION HERE CN",
+        "getting_married_description": "GETTING MARRIED DESCRIPTION HERE CN",
+        "retiring_description": "RETIRING  DESCRIPTION HERE CN",
+
+        "protection": "PROTECTION  CN",
+        "investing_and_saving": "INVESTING & SAVING CN",
+        "retirement": "RETIREMENT CN",
+        "other_planning": "OTHER PLANNING CN",
+
+        "personal_protection":{
+            "life_protection":"LIFE PROTECTION CN",
+            "critical_illness":"CRITICAL ILLNESS CN",
+            "accident_protection":"LIFE PROTECTION CN",
+            "disability_protection":"DISABILITY PROTECTION CN",
+            "medical_protection":"MEDICAL PROTECTION CN",
+            "build_your_wealth":"BUILD YOUR WEALTH CN",
+            "protect_your_wealth":"PROTECT YOUR WEALTH CN",
+            "enjoy_your_retirement":"ENJOY YOUR RETIREMENT CN",
+            "ilas":"ILAS CN",
+            "savings":"SAVINGS CN"
+        }
+
+    },
+     "concerns": {
+        "title": "CONCERNS CN",
+        "death":"WHAT IF I PASS AWAY CN?",
+        "illness":"WHAT IF I FALL SERIUOSLY ILL CN?",
+        "accident":"WHAT IF I HAVE AN ACCIDENT OR MAJOR INJURY CN?",
+        "health_costs":"HOW CAN I COVER EVERYDAY HEALTHCARE COSTS CN?",
+        "retirement":"HOW CAN I ENSURE A COMFORTABLE RETIREMENT CN?",
+        "future_expenses":"HOW WILL I COVER FUTURE EXPENSES CN?"
+    },
+    "getting_to_know_you_summary": {
+        "title": "SUMMARY CN",
+        "getting_to_know_you": "GETTING TO KNOW YOU CN",
+        "dreams": "DREAMS CN",
+        "life_stage": "LIFE STAGE CN",
+        "needs": "NEEDS CN",
+        "personal_protection": "PERSONAL PRIORITIES CN"
+    }
+}

@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="ceoApp">
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../js/angularjs-slider/dist/rzslider.css">
+    <link rel="stylesheet" href="../js/Radial-Gauge-in-AngularJS/DelightMeterStyle.css" />
+    <link rel="stylesheet" href="../js/roundSlider/dist/roundslider.min.css">
+    <link rel="stylesheet" href="../js/rulez.js/dist/css/rulez-black.min.css">
+    <!-- default css should always be the last one -->
+    <link rel="stylesheet" type="text/css" href="../style/default.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script type="text/javascript" src="../js/angular/angular.min.js"></script>
+    <script type="text/javascript" src="../js/angular-animate/angular-animate.js"></script>
+    <script type="text/javascript" src="../js/angular-touch/angular-touch.js"></script>
+    <script type="text/javascript" src="../js/greensock-js/src/minified/TweenMax.min.js"></script>
+    <script type="text/javascript" src="../js/angularjs-slider/dist/rzslider.js"></script>
+    <script type="text/javascript" src="../js/Radial-Gauge-in-AngularJS/DelightMeter.js"></script>
+    <script type="text/javascript" src="../js/fastclick/lib/fastclick.js"></script>
+    <script type="text/javascript" src="../js/roundSlider/dist/roundslider.min.js"></script>
+    <script type="text/javascript" src="../js/rulez.js/dist/js/rulez.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.rwdImageMaps.min.js"></script>
+    <script type="text/javascript" src="../js/controller/app.js"></script>
+    
+</head>
+<body ng-cloak ng-controller="mainNav-ctrl" ng-init="init('index.html', true )">
+
+<div id="pageWrapper">
+    <div id="indexPageOverlay" class="">
+    <div id="indexPageOverlayBackground"></div>
+    <div id="indexPageOverlayContent" myclick="closeIndexOverlay()">
+        <div class="inner">
+            <div class="content" myclick="$event.stopPropagation()">
+                <section class="panelz thin" style="height: 410px; width: 600px;">
+	<div class="content">
+		<div class="indexOverlayContent">
+			<ul>
+				<li><a href="#" myclick="goToPage('login.html')">Login</a></li>
+				<li><a href="#" myclick="goToPage('agent-dashboard.html')">Agent Dashboard</a></li>
+				<li><a href="#" myclick="goToPage('holistic-financial-planning.html')">Holistic Financial Planning</a></li>
+				<li><a href="#" myclick="goToPage('quantity-goals.html')">Quantity Goals</a></li>
+				<li><a href="#" myclick="goToPage('collect-asset-info.html')">Collect Asset Info</li>
+				<li><a href="#" myclick="goToPage('shortfall-and-projections-timeline.html')">Holistic Planning / Shortfall and Projections (Timeline View)</a></li>
+				<li><a href="#" myclick="goToPage('shortfall-and-projections-barchart.html')">Holistic Planning / Shortfall and Projections (Bar Chart View)</a></li>
+				<li><a href="#" myclick="goToPage('proposed-product-recommendations.html')">Recommended Plans</a></li>
+				<li><a href="#" myclick="goToPage('simple-illustration-detail.html')">Illustration</a></li>
+				<li><a href="#" myclick="goToPage('proposal-details.html')">Proposal Details</a></li>
+				<li><a href="#" myclick="goToPage('application-overview.html')">Application Overview</a></li>
+			</ul>
+			<ul>
+				<li><a href="#" myclick="goToPage('personal-information.html')">Personal Information (pre-populated)</a></li>
+				<li><a href="#" myclick="goToPage('edisclosure-basic-info.html')">eDisclosure (Basic info)</a></li>
+				<li><a href="#" myclick="goToPage('edisclosure-family-history.html')">eDisclosure (Family History)</a></li>
+				<li><a href="#" myclick="goToPage('edisclosure-personal-medical-history.html')">eDisclosure (Personal Medical History)</a></li>
+				<li><a href="#" myclick="goToPage('apply-underwriting-result.html')">Apply / Underwriting Result</a></li>
+				<li><a href="#" myclick="goToPage('apply-epayment.html')">Apply / ePayment</a></li>
+				<li><a href="#" myclick="goToPage('apply-esignature.html')">Apply / eSignature</a></li>
+				<li><a href="#" myclick="goToPage('customer-dashboard-policy-issued.html')">Customer Dashboard - Goal View (Policy Issued)</a></li>
+				<li><a href="#" myclick="goToPage('customer-dashboard-annual-review.html')">Customer Dashboard - Goal View (Annual Review)</a></li>
+				<li><a href="#" myclick="goToPage('projections-vs-actual-performance.html')">Projections vs. Actual Performance</a></li>
+				<li><a href="#" myclick="goToPage('recommend-solutions.html')">Recommend Solutions</a></li>
+				<li><a href="#" myclick="goToPage('../oldApp/Calc/pages/emotional-fact-finding.html')">Emotional Calculator</a></li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+<div id="pageOverlay" class="">
+    <div id="pageOverlayBackground"></div>
+    <div id="pageOverlayContent" myclick="closeOverlay()">
+        <div class="inner">
+            <div class="content" myclick="$event.stopPropagation()">
+                
+            </div>
+        </div>
+    </div>
+</div>
+    	
+	
+
+	
+
+<header class="pageHeader pageHeader--editMode">
+
+	<div class="pageHeader__cancelArea">
+		<button myclick="goToPage('personal-information.html')"><span class="imageIcon imageIconBack"></span><span class="accessible">Back</span></button>
+		
+	</div>
+
+	<h1 class="pageTitle">
+		<span class="subtitle">Chan Tai Man <span class="subtitleExtra">- Policyholder &amp; Insured</span></span>
+		<span class="title">e-Disclosure</span>
+	</h1>
+	
+	<div class="headerControl">
+		<ul>
+			
+			
+			
+			
+		</ul>
+	</div>
+</header>
+
+
+
+
+    <div id="app" class="full-screen editMode">
+        <div class="row">
+            
+	
+<section class="panelz">
+	<div class="scrollable scrollable--vertical" >
+		<div class="content padded content--useFullHeight">
+
+			<div class="stepTracker">
+	<a href="edisclosure-basic-info.html" class="previousStep"></a>
+	<a href="edisclosure-personal-medical-history.html" class="nextStep"></a>
+	<!-- <div class="placeholderImage"><img src="../images/placeholder/step-tracker-family-history.jpg" alt="" /></div> -->
+</div>
+
+<div class="stepperWrapper">
+	<ul class="stepMarker">
+		<li class="stepMarkerItem"><div class="dotMarker"></div></li>
+		<li class="stepMarkerItem"><div class="lineMarker"></div></li>
+		<li class="stepMarkerItem"><div class="dotMarker active"></div></li>
+		<li class="stepMarkerItem"><div class="lineMarker"></div></li>
+		<li class="stepMarkerItem"><div class="dotMarker"></div></li>
+	</ul>
+	<div class="stepper">
+		<a class="stepperItem" href="edisclosure-basic-info.html">
+			Basic Info
+		</a>
+		<a class="stepperItem active" href="edisclosure-family-history.html">
+			Family history
+		</a>
+		<a class="stepperItem" href="edisclosure-personal-medical-history.html">
+			Personal medical history
+		</a>
+	</div>
+</div>
+
+<!--
+<div class="placeholderImage"><img src="../images/placeholder/edisclosure-family-history.jpg" alt="" /></div>
+-->
+
+<div ng-controller="edisclosure-family-history-ctrl" style="margin-top: 40px;">
+
+	<h2 class="mainTitle">Family history</h2>
+
+	<div>
+		<p class="subTitle">1. Have any of your family members (including parents, siblings, grandparents, uncles and aunts) had the following:</p>
+
+		<div class="grid">
+			<div class="span6" style="width: calc(50% - 10px); margin-right: 10px;">
+
+				<div class="checkboxContainers" ng-class='{"is-active" : isQuestionSetVisible1($index)}' ng-repeat="q in questionSets1" ng-if="$even">
+
+					<div class="checkboxContainer checkboxContainer--individualBox" ng-class='{"is-active" : isQuestionSetVisible1($index)}' id="checkboxContainer1[{$index}]">
+						<div class="checkbox" >
+							<input name="[{q.name}]" id="[{q.name}]" type="checkbox" ng-model='q.checked' ng-disabled="q.disabled">
+							<label for="[{q.name}]">[{q.name}]</label>
+						</div>
+						<label class="checkboxContainer__label" for="Q1" myclick="toggleQuestion($index)">[{q.name}]</label>
+					</div>
+				</div>
+
+			</div>
+			<div class="span6" style="width: calc(50% - 10px); margin-left: 10px;">
+
+				<div class="checkboxContainers" ng-class='{"is-active" : isQuestionSetVisible1($index)}' ng-repeat="q in questionSets1" ng-if="$odd">
+
+					<div class="checkboxContainer checkboxContainer--individualBox" ng-class='{"is-active" : isQuestionSetVisible1($index)}' id="checkboxContainer[{$index}]">
+						<div class="checkbox" >
+							<input name="[{q.name}]" id="[{q.name}]" type="checkbox" ng-model='q.checked' ng-disabled="q.disabled">
+							<label for="[{q.name}]">[{q.name}]</label>
+						</div>
+						<label class="checkboxContainer__label" for="Q1" myclick="toggleQuestion($index)">[{q.name}]</label>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>	
+
+	<div style="margin-top: 30px; padding: 30px 0; border-top: 1px solid #e5e5e5;">
+		<p class="subTitle">2. Do you have any TWO or more family members of your natural parents or siblings, who before the age of 60 has had the following:</p>
+
+		<div class="grid">
+			<div class="span6" style="width: calc(50% - 10px); margin-right: 10px;">
+
+				<div class="checkboxContainers" ng-class='{"is-active" : isQuestionSetVisible2($index)}' ng-repeat="q in questionSets2" ng-if="$even">
+
+					<div class="checkboxContainer checkboxContainer--individualBox" ng-class='{"is-active" : isQuestionSetVisible2($index)}' id="checkboxContainer2[{$index}]">
+						<div class="checkbox" >
+							<input name="[{q.name}]" id="[{q.id}]" type="checkbox" ng-model='q.checked' ng-disabled="q.disabled">
+							<label for="[{q.id}]">[{q.name}]</label>
+						</div>
+						<label class="checkboxContainer__label" for="Q2" myclick="toggleQuestion($index)">[{q.name}]</label>
+					</div>
+				</div>
+
+			</div>
+			<div class="span6" style="width: calc(50% - 10px); margin-left: 10px;">
+
+				<div class="checkboxContainers" ng-class='{"is-active" : isQuestionSetVisible2($index)}' ng-repeat="q in questionSets2" ng-if="$odd">
+
+					<div class="checkboxContainer checkboxContainer--individualBox" ng-class='{"is-active" : isQuestionSetVisible2($index)}' id="checkboxContainer[{$index}]">
+						<div class="checkbox" >
+							<input name="[{q.name}]" id="[{q.id}]" type="checkbox" ng-model='q.checked' ng-disabled="q.disabled">
+							<label for="[{q.id}]">[{q.name}]</label>
+						</div>
+						<label class="checkboxContainer__label" for="Q2" myclick="toggleQuestion($index)">[{q.name}]</label>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+</div>
+<script src="../js/controller/edisclosure-family-history.js"></script>
+
+
+
+		</div>
+	</div>
+</section>
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+

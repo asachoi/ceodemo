@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class='no-js lt-ie9 lt-ie8 lt-ie7'> <![endif]-->
+<!--[if IE 7]>         <html class='no-js lt-ie9 lt-ie8'> <![endif]-->
+<!--[if IE 8]>         <html class='no-js lt-ie9'> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='no-js'>
+<!--<![endif]-->
+
+
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
+    <meta name='apple-mobile-web-app-capable' content='yes' />
+		<link rel='stylesheet' type='text/css' href='../style/default.css'>
+</head>
+<body>
+	<div class='children-choosing-page'>
+		<div class='left-container'>
+			<div class='header'>
+				<div class='test hidden'>
+				</div>
+				<div class='swiper-container swiper-carousel'>
+					<div class='container swiper-wrapper'>
+						<div class='swiper-slide characters-list'>
+							<div class='inner'>
+							<div class='character-icon icon-boy'></div>
+							<p class='title'>Boy</p>
+							</div>
+						</div>
+						<div class='swiper-slide characters-list'>
+							<div class='inner'>
+							<div class='character-icon icon-girl'></div>
+							<p class='title'>Girl</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='middle'>
+				<div class='overlay'>
+					<div class='container'>
+						<div class='age-container'>
+							<p class='age-title'>AGE </p>
+							<p class='age-num'>100 years</p>
+						</div>
+					</div>
+				</div>
+				<div class='middle-inner'>
+					<p class='title'>CHILDREN</p>
+					<div class='content-container'>
+						<div class='main-info'>
+							<div class='info-line'>
+								<div class='new-slider-component single white education-expenses'>
+								    <div class='content clearfix'>
+								        <label class='label'>Annual education expenses (HK$)</label>
+								        <input type='text' name='fname' class='textinput'>
+								    </div>
+								    <div class='slider-container'></div>
+								</div>
+							</div>
+							<div class='info-line'>
+								<div class='new-slider-component single white expenses-age'>
+								    <div class='content clearfix'>
+								        <label class='label'>Expenses start age</label>
+								        <input type='text' name='fname' class='textinput'>
+								    </div>
+								    <div class='slider-container'></div>
+								</div>
+							</div>
+							<div class='info-line increment-line'>
+								<label class='label uppercase'>Number of year to support</label>
+								<ul id='increment-control' class='increment-control white'>
+								    <li class='sub'><span class='increment-button'></span></li>
+								    <li>
+								        <p class='value'></p>
+								        <input type='number'/>
+								    </li>
+								    <li class='add'><span class='increment-button'></span></li>
+								</ul>
+							</div>
+							<div class='info-line'>
+								<div class='radio-with-icon'>
+									<i class='emotion-icon icon-primary'></i>
+									<div class='radio-group white'>
+									    <label  class='toggle-button'>
+									        <input type='checkbox' value='0' name='checkbox-2' />
+									        Public
+									    </label>
+									    <label class='toggle-button'>
+									        <input type='checkbox' value='1' name='checkbox-2' />
+									        Private
+									    </label>
+									    <label class='toggle-button'>
+									        <input type='checkbox' value='2' name='checkbox-2' />
+									        Oversea
+									    </label>
+									</div>
+									<label class='label'>Primary</label>
+								</div>
+								<div class='radio-with-icon'>
+									<i class='emotion-icon icon-secondary'></i>
+									<div class='radio-group white'>
+									    <label  class='toggle-button'>
+									        <input type='checkbox' value='0' name='checkbox-2' />
+									        Public
+									    </label>
+									    <label class='toggle-button'>
+									        <input type='checkbox' value='1' name='checkbox-2' />
+									        Private
+									    </label>
+									    <label class='toggle-button'>
+									        <input type='checkbox' value='2' name='checkbox-2' />
+									        Oversea
+									    </label>
+									</div>
+									<label class='label'>Secondary</label>
+								</div>
+								<div class='radio-with-icon'>
+									<i class='emotion-icon icon-university'></i>
+									<div class='radio-group white'>
+									    <label  class='toggle-button'>
+									        <input type='checkbox' value='0' name='checkbox-2' />
+									        Local
+									    </label>
+									    <label class='toggle-button'>
+									        <input type='checkbox' value='1' name='checkbox-2' />
+									        Oversea
+									    </label>
+									</div>
+									<label class='label'>University</label>
+								</div>
+							</div>
+							<div class='info-line'>
+								<ul class='summary-line'>
+									<li class='text'>Estimated education cost</li>
+									<li class='value label-bold'>800,000</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='control-container'>
+					<p class='previous'>PREVIOUS</p>
+					<p class='next'>NEXT</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- start data -->
+	<script src='../script/data/ConfigData.js'></script>
+	<script src='../script/data/CharacterData.js'></script>
+	<script src='../script/data/DependentData.js'></script>
+	<script src='../script/data/GettingToKnowYouData.js'></script>
+	<!-- end data -->
+	<script src='../script/jquery.js'></script>
+	<script src='../script/pos/range/jquery.nouislider.js'></script>
+	<script src='../script/plugin/idangerous.swiper.scrollbar.js'></script>
+	<script src='../script/pos/SwiperCarousel.js'></script>
+	<script src='../script/plugin/fastclick.js'></script>
+	<script src='../script/plugin/jtouchswipe.js'></script>
+	<script src='../script/pos/range/NewSlider.js'></script>
+	<script src='../script/pos/IncrementControl.js'></script>
+	<script src='../script/pos/RadioGroup.js'></script>
+	<script src='../script/pos/character/CharacterAge.js'></script>
+
+	<script src="../script/pos/page-management/PageElement.js"></script>
+	<script src="../script/pos/page-management/PageManagement.js"></script>
+
+	<script src='../script/pages/getting_to_know_you/ChildrenChoosingPage.js'></script>
+	<script>
+		/*global FastClick, page*/
+		FastClick.attach(document.body);
+		var childrenChoosingPage = new page.ChildrenChoosingPage('.children-choosing-page', {
+			'isStandalone': true
+		});
+	</script>
+</body>
+
+</html>

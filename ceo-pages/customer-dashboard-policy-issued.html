@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="ceoApp">
+<head>
+	<title>Manulife Pos Technical</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="../js/angularjs-slider/dist/rzslider.css">
+	<link rel="stylesheet" href="../js/Radial-Gauge-in-AngularJS/DelightMeterStyle.css" />
+	<link rel="stylesheet" href="../js/roundSlider/dist/roundslider.min.css">
+	<link rel="stylesheet" href="../js/rulez.js/dist/css/rulez-black.min.css">
+	<!-- default css should always be the last one -->
+	<link rel="stylesheet" type="text/css" href="../style/default.css">
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../cordova.js"></script>
+	<script type="text/javascript" src="../js/angular/angular.min.js"></script>
+	<script type="text/javascript" src="../js/angular-animate/angular-animate.js"></script>
+	<script type="text/javascript" src="../js/angular-touch/angular-touch.js"></script>
+	<script type="text/javascript" src="../js/greensock-js/src/minified/TweenMax.min.js"></script>
+	<script type="text/javascript" src="../js/angularjs-slider/dist/rzslider.js"></script>
+	<script type="text/javascript" src="../js/Radial-Gauge-in-AngularJS/DelightMeter.js"></script>
+	<script type="text/javascript" src="../js/fastclick/lib/fastclick.js"></script>
+	<script type="text/javascript" src="../js/roundSlider/dist/roundslider.min.js"></script>
+	<script type="text/javascript" src="../js/rulez.js/dist/js/rulez.min.js"></script>
+	<script type="text/javascript" src="../js/controller/app.js"></script>    
+
+	<script>
+		$(document).ready(function(){
+			//menu animations are controlled by CSS. The following classes should be added when the menu is to be opened.
+			function open(){
+				$('body').addClass('pageMenuOpen');
+			}
+			function close(){
+				$('body').removeClass('pageMenuOpen');
+			}
+
+			var $menuButton = $('.hamburgerMenuBtn');
+			var $overlay = $('#pageOverlay');
+
+			$menuButton.click(function(e){
+				open();
+			});
+
+			$overlay.click(function(e){
+				e.preventDefault();
+				close();
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+<nav class="mnu-01-01 " id="pageMenu">
+	<div class="menuContainer">
+		<div class="panelUser">
+			<span class="imageIcon imageIconUser"  style="background-image:url(../images/content/placeholder-menu-agent.jpg);" ></span>
+			<p>Patrick Lam</p>
+		</div>
+		<ul class="menuList">
+			<li>
+				<a href="/agent-dashboard">
+					<span class="imageIcon imageIconHome"></span>
+					<p>Home</p>
+					<span class="imageIcon imageIconLock"></span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span class="imageIcon imageIconCustomers"></span>
+					<p>Customer List</p>
+					<span class="imageIcon imageIconLock"></span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span class="imageIcon imageIconTools"></span>
+					<p>All Tools</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span class="imageIcon imageIconResources"></span>
+					<p>Resources</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span class="imageIcon imageIconSolutions"></span>
+					<p>Solutions</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span class="imageIcon imageIconProposals"></span>
+					<p>Proposals</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span class="imageIcon imageIconApplication"></span>
+					<p>eApplication</p>
+				</a>
+			</li>
+		</ul>
+		
+		<div class="menuOption">
+			<ul>
+				<li><a href="#"><span class="imageIcon imageIconSupport"></span><span class="title">Support</span></a></li>
+				<li><a href="#"><span class="imageIcon imageIconSettings"></span><span class="title">Settings</span></a></li>
+			</ul>
+		</div>
+		
+		<div class="panelAction">
+			<button type="button" class="button logoutButton"><span class="imageIcon imageIconLogout"></span><p>LOGOUT</p></button>
+		</div>
+	</div>
+</nav>
+
+
+<div id="pageWrapper" ng-controller="mainNav-ctrl" ng-init="init('')">
+    <div id="indexPageOverlay" class="">
+    <div id="indexPageOverlayBackground"></div>
+    <div id="indexPageOverlayContent" myclick="closeIndexOverlay()">
+        <div class="inner">
+            <div class="content" myclick="$event.stopPropagation()">
+                <section class="panelz thin" style="height: 410px; width: 600px;">
+	<div class="content">
+		<div class="indexOverlayContent">
+			<ul>
+				<li><a href="#" myclick="goToPage('login.html')">Login</a></li>
+				<li><a href="#" myclick="goToPage('agent-dashboard.html')">Agent Dashboard</a></li>
+				<li><a href="#" myclick="goToPage('holistic-financial-planning.html')">Holistic Financial Planning</a></li>
+				<li><a href="#" myclick="goToPage('quantity-goals.html')">Quantity Goals</a></li>
+				<li><a href="#" myclick="goToPage('collect-asset-info.html')">Collect Asset Info</li>
+				<li><a href="#" myclick="goToPage('shortfall-and-projections-timeline.html')">Holistic Planning / Shortfall and Projections (Timeline View)</a></li>
+				<li><a href="#" myclick="goToPage('shortfall-and-projections-barchart.html')">Holistic Planning / Shortfall and Projections (Bar Chart View)</a></li>
+				<li><a href="#" myclick="goToPage('proposed-product-recommendations.html')">Recommended Plans</a></li>
+				<li><a href="#" myclick="goToPage('simple-illustration-detail.html')">Illustration</a></li>
+				<li><a href="#" myclick="goToPage('proposal-details.html')">Proposal Details</a></li>
+				<li><a href="#" myclick="goToPage('application-overview.html')">Application Overview</a></li>
+			</ul>
+			<ul>
+				<li><a href="#" myclick="goToPage('personal-information.html')">Personal Information (pre-populated)</a></li>
+				<li><a href="#" myclick="goToPage('edisclosure-basic-info.html')">eDisclosure (Basic info)</a></li>
+				<li><a href="#" myclick="goToPage('edisclosure-family-history.html')">eDisclosure (Family History)</a></li>
+				<li><a href="#" myclick="goToPage('edisclosure-personal-medical-history.html')">eDisclosure (Personal Medical History)</a></li>
+				<li><a href="#" myclick="goToPage('apply-underwriting-result.html')">Apply / Underwriting Result</a></li>
+				<li><a href="#" myclick="goToPage('apply-epayment.html')">Apply / ePayment</a></li>
+				<li><a href="#" myclick="goToPage('apply-esignature.html')">Apply / eSignature</a></li>
+				<li><a href="#" myclick="goToPage('customer-dashboard-policy-issued.html')">Customer Dashboard - Goal View (Policy Issued)</a></li>
+				<li><a href="#" myclick="goToPage('customer-dashboard-annual-review.html')">Customer Dashboard - Goal View (Annual Review)</a></li>
+				<li><a href="#" myclick="goToPage('projections-vs-actual-performance.html')">Projections vs. Actual Performance</a></li>
+				<li><a href="#" myclick="goToPage('recommend-solutions.html')">Recommend Solutions</a></li>
+				<li><a href="#" myclick="goToPage('../oldApp/Calc/pages/emotional-fact-finding.html')">Emotional Calculator</a></li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+            </div>
+        </div>
+    </div>
+</div>
+	
+
+	<div id="pageOverlay" class="">
+		<div id="pageOverlayBackground"></div>
+		<div id="pageOverlayContent">
+			<div class="inner">
+				<div class="content">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	 
+
+
+<header class="pageHeader pageHeader--customerDashboard">
+	
+	<div class="headerMenu">
+		<button class="imageIcon hamburgerMenuBtn" type="button"></button>
+	</div>
+		
+	<h1 class="pageTitle">
+		<span class="subtitle">Chan Tai Man </span>
+		<span class="title">Customer Home</span>
+	</h1>
+	
+	<div class="headerControl">
+		<ul>
+			<li><button><span class="imageIcon imageIconFilter"></span><span class="accessible">Filter</span></button></li>
+			<li><button><span class="imageIcon imageIconSearch"></span><span class="accessible">Search</span></button></li>
+			<li><button><span class="imageIcon imageIconTool"></span><span class="accessible">Tools</span></button></li>
+		</ul>
+	</div>
+</header>
+
+
+
+
+
+	<div id="app" class="scrollable">
+		<div class="scroller row">
+				
+			<section class="panelz yellow normal">
+				<header class="row">
+					<h2>Profile</h2>					
+					<button class="imageIcon imageIconForward"><span class="accessible"></span></button>		
+				</header>
+					<div class="content">
+						<div class="placeholderImage"><img src="../images/placeholder/customer-dashboard-profile-current-top.jpg" alt="" /></div>
+						<div class="scrollable scrollable--vertical">
+							<div class="placeholderImage"><img src="../images/placeholder/customer-dashboard-current-bottom.jpg" alt="" /></div>
+						</div>
+					</div>
+			</section>
+
+			<section class="panelz orange wide" style="margin-right: 48px;">
+				<header class="row">
+					<h2>Goals</h2>		
+					<button class="imageIcon imageIconForward"><span class="accessible"></span></button>
+				</header>
+				<div class="content">
+					<div class="scrollable scrollable--vertical">
+						<div class="placeholderImage" style="padding: 20px;"><a href="customer-dashboard-annual-review.html"><img src="../images/placeholder/customer-dashboard-policy-issued.jpg" alt="" /></a></div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+	</div>
+
+</div>
+</body>
+</html>
+
+
+
+
+

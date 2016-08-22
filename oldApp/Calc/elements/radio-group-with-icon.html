@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../style/default.css">
+    <link rel="stylesheet" type="text/css" href="../style/compgal.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="radio-group">
+        <label class="toggle-button no-of-kid-icon icon-basic">
+            <input type="checkbox" value="0"> Radio 1
+        </label>
+        <label class="toggle-button no-of-kid-icon icon-moderate selected">
+            <input type="checkbox" value="1"> Radio 2
+        </label>
+        <label class="toggle-button no-of-kid-icon icon-care-free">
+            <input type="checkbox" value="2"> Radio 3
+        </label>
+        <label class="toggle-button no-of-kid-icon icon-luxury">
+            <input type="checkbox" value="3"> Radio 4
+        </label>
+    </div>
+    <script src="../script/jquery.js"></script>
+    <script src="../script/plugin/fastclick.js"></script>
+    <script src="../script/pos/RadioGroup.js"></script>
+    <script>
+    /*global pos:true FastClick*/
+    FastClick.attach(document.body);
+    var toggleButton = new pos.RadioGroup($('.radio-group'));
+    console.log(toggleButton);
+    </script>
+</body>
+
+</html>
+
+
+
+

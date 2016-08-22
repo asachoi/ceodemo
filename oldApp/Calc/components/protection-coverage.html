@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../style/default.css">
+</head>
+
+<body>
+    <div class="calc-page-wrap protection-coverage">
+        <!-- start left panl -->
+        <div class="calc-page-content">
+            <div class="content-wrapper">
+                <div class="calc-page-title">
+                    <p class="title">Current Coverage / Reserve</p>
+                </div>
+                <!-- start content view -->
+                <div class="inner-content">
+                    <div class="saving-investment">
+                        <div class="slider-title">Current Savings and Investments (excluding residential property) (HK$)</div>
+                        <div class="new-slider-component single">
+                            <div class="slider-container"></div>
+                            <div class="content">
+                                <input type="number" name="fname" class="textinput">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="target-amount">
+                        <div class="slider-title">Current Life Protection Coverage (HK$)</div>
+                        <div class="new-slider-component single">
+                            <div class="slider-container"></div>
+                            <div class="content">
+                                <input type="number" name="fname" class="textinput">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end content view -->
+            </div>
+        </div>
+        <!-- end left panl -->
+        <div class="calc-page-graph"><div class="graph-control clearfix"></div></div>
+    </div>
+    <script src="../script/jquery.js"></script>
+    <script src="../script/plugin/fastclick.js"></script>
+    <script src="../script/pos/NumberInput.js"></script>
+    <script src="../script/pos/range/jquery.nouislider.js"></script>
+    <script src="../script/pos/range/NewSlider.js"></script>
+    <script src="../script/pos/Graph.js"></script>
+    <script src="../script/ProtectionCoverageReserve.js"></script>
+    <script>
+    /*global FastClick, page*/
+    FastClick.attach(document.body);
+    var investmentUserInfo = new page.ProtectionCoverageReserve(".protection-coverage", {});
+    </script>
+</body>
+
+</html>

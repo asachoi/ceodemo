@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+		<title>Manulife Pos Technical</title>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
+		<link rel='stylesheet' type='text/css' href='../style/default.css'>
+</head>
+<body>
+
+	<!-- start data -->
+	<script src='../script/data/ConfigData.js'></script>
+	<script src='../script/data/CharacterData.js'></script>
+	<script src='../script/data/DependentData.js'></script>
+	<script src='../script/data/GettingToKnowYouData.js'></script>
+	<!-- end data -->
+
+	<script src='../script/jquery.js'></script>
+	<script src="../script/handlebars.js"></script>
+	<script src="../script/Templates.js"></script>
+
+	<script src='../script/plugin/jquery-ui-effect.js'></script>
+	<script src='../script/plugin/jtouchswipe.js'></script>
+	<script src='../script/pos/character/CharacterAge.js'></script>
+	<script src='../script/pos/RadioGroup.js'></script>
+
+	<script src="../script/pos/page-management/PageElement.js"></script>
+	<script src="../script/pos/page-management/PageManagement.js"></script>
+
+	<script src='../script/pages/getting_to_know_you/AboutYouPage.js'></script>
+	<script>
+		var aboutYouPage = new page.AboutYouPage('.about-you-page', {
+			'container':'body',
+			'containerPosition':'prepend',
+			'isStandalone': true
+		});
+	</script>
+</body>
+
+</html>

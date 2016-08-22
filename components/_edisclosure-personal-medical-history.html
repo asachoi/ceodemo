@@ -1,0 +1,152 @@
+<div class="stepTracker">
+	<a href="edisclosure-family-history.html" class="previousStep"></a>
+	<a href="#" class="nextStep stepHidden"></a>
+	<!-- <div class="placeholderImage" style="position: relative; top: 1px; z-index: 1;"><img src="../images/placeholder/step-tracker-personal-medical-history.jpg" alt="" /></div> -->
+</div>
+
+<div class="stepperWrapper">
+	<ul class="stepMarker">
+		<li class="stepMarkerItem"><div class="dotMarker"></div></li>
+		<li class="stepMarkerItem"><div class="lineMarker"></div></li>
+		<li class="stepMarkerItem"><div class="dotMarker"></div></li>
+		<li class="stepMarkerItem"><div class="lineMarker"></div></li>
+		<li class="stepMarkerItem"><div class="dotMarker active"></div></li>
+	</ul>
+	<div class="stepper">
+		<a class="stepperItem" href="edisclosure-basic-info.html">
+			Basic Info
+		</a>
+		<a class="stepperItem" href="edisclosure-family-history.html">
+			Family history
+		</a>
+		<a class="stepperItem active" href="edisclosure-personal-medical-history.html">
+			Personal medical history
+		</a>
+	</div>
+</div>
+
+<div ng-controller="edisclosure-personal-medical-history-ctrl" style="margin-top: 40px;">
+
+	<h2 class="mainTitle">Personal medical history</h2>
+
+
+	<p class="subTitle">Have you ever suffered from any of the following conditions?</p>
+
+	<div class="grid">
+		<div class="span6" style="width: calc(50% - 10px); margin-right: 10px;">
+
+			<div class="checkboxContainers" ng-class='{"is-active" : isQuestionSetVisible($index)}' ng-repeat="q in questionSets" ng-if="$even">
+
+				<div class="checkboxContainer checkboxContainer--individualBox" ng-class='{"is-active" : isQuestionSetVisible($index)}' id="checkboxContainer[{$index}]">
+					<div class="checkbox" >
+						<input name="[{q.name}]" id="[{q.name}]" type="checkbox" ng-model='q.checked' ng-disabled="q.disabled">
+						<label for="[{q.name}]" myclick="toggleQuestion($index)">[{q.name}]</label>
+					</div>
+					<label class="checkboxContainer__label" for="Q1" myclick="toggleQuestion($index)">[{q.name}]</label>
+				</div>
+			</div>
+
+		</div>
+		<div class="span6" style="width: calc(50% - 10px); margin-left: 10px;">
+
+			<div class="checkboxContainers" ng-class='{"is-active" : isQuestionSetVisible($index)}' ng-repeat="q in questionSets" ng-if="$odd">
+
+				<div class="checkboxContainer checkboxContainer--individualBox" ng-class='{"is-active" : isQuestionSetVisible($index)}' id="checkboxContainer[{$index}]">
+					<div class="checkbox" >
+						<input name="[{q.name}]" id="[{q.name}]" type="checkbox" ng-model='q.checked' ng-disabled="q.disabled">
+						<label for="[{q.name}]" myclick="toggleQuestion($index)">[{q.name}]</label>
+					</div>
+					<label class="checkboxContainer__label" for="Q1" myclick="toggleQuestion($index)">[{q.name}]</label>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+	
+	<div ng-show="isQuestionSetVisible(0)" class="commonForm commonForm--withTopBorder">
+
+		<h2 class="mainTitle">Hypertension</h2>
+
+		<div class="question">
+			<p class="question__title">1. When was the condition first diagnosed?</p>
+			<div class="question__content">
+
+				<div class="placeholderImage" style="width: 280px;"><img src="../images/placeholder/custom-select.jpg" alt=""/></div>
+
+			</div>
+		</div>
+
+		<div class="question">
+			<p class="question__title">2. Do you know your most recent blood pressure reading?</p>
+			<div class="question__content">
+
+				<div class="myToggle myToggle--clearFix myToggle--small">
+					<div class="radio">
+						<input id="bloodPressureReadingYes" name="bloodPressureReading" type="radio" ng-model="body.bloodPressureReading" ng-value="true">
+						<label for="bloodPressureReadingYes">Yes</label>
+					</div>
+					<div class="radio">
+						<input id="bloodPressureReadingNo" name="bloodPressureReading" type="radio" ng-model="body.bloodPressureReading" ng-value="false">
+						<label for="bloodPressureReadingNo">No</label>
+					</div>
+				</div>
+
+				<div ng-show="body.bloodPressureReading">
+					<div class="question__innerQuestion">
+						<label for="bloodPressureReadingSystolic" class="question__title">Systolic</label>
+						<div class="question__content">
+							<input id="bloodPressureReadingSystolic" name="bloodPressureReadingSystolic" type="number" value="150">
+						</div>
+					</div>
+
+					<div class="question__innerQuestion">
+						<label for="bloodPressureReadingDiastolic" class="question__title">Diastolic</label>
+						<div class="question__content">
+							<input id="bloodPressureReadingDiastolic" name="bloodPressureReadingDiastolic" type="number" value="100">
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="question">
+			<p class="question__title">3. Do you take treatment for your blood pressure?</p>
+			<div class="question__content">
+
+				<div class="myToggle myToggle--clearFix myToggle--small">
+					<div class="radio">
+						<input id="treatmentYes" name="treatment" type="radio">
+						<label for="treatmentYes">Yes</label>
+					</div>
+					<div class="radio">
+						<input id="treatmentNo" name="treatment" type="radio">
+						<label for="treatmentNo">No</label>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="question">
+			<p class="question__title">4. Has your treatment been altered in the last 12 months?</p>
+			<div class="question__content">
+
+				<div class="myToggle myToggle--clearFix myToggle--small">
+					<div class="radio">
+						<input id="treatmentAlteredYes" name="treatmentAltered" type="radio">
+						<label for="treatmentAlteredYes">Yes</label>
+					</div>
+					<div class="radio">
+						<input id="treatmentAlteredNo" name="treatmentAltered" type="radio">
+						<label for="treatmentAlteredNo">No</label>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+	</div>
+</div>
+<script src="../js/controller/edisclosure-personal-medical-history.js"></script>

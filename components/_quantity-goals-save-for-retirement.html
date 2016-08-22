@@ -1,0 +1,109 @@
+<div class="scrollable" ng-controller="quantity-goal-save-for-retirement-ctrl">
+	<form name="myForm2" class="my-form2 commonForm">
+
+		<fieldset>
+			<legend>Age</legend>
+			<div class="sideBySideBlock">
+				<div class="sideBySideBlock__leftBlock">
+					<label for="currentAge">Current Age</label>
+					<span class="age"><input name="currentAge" type="number" min="0" max="65" ng-model="ageSlider.currentAge"></span>
+				</div>
+				<div class="sideBySideBlock__rightBlock">
+					<label for="targetAge">Target Retirement Age</label>
+					<span class="age"><input name="targetAge" type="number" min="0" max="65" ng-model="ageSlider.targetAge"></span>
+				</div>
+			</div>
+			<rzslider rz-slider-model="ageSlider.currentAge" rz-slider-high="ageSlider.targetAge" rz-slider-options="ageSlider.options">></rzslider>
+		</fieldset>
+
+		<fieldset>
+			<legend>Retirement</legend>
+			<div class="sideBySideBlock">
+				<div class="sideBySideBlock__leftBlock">
+					<label for="lifestyle">Ideal retirement lifestyle (HK$/month)</label>
+				</div>
+				<div class="sideBySideBlock__rightBlock">
+					
+					<div class="toggle">
+					    <input type="radio" id="lifestyle0" name="lifestyle" value="lifestyle" checked="checked"/>
+					    <label for="lifestyle0">Lifestyle</label>
+
+					    <input type="radio" id="lifestyle1" name="lifestyle" value="expenses"/>
+					    <label for="lifestyle1">Expenses</label>
+					</div>
+				</div>
+			</div>
+			<div class="sameWidthBlock sameWidthBlock--4blocks">
+				<ul>
+					<li>
+						<div class="radio">
+							<input id="styleBasic" name="styleRadio" type="radio" ng-click="setMonthlySpending(20000)">
+							<label for="styleBasic">Basic</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio">
+							<input id="styleModerate" name="styleRadio" type="radio" ng-click="setMonthlySpending(40000)">
+							<label for="styleModerate">Moderate</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio">
+							<input id="styleCareFree" name="styleRadio" type="radio" ng-click="setMonthlySpending(50000)">
+							<label for="styleCareFree">Care-free</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio">
+							<input id="styleLuxury" name="styleRadio" type="radio" ng-click="setMonthlySpending(70000)">
+							<label for="styleLuxury">Luxury</label>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="sliderWithValue">
+				<span class="sliderWithValue__slider">
+					<rzslider rz-slider-options="monthlySpendingSlider.options" rz-slider-model="monthlySpendingSlider.monthlySpending"></rzslider>
+				</span>
+				<span class="sliderWithValue__value">
+					<input name="monthlySpending" type="number" ng-model="monthlySpendingSlider.monthlySpending">
+				</span>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>How long</legend>
+			<div class="sideBySideBlock">
+				<div class="sideBySideBlock__fullBlock">
+					<label for="yearOfEnjoyment">For how long do you plan to enjoy this lifestyle? (years)</label>
+				</div>
+				<div class="sideBySideBlock__rightBlock">
+				</div>
+			</div>
+			<div class="sliderWithValue">
+				<span class="sliderWithValue__slider">										
+					<rzslider rz-slider-options="yearOfEnjoymentSlider.options" rz-slider-model="yearOfEnjoymentSlider.yearOfEnjoyment"></rzslider>
+				</span>
+				<span class="sliderWithValue__value">										
+					<input name="yearOfEnjoyment" type="number" ng-model="yearOfEnjoymentSlider.yearOfEnjoyment">
+				</span>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Inflation</legend>
+			<div class="sideBySideBlock" style="padding-bottom:20px;">
+				<div class="sideBySideBlock__leftBlock">
+					<label for="inflation">Expected rate of inflation (%)</label>
+				</div>
+				<div class="sideBySideBlock__rightBlock">
+					<button type="button" class="button--arithmetic" myclick="inflationDown()">-</button>
+					<input name="inflation" type="number" class="number number--withButton" ng-model="data.inflation">
+					<button type="button" class="button--arithmetic" myclick="inflationUp()">+</button>
+				</div>
+			</div>
+		</fieldset>
+
+	</form>
+</div>
+

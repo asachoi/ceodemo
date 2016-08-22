@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../style/default.css">
+</head>
+
+<body>
+    <div class="calc-page-wrap life-style">
+        <div class="calc-page-content">
+            <div class="content-wrapper">
+                <div class="calc-page-title">
+                    <p class="title">Your Retirement</p>
+                </div>
+                <div class="inner-content">
+                    <div class="retirement-duration">
+                        <div class="header-title">Retirement Duration</div>
+                        <div class="new-slider-component single">
+                            <div class="slider-container"></div>
+                            <div class="content">
+                                <input type="number" name="fname" class="textinput">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="retirement-type clearfix">
+                        <div class="header-title">Ideal Retirement Lifestyle (HK$/month)</div>
+                        <div class="radio-group">
+                            <label class="toggle-button">
+                                <input type="checkbox" value="1"></input>
+                                Expenses
+                            </label>
+                            <label class="toggle-button">
+                                <input type="checkbox" value="0"></input>
+                                Lifestyle
+                            </label>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="life-style-container">
+                        <div class="radio-group">
+                            <label class="toggle-button no-of-kid-icon icon-basic">
+                                <input type="checkbox" value="0"></input>
+                                Basic
+                            </label>
+                            <label class="toggle-button no-of-kid-icon icon-moderate">
+                                <input type="checkbox" value="1"></input>
+                                Moderate
+                            </label>
+                            <label class="toggle-button no-of-kid-icon icon-care-free">
+                                <input type="checkbox" value="2"></input>
+                                Care-Free
+                            </label>
+                            <label class="toggle-button no-of-kid-icon icon-luxury">
+                                <input type="checkbox" value="3"></input>
+                                Luxury
+                            </label>
+                        </div>
+                        <div class="hk-month clearfix">
+                            <div class="new-slider-component single">
+                                <div class="slider-container"></div>
+                                <label for="" class="label-bold label-unit">(HK$/mth)</label>
+                                <div class="content">
+                                    <input type="number" name="fname" class="textinput">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expense-container">
+                        <div class="total-retirement-expenses clearfix">
+                            <div class="header-title">Total Retirement Expenses (monthly expense) (HK$)
+                            </div>
+                            <div class="content label-bold">14,000</div>
+                        </div>
+                        <div class="expense-list">
+                            <ul class="list-item-value">
+                                <li class="left">
+                                    <div class="text-icon icon-clothers">
+                                        <p class="text">Clothers</p>
+                                    </div>
+                                    <div class="input">
+                                        <input type="number">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="text-icon icon-food-drink">
+                                        <p class="text">Food &amp; Drink</p>
+                                    </div>
+                                    <div class="input">
+                                        <input type="number">
+                                    </div>
+                                </li>
+                                <li class="left">
+                                    <div class="text-icon icon-housing">
+                                        <p class="text" class="">Housing <span class="note">(not inclsive of rent)</span>
+                                        </p>
+                                    </div>
+                                    <div class="input">
+                                        <input type="number">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="text-icon icon-transport">
+                                        <p class="text">Transport</p>
+                                    </div>
+                                    <div class="input">
+                                        <input type="number">
+                                    </div>
+                                </li>
+                                <li class="left">
+                                    <div class="text-icon icon-medical-care">
+                                        <p class="text">Medical Care</p>
+                                    </div>
+                                    <div class="input">
+                                        <input type="number">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="text-icon icon-other">
+                                        <p class="text">Other</p>
+                                    </div>
+                                    <div class="input">
+                                        <input type="number">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="annual-rate  clearfix">
+                        <div class="title">
+                            <p class="header-title">Assumed Annual Rate of Inflation (%)</p>
+                            <div class="icon-info" title="Tooltip"></div>
+                        </div>
+                        <div class="incerement-container">
+                            <ul id="increment-control" class="increment-control">
+                                <li class="sub"><span class="increment-button"></span>
+                                </li>
+                                <li>
+                                    <p class="value"></p>
+                                    <input type="number" />
+                                </li>
+                                <li class="add"><span class="increment-button"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="half-line"></div>
+                    <div class="note">
+                        Please note: The lifestyles and corresponding expenses above are classified. Figures are based on the 2009/2010 Household Expenditure Survey and Rebasing of the Consumer Price Indices, conducted by the government Census and Statistics Department and are for reference only. Actual expenses may vary depending on individual needs.
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="calc-page-graph"><div class="graph-control clearfix"></div></div>
+    </div>
+    <script src="../script/jquery.js"></script>
+    <script src="../script/plugin/fastclick.js"></script>
+    <script src="../script/plugin/jquery.tooltip.js"></script>
+    <script src="../script/pos/NumberInput.js"></script>
+    <script src="../script/pos/tooltip/Tooltip.js"></script>
+    <script src="../script/pos/range/jquery.nouislider.js"></script>
+    <script src="../script/pos/range/NewRangeSlider.js"></script>
+    <script src="../script/pos/range/NewSlider.js"></script>
+    <script src="../script/pos/RadioGroup.js"></script>
+    <script src="../script/pos/IncrementControl.js"></script>
+    <script src="../script/RetirementLifeStyle.js"></script>
+    <script src="../script/pos/Graph.js"></script>
+    <script>
+    /*global page, FastClick*/
+    FastClick.attach(document.body);
+    var retirementUser = new page.RetirementLifeStyle(".life-style", {});
+    </script>
+</body>
+
+</html>

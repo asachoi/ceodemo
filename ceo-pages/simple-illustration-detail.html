@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="ceoApp">
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../js/angularjs-slider/dist/rzslider.css">
+    <link rel="stylesheet" href="../js/Radial-Gauge-in-AngularJS/DelightMeterStyle.css" />
+    <link rel="stylesheet" href="../js/roundSlider/dist/roundslider.min.css">
+    <link rel="stylesheet" href="../js/rulez.js/dist/css/rulez-black.min.css">
+    <!-- default css should always be the last one -->
+    <link rel="stylesheet" type="text/css" href="../style/default.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script type="text/javascript" src="../js/angular/angular.min.js"></script>
+    <script type="text/javascript" src="../js/angular-animate/angular-animate.js"></script>
+    <script type="text/javascript" src="../js/angular-touch/angular-touch.js"></script>
+    <script type="text/javascript" src="../js/greensock-js/src/minified/TweenMax.min.js"></script>
+    <script type="text/javascript" src="../js/angularjs-slider/dist/rzslider.js"></script>
+    <script type="text/javascript" src="../js/Radial-Gauge-in-AngularJS/DelightMeter.js"></script>
+    <script type="text/javascript" src="../js/fastclick/lib/fastclick.js"></script>
+    <script type="text/javascript" src="../js/roundSlider/dist/roundslider.min.js"></script>
+    <script type="text/javascript" src="../js/rulez.js/dist/js/rulez.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.rwdImageMaps.min.js"></script>
+    <script type="text/javascript" src="../js/controller/app.js"></script>
+    
+</head>
+<body ng-cloak ng-controller="mainNav-ctrl" ng-init="init('index.html', true )">
+
+<div id="pageWrapper">
+    <div id="indexPageOverlay" class="">
+    <div id="indexPageOverlayBackground"></div>
+    <div id="indexPageOverlayContent" myclick="closeIndexOverlay()">
+        <div class="inner">
+            <div class="content" myclick="$event.stopPropagation()">
+                <section class="panelz thin" style="height: 410px; width: 600px;">
+	<div class="content">
+		<div class="indexOverlayContent">
+			<ul>
+				<li><a href="#" myclick="goToPage('login.html')">Login</a></li>
+				<li><a href="#" myclick="goToPage('agent-dashboard.html')">Agent Dashboard</a></li>
+				<li><a href="#" myclick="goToPage('holistic-financial-planning.html')">Holistic Financial Planning</a></li>
+				<li><a href="#" myclick="goToPage('quantity-goals.html')">Quantity Goals</a></li>
+				<li><a href="#" myclick="goToPage('collect-asset-info.html')">Collect Asset Info</li>
+				<li><a href="#" myclick="goToPage('shortfall-and-projections-timeline.html')">Holistic Planning / Shortfall and Projections (Timeline View)</a></li>
+				<li><a href="#" myclick="goToPage('shortfall-and-projections-barchart.html')">Holistic Planning / Shortfall and Projections (Bar Chart View)</a></li>
+				<li><a href="#" myclick="goToPage('proposed-product-recommendations.html')">Recommended Plans</a></li>
+				<li><a href="#" myclick="goToPage('simple-illustration-detail.html')">Illustration</a></li>
+				<li><a href="#" myclick="goToPage('proposal-details.html')">Proposal Details</a></li>
+				<li><a href="#" myclick="goToPage('application-overview.html')">Application Overview</a></li>
+			</ul>
+			<ul>
+				<li><a href="#" myclick="goToPage('personal-information.html')">Personal Information (pre-populated)</a></li>
+				<li><a href="#" myclick="goToPage('edisclosure-basic-info.html')">eDisclosure (Basic info)</a></li>
+				<li><a href="#" myclick="goToPage('edisclosure-family-history.html')">eDisclosure (Family History)</a></li>
+				<li><a href="#" myclick="goToPage('edisclosure-personal-medical-history.html')">eDisclosure (Personal Medical History)</a></li>
+				<li><a href="#" myclick="goToPage('apply-underwriting-result.html')">Apply / Underwriting Result</a></li>
+				<li><a href="#" myclick="goToPage('apply-epayment.html')">Apply / ePayment</a></li>
+				<li><a href="#" myclick="goToPage('apply-esignature.html')">Apply / eSignature</a></li>
+				<li><a href="#" myclick="goToPage('customer-dashboard-policy-issued.html')">Customer Dashboard - Goal View (Policy Issued)</a></li>
+				<li><a href="#" myclick="goToPage('customer-dashboard-annual-review.html')">Customer Dashboard - Goal View (Annual Review)</a></li>
+				<li><a href="#" myclick="goToPage('projections-vs-actual-performance.html')">Projections vs. Actual Performance</a></li>
+				<li><a href="#" myclick="goToPage('recommend-solutions.html')">Recommend Solutions</a></li>
+				<li><a href="#" myclick="goToPage('../oldApp/Calc/pages/emotional-fact-finding.html')">Emotional Calculator</a></li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+<div id="pageOverlay" class="">
+    <div id="pageOverlayBackground"></div>
+    <div id="pageOverlayContent" myclick="closeOverlay()">
+        <div class="inner">
+            <div class="content" myclick="$event.stopPropagation()">
+                
+            </div>
+        </div>
+    </div>
+</div>
+    	
+	
+
+	
+
+<header class="pageHeader pageHeader--editMode">
+
+	<div class="pageHeader__cancelArea">
+		<button myclick="goToPage('')"><span class="imageIcon imageIconBack"></span><span class="accessible">Back</span></button>
+		
+	</div>
+
+	<h1 class="pageTitle">
+		<span class="subtitle">Chan Tai Man </span>
+		<span class="title">Illustration</span>
+	</h1>
+	
+	<div class="headerControl">
+		<ul>
+			
+			
+			
+			
+		</ul>
+	</div>
+</header>
+
+
+
+
+    <div id="app" class="full-screen editMode simpleIllustration">
+        <div class="row">
+            
+	
+<section>
+	<section class="commonBox">
+
+			<div class="grid">
+				<div class="span2">
+
+					<div class="summaryTitle">
+						<h3 class="summaryTitle__title">My Choice</h3>
+					</div>
+
+				</div>
+				<div class="span10">
+
+					<div class="valuePairBlock">
+						<div class="valuePairBlock__leftBlock">
+							<span class="valuePairBlock__description">Guaranteed amount</span>
+						</div>
+						<div class="valuePairBlock__rightBlock">
+							<span class="valuePairBlock__value">HK$ 9,787,200</span>
+						</div>
+					</div>
+
+					<div class="valuePairBlock">
+						<div class="valuePairBlock__leftBlock">
+							<span class="valuePairBlock__description">Guaranteed income</span>
+						</div>
+						<div class="valuePairBlock__rightBlock">
+							<span class="valuePairBlock__value">HK$ 40,780 / month</span>
+						</div>
+					</div>
+
+					<div class="valuePairBlock">
+						<div class="valuePairBlock__leftBlock">
+							<span class="valuePairBlock__description">Estimated total income</span>
+						</div>
+						<div class="valuePairBlock__rightBlock">
+							<span class="valuePairBlock__value">HK$ 84,591 / month</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+	</section>
+
+
+
+	<section class="commonBox">
+
+		<section ng-controller="simple-illustration-detail-ctrl" >
+
+	<div class="actionIcons">
+<!-- 		<span class="imageIcon imageIconPDF"></span>
+ -->		<nav class="horizontalNav horizontalNav--withBottomBorder">
+			<ul>
+				<li class="item" ng-class='{"is-active" : isActive(0)}' myclick='toggleTab(0)'><a href="#">Accumulated illustration</a></li>
+				<li class="item" ng-class='{"is-active" : isActive(1)}' myclick='toggleTab(1)'><a href="#">Regular withdrawal illustration</a></li>
+				<li class="item" ng-class='{"is-active" : isActive(2)}' myclick='toggleTab(2)'><a href="#">Complete rollover illustration</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="scrollable scrollable--vertical" style="height: 400px;">
+		<div ng-init="init('container')">
+			<div class="grid">
+				<div class="span8">
+					<div style="padding-top: 12px;">
+						<div id="container" ng-init="init('container')"></div>
+					</div>
+				</div>
+				<div class="span4">
+
+					<div class="checkboxContainers">
+						<div class="checkboxContainer checkboxContainer--stackedBox" ng-class='{"is-active" : isSeriesVisible($index)}' id="checkboxContainer[{$index}]" ng-repeat="s in series">
+							<div class="checkbox" >
+								<input name="form" id="[{s.name}]" type="checkbox" ng-model='seriesChecked[$index]' ng-change="toggleDisplay($index)">
+								<label for="[{s.name}]">[{s.name}]</label>
+							</div>
+							<label class="checkboxContainer__label" for="[{s.name}]">[{s.name}]</label>
+							<span class="checkboxContainer__graphLegend" style="background-color:[{s.color}]" myclick="toggleDisplay($index)"></span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="placeholderImage"><img src="../images/content/basic-info-table.jpg" alt="" /></div>
+		</div>
+	</div>
+
+</section>
+<script src="../js/Highcharts-4.1.9/js/highcharts.js"></script>
+<script src="../js/controller/simple-illustration-detail.js"></script>
+
+
+	</section>
+
+
+</section>
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+

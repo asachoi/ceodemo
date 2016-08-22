@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../style/default.css">
+    <link rel="stylesheet" type="text/css" href="../style/compgal.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="text-icon icon-food-drink">
+        <p class="text">Text</p>
+    </div>
+    <script src="../script/jquery.js"></script>
+    <script src="../script/plugin/fastclick.js"></script>
+    <script src="../script/pos/RadioGroup.js"></script>
+    <script>
+    /*global pos:true, FastClick*/
+    FastClick.attach(document.body);
+    var toggleButton = new pos.RadioGroup($('.radio-group'));
+    console.log(toggleButton);
+    </script>
+</body>
+
+</html>

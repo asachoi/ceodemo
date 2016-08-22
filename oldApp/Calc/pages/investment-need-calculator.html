@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-height, height=device-width, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi,  user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="../style/default.css">
+</head>
+
+<body>
+    <div id="pageWrapper" class="investment-need-calculator">
+        <div id="pageOverlay" class="pageOverlay"></div>
+        <div class="pageHeader" id="pageHeader" data-hw-module="app/modules/Header">
+            <div class="header-wrapper">
+                <div class="header-menu">
+                    <span class="imageIcon hamburgerManulifeMenuBtn"></span>
+                </div>
+                <div class="hader-title">
+                    <h1 class="title">Investment Needs Calculator</h1>
+                </div>
+                <div class="header-control">
+                    <ul class="actions-list">
+                        <li>
+                            <span class="imageIcon imageIconTool"></span><span class="accessible">Tools</span>
+                        </li>
+                        <li>
+                            <span class="imageIcon imageIconClose"></span><span class="accessible">Close</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="swipe-panel-wrapper swipe-page">
+            <div class="swipe-page-wrap">
+                <div class="swipe-page-content swiper-container">
+                    <ul class="swipe-panel swiper-wrapper">
+                        <li class="item active swiper-slide">
+                            <!--start investment user info -->
+                            <div class="calc-page-wrap investment-user-info">
+                                <!-- start left panl -->
+                                <div class="calc-page-content">
+                                    <div class="content-wrapper">
+                                        <div class="calc-page-title">
+                                            <p class="title">Your Investment</p>
+                                        </div>
+                                        <!-- start content view -->
+                                        <div class="inner-content">
+                                            <div class="age-info">
+                                                <div class="new-slider-component range">
+                                                    <div class="header">
+                                                        <div class="content left">
+                                                            <span class="title">Current Age</span>
+                                                            <input type="number" name="fname" class="textinput">
+                                                        </div>
+                                                        <div class="content left center">
+                                                            <span class="title">Target Age</span>
+                                                            <input type="number" name="fname" class="textinput">
+                                                        </div>
+                                                        <div class="content right saving-period">
+                                                            <span class="title">Saving Period (yr)</span>
+                                                            <input type="number" name="" value="28" disabled class="saving-period-input">
+                                                        </div>
+                                                    </div>
+                                                    <div class="slider-container"></div>
+                                                </div>
+                                            </div>
+                                            <div class="saving-investment">
+                                                <label class="label-bold slider-title">Savings and Investments (excluding property) (HK$)</label>
+                                                <div class="new-slider-component single">
+                                                    <div class="slider-container"></div>
+                                                    <div class="content">
+                                                        <input type="number" name="fname" class="textinput">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="target-amount">
+                                                <label class="label-bold slider-title">Target Amount (HK$)</label>
+                                                <div class="new-slider-component single">
+                                                    <div class="slider-container"></div>
+                                                    <div class="content">
+                                                        <input type="number" name="fname" class="textinput">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="line"></div>
+                                            <!-- start rate container -->
+                                            <div class="rate-container">
+                                                <div class="variable">
+                                                    <div class="annual-rate rate-return clearfix">
+                                                        <div class="title slider-title">
+                                                            <label class="label-bold">Assumed Annual Rate of Return (%)</label>
+                                                            <i class="icon icon-info" title="Tooltip"></i>
+                                                        </div>
+                                                        <div class="incerement-container">
+                                                            <ul id="increment-control" class="increment-control">
+                                                                <li class="sub"><span class="increment-button"></span></li>
+                                                                <li>
+                                                                    <p class="value"></p>
+                                                                    <input type="number"/>
+                                                                </li>
+                                                                <li class="add"><span class="increment-button"></span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="annual-rate rate-inflation clearfix">
+                                                        <div class="title slider-title">
+                                                            <label class="label-bold">Assumed Annual Rate of Inflation (%) </label>
+                                                            <i class="icon icon-info" title="Tooltip"></i>
+                                                        </div>
+                                                        <div class="incerement-container">
+                                                            <ul class="increment-control">
+                                                                <li class="sub"><span class="increment-button"></span></li>
+                                                                <li>
+                                                                    <p class="value"></p>
+                                                                    <input type="number"/>
+                                                                </li>
+                                                                <li class="add"><span class="increment-button"></span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end rate container -->
+                                        </div>
+                                        <!-- end content view -->
+                                    </div>
+                                </div>
+                                <!-- end left panl -->
+                                <div class="calc-page-graph"><div class="graph-control clearfix"></div></div>
+                            </div>
+                            <!--end investment user info -->
+                        </li>
+                        <li class="item swiper-slide">
+                            <!-- start investment analysis -->
+                            <div class="calc-page-wrap investment-analysis">
+                                <div class="calc-page-content">
+                                    <div class="content-wrapper">
+                                        <!--start content wrapper -->
+                                        <!-- <h3 class="page-title">Analysis</h3> -->
+                                        <div class="calc-page-title">
+                                            <p class="title">Analysis</p>
+                                        </div>
+                                        <div class="inner-content">
+                                            <div id="" class="accordians-control">
+                                                <ul class="accordians-header">
+                                                    <li class="header">
+                                                        <p class="label-bold title">Cumulative Total Assets</p>
+                                                    </li>
+                                                    <li class="value">
+                                                        <p class="label-bold hk-value">HK$ 80,000</p>
+                                                    </li>
+                                                    <li><i class="expand-icon"></i>
+                                                    </li>
+                                                </ul>
+                                                <div class="accordians-content">
+                                                    <ul class="leaders">
+                                                        <li>
+                                                            <span>Savings and Investments (excluding property)</span>
+                                                            <span>HK$ 80,000</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div id="" class="accordians-control blue-color">
+                                                <ul class="accordians-header">
+                                                    <li class="header">
+                                                        <p class="label-bold title">Target Amount After Inflation</p>
+                                                    </li>
+                                                    <li class="value">
+                                                        <p class="label-bold hk-value">HK$ 150,000</p>
+                                                    </li>
+                                                    <li><i class="expand-icon"></i>
+                                                    </li>
+                                                </ul>
+                                                <div class="accordians-content">
+                                                    <ul class="leaders">
+                                                        <li>
+                                                            <span>Current Monthly Income</span>
+                                                            <span>HK$ 20,000</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="ideal-retirement">
+                                                <ul class="leaders">
+                                                    <li>
+                                                        <span class="label-bold">Shortfall of Target Saving</span>
+                                                        <span class="label-bold highlight">HK$ 70,000</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="label-bold text">Recommended Monthly Savings for Next 30 Years</span>
+                                                        <span class="label-bold value highlight">HK$ 167</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="delay">
+                                                <div class="years-block">
+                                                    <p class="question">What if you defer your saving plan?</p>
+                                                </div>
+                                                <div class="value-block">
+                                                    <p class="question">Estimated Monthly Savings for next 30 year(s)</p>
+                                                </div>
+                                                <div class="years-block">
+                                                    <ul id="increment-control" class="increment-control no-input" data-suffix="years">
+                                                        <li class="sub"><span class="increment-button"></span>
+                                                        </li>
+                                                        <li>
+                                                            <p class="value"></p>
+                                                            <input type="number" />
+                                                        </li>
+                                                        <li class="add"><span class="increment-button"></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="value-block">
+                                                    <p class="label-bold">HK$ 167</p>
+                                                </div>
+                                            </div>
+                                            <div class="half-line"></div>
+                                            <p class="note">The recommended savings total above is based on an assumed rate of return of 0% and is for reference only</p>
+                                        </div>
+                                        <!-- end content wrapper -->
+                                    </div>
+                                </div>
+                                <div class="calc-page-graph with-action">
+                                        <div class="graph-control clearfix"></div>
+
+                                        <div class="slide-in-panel-wrapper" data-toggle-button=".action" data-toggle-class="show">
+                                            <div class="slide-in-panel">
+                                                <div class="action">
+                                                    <span class="left-arrow-content"></span>
+                                                </div>
+                                                <div class="slide-in-content">
+                                                    <div class="age">
+                                                        <label class="label-bold">Age</label>
+                                                        <div class="content-value">
+                                                            <input type="number" name="fname" class="textinput">
+                                                        </div>
+                                                    </div>
+                                                    <div class="target-retirement-age">
+                                                        <label class="label-bold">Target Retirement Age</label>
+                                                        <div class="content-value">
+                                                            <input type="number" name="fname" class="textinput" value="65">
+                                                        </div>
+                                                    </div>
+                                                    <div class="expected-year-retirement">
+                                                        <label class="label-bold">Expected Years of Retirement</label>
+                                                        <div class="content-value">
+                                                            <input type="number" name="fname" class="textinput">
+                                                        </div>
+                                                    </div>
+                                                    <div class="mpf-balance">
+                                                        <label class="label-bold">Existing MPF Balance (HK$)</label>
+                                                        <div class="content-value">
+                                                            <input type="number" name="fname" class="textinput">
+                                                        </div>
+                                                    </div>
+                                                    <div class="mpf-contribution">
+                                                        <label class="label-bold">Monthly MPF Contributions (HK$)</label>
+                                                        <div class="content-value">
+                                                            <input type="number" name="fname" class="textinput">
+                                                        </div>
+                                                    </div>
+                                                    <div class="current-assets">
+                                                        <label class="label-bold">Current Assets (HK$) (Excluding property)</label>
+                                                        <div class="content-value">
+                                                            <input type="number" name="fname" class="textinput">
+                                                        </div>
+                                                    </div>
+                                                    <div class="pre-retirement">
+                                                        <label class="label-bold">Assumed Annual Rate of Return (%) (pre-retirement)</label>
+                                                        <ul class="increment-control">
+                                                            <li class="sub"><span class="increment-button"></span></li>
+                                                            <li>
+                                                                <p class="value"></p>
+                                                                <input type="number"/>
+                                                            </li>
+                                                            <li class="add"><span class="increment-button"></span></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="post-retirement">
+                                                        <label class="label-bold">Assumed Annual Rate of Return (%) (post-retirement)</label>
+                                                        <ul class="increment-control">
+                                                            <li class="sub"><span class="increment-button"></span></li>
+                                                            <li>
+                                                                <p class="value"></p>
+                                                                <input type="number"/>
+                                                            </li>
+                                                            <li class="add"><span class="increment-button"></span></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="rate-inflation">
+                                                        <label class="label-bold">Assumed Annual Rate of Inflation (%)</label>
+                                                        <ul class="increment-control">
+                                                            <li class="sub"><span class="increment-button"></span></li>
+                                                            <li>
+                                                                <p class="value"></p>
+                                                                <input type="number"/>
+                                                            </li>
+                                                            <li class="add"><span class="increment-button"></span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <!-- end investment analysis -->
+                        </li>
+                    </ul>
+                    <span class="left-arrow swipe-button hidden"></span>
+                    <span class="right-arrow swipe-button"></span>
+
+                    <div class="active-panel">
+                        <a href="#" class="proceed-link hidden">
+                            <button type="button" class="button positiveButton">Proceed</button>
+                        </a>
+                        <div class="active-panel-inner">
+                            <div class="show-footer-menu">
+                                <p class="step-text">Step <span class="curr-step">2</span> out of <span class="total-step">3</span>
+                                </p>
+                                <div class="up-arrow"></div>
+                            </div>
+                            <div class="active-panel-bar">
+                                <div class="active-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="footer-menu" class="footer-menu">
+                        <ul class="menu-list"></ul>
+                        <div id="white-overlay" class="white-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../script/jquery.js"></script>
+    <script src="../script/plugin/fastclick.js"></script>
+    <script src="../script/plugin/idangerous.swiper.scrollbar.js"></script>
+    <script src="../script/pos/NumberInput.js"></script>
+    <script src="../script/plugin/jquery.tooltip.js"></script>
+    <script src="../script/pos/tooltip/Tooltip.js"></script>
+    <script src="../script/plugin/jtouchswipe.js"></script>
+    <script src="../script/pos/range/jquery.nouislider.js"></script>
+    <script src="../script/pos/range/NewRangeSlider.js"></script>
+    <script src="../script/pos/range/NewSlider.js"></script>
+    <script src="../script/pos/RadioGroup.js"></script>
+    <script src="../script/pos/IncrementControl.js"></script>
+    <script src="../script/pos/Accordians.js"></script>
+    <script src="../script/pos/Graph.js"></script>
+    <script src="../script/pos/SlideInControl.js"></script>
+    <script src="../script/pos/SwipePanel.js"></script>
+
+    <script src="../script/InvestmentUserInfo.js"></script>
+    <script src="../script/InvestmentAnalysis.js"></script>
+    <script src="../script/InvestmentCalculator.js"></script>
+    <script>
+    /*global page, FastClick*/
+    FastClick.attach(document.body);
+    var investmentUserInfo = new page.InvestmentUserInfo(".investment-user-info", {});
+    var swipePanel = new pos.SwipePanel($('.swiper-container'));
+    var investmentAnalysis = new page.InvestmentAnalysis($('.investment-analysis'), {
+
+    });
+    </script>
+</body>
+
+</html>

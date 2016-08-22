@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="ceoApp">
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../js/angularjs-slider/dist/rzslider.css">
+    <link rel="stylesheet" href="../js/Radial-Gauge-in-AngularJS/DelightMeterStyle.css" />
+    <link rel="stylesheet" href="../js/roundSlider/dist/roundslider.min.css">
+    <link rel="stylesheet" href="../js/rulez.js/dist/css/rulez-black.min.css">
+    <!-- default css should always be the last one -->
+    <link rel="stylesheet" type="text/css" href="../style/default.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script type="text/javascript" src="../js/angular/angular.min.js"></script>
+    <script type="text/javascript" src="../js/angular-animate/angular-animate.js"></script>
+    <script type="text/javascript" src="../js/angular-touch/angular-touch.js"></script>
+    <script type="text/javascript" src="../js/greensock-js/src/minified/TweenMax.min.js"></script>
+    <script type="text/javascript" src="../js/angularjs-slider/dist/rzslider.js"></script>
+    <script type="text/javascript" src="../js/Radial-Gauge-in-AngularJS/DelightMeter.js"></script>
+    <script type="text/javascript" src="../js/fastclick/lib/fastclick.js"></script>
+    <script type="text/javascript" src="../js/roundSlider/dist/roundslider.min.js"></script>
+    <script type="text/javascript" src="../js/rulez.js/dist/js/rulez.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.rwdImageMaps.min.js"></script>
+    <script type="text/javascript" src="../js/controller/app.js"></script>
+    
+</head>
+<body ng-cloak ng-controller="mainNav-ctrl" ng-init="init('index.html', true )">
+
+<div id="pageWrapper">
+    <div id="indexPageOverlay" class="">
+    <div id="indexPageOverlayBackground"></div>
+    <div id="indexPageOverlayContent" myclick="closeIndexOverlay()">
+        <div class="inner">
+            <div class="content" myclick="$event.stopPropagation()">
+                <section class="panelz thin" style="height: 410px; width: 600px;">
+	<div class="content">
+		<div class="indexOverlayContent">
+			<ul>
+				<li><a href="#" myclick="goToPage('login.html')">Login</a></li>
+				<li><a href="#" myclick="goToPage('agent-dashboard.html')">Agent Dashboard</a></li>
+				<li><a href="#" myclick="goToPage('holistic-financial-planning.html')">Holistic Financial Planning</a></li>
+				<li><a href="#" myclick="goToPage('quantity-goals.html')">Quantity Goals</a></li>
+				<li><a href="#" myclick="goToPage('collect-asset-info.html')">Collect Asset Info</li>
+				<li><a href="#" myclick="goToPage('shortfall-and-projections-timeline.html')">Holistic Planning / Shortfall and Projections (Timeline View)</a></li>
+				<li><a href="#" myclick="goToPage('shortfall-and-projections-barchart.html')">Holistic Planning / Shortfall and Projections (Bar Chart View)</a></li>
+				<li><a href="#" myclick="goToPage('proposed-product-recommendations.html')">Recommended Plans</a></li>
+				<li><a href="#" myclick="goToPage('simple-illustration-detail.html')">Illustration</a></li>
+				<li><a href="#" myclick="goToPage('proposal-details.html')">Proposal Details</a></li>
+				<li><a href="#" myclick="goToPage('application-overview.html')">Application Overview</a></li>
+			</ul>
+			<ul>
+				<li><a href="#" myclick="goToPage('personal-information.html')">Personal Information (pre-populated)</a></li>
+				<li><a href="#" myclick="goToPage('edisclosure-basic-info.html')">eDisclosure (Basic info)</a></li>
+				<li><a href="#" myclick="goToPage('edisclosure-family-history.html')">eDisclosure (Family History)</a></li>
+				<li><a href="#" myclick="goToPage('edisclosure-personal-medical-history.html')">eDisclosure (Personal Medical History)</a></li>
+				<li><a href="#" myclick="goToPage('apply-underwriting-result.html')">Apply / Underwriting Result</a></li>
+				<li><a href="#" myclick="goToPage('apply-epayment.html')">Apply / ePayment</a></li>
+				<li><a href="#" myclick="goToPage('apply-esignature.html')">Apply / eSignature</a></li>
+				<li><a href="#" myclick="goToPage('customer-dashboard-policy-issued.html')">Customer Dashboard - Goal View (Policy Issued)</a></li>
+				<li><a href="#" myclick="goToPage('customer-dashboard-annual-review.html')">Customer Dashboard - Goal View (Annual Review)</a></li>
+				<li><a href="#" myclick="goToPage('projections-vs-actual-performance.html')">Projections vs. Actual Performance</a></li>
+				<li><a href="#" myclick="goToPage('recommend-solutions.html')">Recommend Solutions</a></li>
+				<li><a href="#" myclick="goToPage('../oldApp/Calc/pages/emotional-fact-finding.html')">Emotional Calculator</a></li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+<div id="pageOverlay" class="">
+    <div id="pageOverlayBackground"></div>
+    <div id="pageOverlayContent" myclick="closeOverlay()">
+        <div class="inner">
+            <div class="content" myclick="$event.stopPropagation()">
+                
+                <section class="panelz wide" style="width: 900px; height: 400px;">
+	<div class="content padded">
+
+		<div class="scrollable scrollable--vertical scrollable--withFooter">
+
+			<div class="placeholderImage"><img src="../images/placeholder/create-customer-profile.jpg" alt="" /></div>
+<!--    		
+			<div class="textBlock">
+				<div class="row">
+					<label for="scenario">Save your scenario as</label>
+					<input name="scenario" id="scenario" type="text" value="Scenario 1">
+				</div>
+			</div>
+	
+			<div class="textBlock textBlock--withSeparator">
+				<h2>Create your profile</h2>
+				<p>By submitting the below information, you agree to allow Manulife to store your personal data.</p>
+			</div>
+
+			<div class="textBlock textBlock--withSeparator">
+				<div class="row">
+					<label for="surname"><strong>Surname</strong></label>
+					<input name="surname" id="surname" type="text" value="Chan">
+				</div>
+				<div class="row">
+					<label for="givenName"><strong>Given name</strong></label>
+					<input name="givenName" id="givenName" type="text" value="Tai Man">
+				</div>
+				<div class="row">
+					<label for="genderMale"><strong>Gender</strong></label>
+					<div class="toggle">
+						<input type="radio" id="genderMale" name="genderRadio" value="male" checked="checked">
+						<label for="genderMale">Male</label>
+						<input type="radio" id="genderFemale" name="genderRadio" value="female">
+						<label for="genderFemale">Female</label>
+					</div>
+				</div>
+				<div class="row">
+					<label for="dateOfBirth"><strong>Date of birth</strong></label>
+					<input name="dateOfBirth" id="dateOfBirth" type="text" value="15 - May - 1985">
+				</div>
+			</div>
+-->
+
+		</div>
+		
+		<div class="panelFooter panelFooter--twoButtons">
+			<span class="buttonLeft">
+				<button type="button" class="button negativeButton" myclick="closeOverlay()">Cancel</button>
+			</span>
+			<span class="buttonRight">
+				<button type="button" class="button positiveButton" myclick="goToPage('proposed-product-recommendations.html')">Submit</button>
+			</span>
+		</div>
+
+	</div>
+</section>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+    	
+	
+
+	
+
+<header class="pageHeader pageHeader--editMode">
+
+	<div class="pageHeader__cancelArea">
+		
+		<button myclick="goToPage()"><span class="imageIcon imageIconClose"></span><span class="accessible">Close</span></button>
+	</div>
+
+	<h1 class="pageTitle">
+		<span class="subtitle">Prospect Customer </span>
+		<span class="title">Will You Have Enough?</span>
+	</h1>
+	
+	<div class="headerControl">
+		<ul>
+			
+			<li><button><span class="imageIcon imageIconFile"></span><span class="accessible">PDF</span></button></li>
+			
+			<li><button class="pageActionButton" myclick="openOverlay()">Generate Proposal</button></li>
+		</ul>
+	</div>
+</header>
+
+
+
+
+    <div id="app" class="full-screen editMode shortfallProjection">
+        <div class="row">
+            
+
+<!--
+<section class="commonBox">
+-->
+	
+
+<section class="row">
+	<section class="panelz">
+		<div class="scrollable scrollable--vertical">
+			<div class="content padded">
+
+				<div class="viewMode">
+					<div class="viewMode__header"><img src="../images/placeholder/shortfall-title.jpg" alt="" /></div>
+					<div class="viewMode__selector"><span class="text">View mode</span> <a href="#"><img src="../images/placeholder/icon-bar-chart-highlighted.png" alt="" /></a><a href="shortfall-and-projections-timeline.html"><img src="../images/placeholder/icon-timeline.png" alt="" /></a></div>
+				</div>
+
+				<div class="placeholderImage" style="text-align: left; margin-top: 20px;"><img src="../images/placeholder/shortfall-bar-chart.jpg" alt="" style="width: 65%;" /></div>
+
+
+			</div>
+		</div>
+	</section>
+</section>
+<script src="../js/controller/shortfall-and-projections-simple.js"></script>
+
+<!--
+</section>
+-->
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+

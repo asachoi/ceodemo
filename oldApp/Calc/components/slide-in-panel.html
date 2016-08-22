@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../style/default.css">
+    <style>
+        .wrapper { position: relative; }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et exercitationem laborum eaque illo est non aperiam similique praesentium possimus a, harum voluptate quia voluptatum fugiat. Qui natus architecto rem aliquid.</p>
+    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat corporis porro sit, quaerat ducimus a eos illo! Corporis voluptate reprehenderit ducimus omnis eum, minima nam in dicta veniam, excepturi ipsum.</p>
+    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, excepturi sed, porro error animi, voluptatibus pariatur incidunt tempore veritatis quis labore vel dignissimos eligendi. Tenetur magni id voluptate laboriosam aliquid.</p>
+    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et exercitationem laborum eaque illo est non aperiam similique praesentium possimus a, harum voluptate quia voluptatum fugiat. Qui natus architecto rem aliquid.</p>
+    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat corporis porro sit, quaerat ducimus a eos illo! Corporis voluptate reprehenderit ducimus omnis eum, minima nam in dicta veniam, excepturi ipsum.</p>
+    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, excepturi sed, porro error animi, voluptatibus pariatur incidunt tempore veritatis quis labore vel dignissimos eligendi. Tenetur magni id voluptate laboriosam aliquid.</p>
+        <div class="slide-in-panel-wrapper" data-toggle-button=".action" data-toggle-class="show">
+            <div class="slide-in-panel">
+                <div class="action">
+                    <span class="left-arrow-content"></span>
+                </div>
+                <div class="slide-in-content">
+                    <div class="age">
+                        <label class="label-bold">Age</label>
+                        <div class="content-value">
+                            <input type="text" name="fname" class="textinput">
+                        </div>
+                    </div>
+                    <div class="target-retirement-age">
+                        <label class="label-bold">Target Retirement Age</label>
+                        <div class="content-value">
+                            <input type="text" name="fname" class="textinput" value="65">
+                        </div>
+                    </div>
+                    <div class="expected-year-retirement">
+                        <label class="label-bold">Expected Years of Retirement</label>
+                        <div class="content-value">
+                            <input type="text" name="fname" class="textinput">
+                        </div>
+                    </div>
+                    <div class="mpf-balance">
+                        <label class="label-bold">Existing MPF Balance (HK$)</label>
+                        <div class="content-value">
+                            <input type="text" name="fname" class="textinput">
+                        </div>
+                    </div>
+                    <div class="mpf-contribution">
+                        <label class="label-bold">Monthly MPF Contributions (HK$)</label>
+                        <div class="content-value">
+                            <input type="text" name="fname" class="textinput">
+                        </div>
+                    </div>
+                    <div class="current-assets">
+                        <label class="label-bold">Current Assets (HK$) (Excluding property)</label>
+                        <div class="content-value">
+                            <input type="text" name="fname" class="textinput">
+                        </div>
+                    </div>
+                    <div class="pre-retirement">
+                        <label class="label-bold">Assumed Annual Rate of Return (%) (pre-retirement)</label>
+                        <ul class="increment-control">
+                            <li class="sub"><span class="increment-button"></span></li>
+                            <li>
+                                <p class="value"></p>
+                                <input type="number"/>
+                            </li>
+                            <li class="add"><span class="increment-button"></span></li>
+                        </ul>
+                    </div>
+                    <div class="post-retirement">
+                        <label class="label-bold">Assumed Annual Rate of Return (%) (post-retirement)</label>
+                        <ul class="increment-control">
+                            <li class="sub"><span class="increment-button"></span></li>
+                            <li>
+                                <p class="value"></p>
+                                <input type="number"/>
+                            </li>
+                            <li class="add"><span class="increment-button"></span></li>
+                        </ul>
+                    </div>
+                    <div class="rate-inflation">
+                        <label class="label-bold">Assumed Annual Rate of Inflation (%)</label>
+                        <ul class="increment-control">
+                            <li class="sub"><span class="increment-button"></span></li>
+                            <li>
+                                <p class="value"></p>
+                                <input type="number"/>
+                            </li>
+                            <li class="add"><span class="increment-button"></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../script/jquery.js"></script>
+    <script src="../script/plugin/fastclick.js"></script>
+    <script src="../script/pos/IncrementControl.js"></script>
+    <script src="../script/pos/SlideInControl.js"></script>
+    <script>
+    /*global FastClick, pos*/
+    FastClick.attach(document.body);
+    var slideHtml = $(".slide-in-panel-wrapper");
+    var slideInControl = new pos.SlideInControl(slideHtml, {});
+    </script>
+</body>
+
+</html>

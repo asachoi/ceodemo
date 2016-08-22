@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<head>
+    <title>Manulife Pos Technical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../style/default.css">
+</head>
+
+<body>
+    <!-- <div class="swipe-panel-wrapper"> -->
+        <div class="swipe-panel-wrapper swiper-container">
+            <ul class="swipe-panel swiper-wrapper">
+                <li class="item active swiper-slide">
+                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum magni consequatur id sapiente ipsam! Iste architecto temporibus tenetur explicabo dolores, aspernatur, in atque, laboriosam velit ipsa praesentium saepe sunt nostrum.</p>
+
+                    <div class="rounded">Rouned</div>
+                </li>
+                <li class="item swiper-slide">
+                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, eum adipisci, nemo debitis ducimus molestias magni saepe. Molestiae iste explicabo, possimus odio. Hic asperiores accusamus saepe maiores, veniam enim quae?</p>
+                </li>
+                <li class="item swiper-slide">
+                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, eius quis quaerat minima laudantium fuga quia ea quasi, modi obcaecati ex dolore qui aliquam provident in nemo ab doloremque et!</p>
+                </li>
+                <li class="item swiper-slide">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, eum adipisci, nemo debitis ducimus molestias magni saepe. Molestiae iste explicabo, possimus odio. Hic asperiores accusamus saepe maiores, veniam enim quae?</p>
+                </li>
+                <li class="item swiper-slide">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, eius quis quaerat minima laudantium fuga quia ea quasi, modi obcaecati ex dolore qui aliquam provident in nemo ab doloremque et!</p>
+                </li>
+            </ul>
+
+            <span class="left-arrow swipe-button hidden"></span>
+            <span class="right-arrow swipe-button"></span>
+
+            <div class="active-panel">
+                <a href="#" class="proceed-link hidden"><button type="button" class="button positiveButton">Proceed</button></a>
+                <div class="active-panel-inner">
+                    <div class="show-footer-menu">
+                        <p class="step-text">Step <span class="curr-step">2</span> out of <span class="total-step">3</span></p>
+                        <div class="up-arrow"></div>
+                    </div>
+                    <div class="active-panel-bar">
+                        <div class="active-bar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer-menu" class="footer-menu">
+                <ul class="menu-list">
+                    <li class="selected checked">Q1: Lorem Ipusm Dolot Sit</li>
+                    <li class="checked">Q2: Lorem Ipusm Dolot Sit</li>
+                    <li>Q3: Lorem Ipusm Dolot Sit</li>
+                    <li>Q4.1: Lorem Ipusm Dolot Sit</li>
+                    <li>Q4.2: Lorem Ipusm Dolot Sit</li>
+                    <li>Q4.3: Lorem Ipusm Dolot Sit</li>
+                    <li>Q4.4: Lorem Ipusm Dolot Sit</li>
+                    <li>Q4.5: Lorem Ipusm Dolot Sit</li>
+                    <li>Q5: Lorem Ipusm Dolot Sit</li>
+                    <li>Q7: Lorem Ipusm Dolot Sit</li>
+                    <li>Q8: Lorem Ipusm Dolot Sit</li>
+                </ul>
+                <div id="white-overlay" class="white-overlay"></div>
+            </div>
+        </div>
+    <!-- </div> -->
+
+    <script src="../script/jquery.js"></script>
+    <script src="../script/plugin/fastclick.js"></script>
+    <script src="../script/plugin/jtouchswipe.js"></script>
+    <script src="../script/plugin/idangerous.swiper.scrollbar.js"></script>
+    <script src="../script/pos/SwipePanel.js"></script>
+    <script>
+        /*global pos:true, FastClick*/
+        FastClick.attach(document.body);
+	    new pos.SwipePanel($('.swiper-container'));
+    </script>
+</body>
+
+</html>

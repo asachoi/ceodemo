@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class='no-js lt-ie9 lt-ie8 lt-ie7'> <![endif]-->
+<!--[if IE 7]>         <html class='no-js lt-ie9 lt-ie8'> <![endif]-->
+<!--[if IE 8]>         <html class='no-js lt-ie9'> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='no-js'>
+<!--<![endif]-->
+
+
+<head>
+	<title>Manulife Pos Technical</title>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
+	<meta name='apple-mobile-web-app-capable' content='yes' />
+	<link rel='stylesheet' type='text/css' href='../style/default.css'>
+</head>
+
+<body>
+	<div class='your-concern-page'>
+		<div class='left-container'>
+			<div class='header'>
+				<div class='container'>
+					<div class='characters-list'>
+						<div class='inner'>
+						<div class='character-icon icon-mortgage'></div>
+						<p class='title'>Mortgage</p>
+						</div>
+					</div>
+					<div class='characters-list'>
+						<div class='inner'>
+						<div class='character-icon icon-fully-owned'></div>
+						<p class='title'>Fully owned</p>
+						</div>
+					</div>
+					<div class='characters-list'>
+						<div class='inner'>
+						<div class='character-icon icon-rented'></div>
+						<p class='title'>Rented</p>
+						</div>
+					</div>
+					<div class='characters-list'>
+						<div class='inner'>
+						<div class='character-icon icon-living-with-family'></div>
+						<p class='title'>Living with family</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='middle'>
+				<p class='title'>Your Concern</p>
+				<div class='content-container'>
+
+				</div>
+				<div class='control-container'>
+					<p class='previous'>PREVIOUS</p>
+					<p class='next'>NEXT</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../script/jquery.js"></script>
+	<!-- start data -->
+	<script src='../script/data/SubscribeItem.js'></script>
+	<script src='../script/data/svg/SVGDataConfig.js'></script>
+	<script src='../script/data/ConfigData.js'></script>
+	<script src='../script/data/CharacterData.js'></script>
+	<script src='../script/data/DependentData.js'></script>
+	<script src='../script/data/HousingData.js'></script>
+	<script src='../script/data/GettingToKnowYouData.js'></script>
+
+	<script src='../script/data/retirement/RetirementConfigData.js'></script>
+	<script src='../script/data/retirement/RetirementIncomeAssetsData.js'></script>
+	<script src='../script/data/retirement/RetirementLifeStyleData.js'></script>
+	<script src='../script/data/retirement/RetirementPlanData.js'></script>
+
+	<script src='../script/data/insurance/InsurancePlanData.js'></script>
+	<script src='../script/data/investment/InvestmentGoalData.js'></script>
+
+	<script src='../script/data/EmotionalFactFindingData.js'></script>
+	<!-- end data -->
+	<!--start base control -->
+	<script src="../script/jquery.js"></script>
+	<script src='../script/plugin/jquery-ui-effect.js'></script>
+	<script src='../script/plugin/fastclick.js'></script>
+	<script src='../script/pos/range/jquery.nouislider.js'></script>
+	<script src='../script/plugin/jtouchswipe.js'></script>
+	<script src='../script/plugin/idangerous.swiper.scrollbar.js'></script>
+	<script src='../script/pos/SwiperCarousel.js'></script>
+	<script src='../script/pos/sortable-jquery-ui.js'></script>
+	<script src='../script/plugin/jquery.ui.touch-punch.js'></script>
+
+	<script src='../script/pos/range/NewSlider.js'></script>
+	<script src='../script/pos/IncrementControl.js'></script>
+	<script src='../script/pos/RadioGroup.js'></script>
+	<script src="../script/pos/page-management/PageElement.js"></script>
+	<script src="../script/pos/page-management/PageManagement.js"></script>
+	<!-- end base control -->
+	<script src='../script/pos/character/CharacterAge.js'></script>
+	<script src="../script/pos/character/SVGItem.js"></script>
+	<script src="../script/pos/character/SVGHousingItem.js"></script>
+
+	<script src='../script/pages/getting_to_know_you/YourConcernPage.js'></script>
+	<script>
+	/*global page, FastClick*/
+	FastClick.attach(document.body);
+	var occupation = new page.YourConcernPage('.your-concern-page', {
+		'isStandalone': true
+	});
+	</script>
+</body>
+
+</html>

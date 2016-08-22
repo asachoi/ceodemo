@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Manulife Pos Technical</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../style/default.css">
+</head>
+
+<body>
+	<div class="page-test">
+		<div class="page-management">
+			<div class="page-container">
+			</div>
+		</div>
+		<div class="control-container">
+			<span class="left-arrow"></span>
+			<span class="right-arrow"></span>
+		</div>
+	</div>
+	<script src="../script/jquery.js"></script>
+	<script src='../script/plugin/jquery-ui-effect.js'></script>
+	<script src="../script/pos/page-management/PageElement.js"></script>
+	<script src="../script/pos/page-management/PageA.js"></script>
+	<script src="../script/pos/page-management/PageManagement.js"></script>
+	<script src="../script/pos/page-management/PageTest.js"></script>
+	<script>
+		var pageTest = new pos.PageTest(".page-test", {});
+	</script>
+</body>
+
+</html>

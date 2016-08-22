@@ -1,0 +1,54 @@
+<section class="row financialPlan">
+	<div class="grid">
+		<div class="span8">
+
+			<section class="panelz panelz--withTabs">
+			    <div class="content padded">
+
+					<section class="titleBlock">
+						<h2 class="mainTitle">Financial plan pyramid</h2>
+						<div class="titleBlock__information"><a href="#"><span class="icon icon--question"></span> Why do people need insurance?</a></div>
+					</section>
+
+					<section class="financialPlan__graph">
+						<div><img src="[{planningGroups[selectedTypeIndex].pyramidImg}]" alt="" /></div>
+					</section>
+
+			    </div>
+			</section>
+
+		</div>
+		<div class="span4">
+			<section class="panelz panelz--withTabs">
+			    <div class="content padded">
+
+					<section class="titleBlock">
+						<h2 class="mainTitle">Your type</h2>
+						<p>[{planningGroups[selectedTypeIndex].type}]</p>
+					</section>
+
+					<section class="financialPlan__goalSelector">
+						<h3 class="mainTitle">Select your goals</h3>
+						<div class="scrollingArea">
+							<ul>
+								<li ng-repeat="goal in planningGroups[selectedTypeIndex].goals | orderBy:['-stars', 'name']" class="item" ng-class="{ itemSelected : hasMoreStarThan(goal, 0)}" >
+									<div class="wrapper1">
+										<div class="wrapper2">
+											<span class="icon [{goal.icon}]"></span>
+											<span class="text">[{goal.name}]</span>
+											<div class="stars">
+												<button type="button" class="star" ng-class="{starFilled : hasMoreStarThan(goal, i)}" ng-repeat="i in [1,0]" ng-click="toggleStar(goal, i)"></button>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+			    </div>
+			</section>
+		</div>
+	</div>
+</section>
+
